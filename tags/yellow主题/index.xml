@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>yellow主题 on CODEPOOL</title>
+    <link>https://busui.github.io/tags/yellow%E4%B8%BB%E9%A2%98/</link>
+    <description>Recent content in yellow主题 on CODEPOOL</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 28 Jul 2019 11:46:49 +0800</lastBuildDate>
+    
+	<atom:link href="https://busui.github.io/tags/yellow%E4%B8%BB%E9%A2%98/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Yellow主题的使用说明</title>
+      <link>https://busui.github.io/posts/yellow%E4%B8%BB%E9%A2%98%E7%9A%84%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/</link>
+      <pubDate>Sun, 28 Jul 2019 11:46:49 +0800</pubDate>
+      
+      <guid>https://busui.github.io/posts/yellow%E4%B8%BB%E9%A2%98%E7%9A%84%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/</guid>
+      <description>使用Hugo你大概就应该知道你是一个content manager,也就是内容管理者。事实上，要想有比较清晰简洁甚至漂亮的布局，是需要content manager自己去慢慢调试的。有很多工具帮助你来完成这些调试。如果你从来没用过这种工具来策划自己的文章布局，会有感觉有一点不习惯。刚开始我也不习惯，但既然你都决定自己建站来管理自己的内容，这点“不习惯”也就不算什么的了。</description>
+    </item>
+    
+  </channel>
+</rss>

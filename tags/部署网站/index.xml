@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>部署网站 on CODEPOOL</title>
+    <link>https://busui.github.io/tags/%E9%83%A8%E7%BD%B2%E7%BD%91%E7%AB%99/</link>
+    <description>Recent content in 部署网站 on CODEPOOL</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 12 Sep 2019 10:38:14 +0800</lastBuildDate>
+    
+	<atom:link href="https://busui.github.io/tags/%E9%83%A8%E7%BD%B2%E7%BD%91%E7%AB%99/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo教程系列（十一）</title>
+      <link>https://busui.github.io/posts/hugo-tutorial-11/</link>
+      <pubDate>Thu, 12 Sep 2019 10:38:14 +0800</pubDate>
+      
+      <guid>https://busui.github.io/posts/hugo-tutorial-11/</guid>
+      <description>部署网站的一个很重要目的就是令得你的网站可以被所有互联网用户访问到（请自行忽略某种不可抗拒因素）。 由于Hugo网站是静态网站，基本上没涉及到什么web运行环境的部署，因此发布Hugo网站其实是相当简单</description>
+    </item>
+    
+  </channel>
+</rss>

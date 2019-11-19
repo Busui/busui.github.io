@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>CODEPOOL  | Hugo教程系列（十一）</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.57.0" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/css/bootstrap.min.css" rel="stylesheet">
+    
+      <link href="/css/github.css" rel="stylesheet">
+    
+      <link href="/css/style.css" rel="stylesheet">
+    
+
+
+    
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/favicon144.png">
+    
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/favicon114.png">
+    
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/img/favicon72.png">
+    
+    <link rel="apple-touch-icon-precomposed" href="/img/favicon57.png">
+    
+    <link rel="shortcut icon" href="/img/favicon32.png">
+
+    
+
+    
+    
+  </head>
+
+  <body>
+       <script>
+          if (/android/i.test(navigator.userAgent) || /(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent) || /mobile/i.test(navigator.userAgent))
+          {
+              document.body.classList.add('custom-mobile');
+          }
+       </script>
+      <div class="container px-0" id="content">
+        <header class="container" id="header-id">
+    <div class="row justify-content-center">
+        <div class="col-12 text-center">
+            <div class="my-3" style="font-size:2rem;">
+                <a href="https://busui.github.io" class="px-3 px-md-5 badge custom-badge-dark text-wrap py-1 py-md-2">CODEPOOL</a>
+            </div>
+        </div>
+        <div class="w-100"></div>
+        
+        <div>
+            <p class="text-muted text-center custom-text-muted mobile-custom-size">
+                我至今无法否认学习是一件快乐的事儿
+            </p>
+        </div>
+        
+    </div>
+    <div class="row justify-content-center">
+        <nav class="navbar navbar-expand-md justify-content-center">
+            <div class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span> 
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-xinxiaoxixiangxiajiantou"></use>
+                    </svg>
+                </span>
+            </div>
+            <div class="border-warning collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav d-flex">
+                    
+                    
+                    <li class="">
+                        <a class="nav-link custom-link-color " href="/" style="text-align: center;">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-ziyuan2"></use>
+                            </svg>
+                            <span>首页</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="">
+                        <a class="nav-link custom-link-color " href="/categories/" style="text-align: center;">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-ziyuan"></use>
+                            </svg>
+                            <span>分类</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="">
+                        <a class="nav-link custom-link-color " href="/tags/" style="text-align: center;">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-ziyuan4"></use>
+                            </svg>
+                            <span>标签</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="">
+                        <a class="nav-link custom-link-color " href="/archive/" style="text-align: center;">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-ziyuan5"></use>
+                            </svg>
+                            <span>归档</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="">
+                        <a class="nav-link custom-link-color " href="/about/" style="text-align: center;">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-ziyuan1"></use>
+                            </svg>
+                            <span>关于</span>
+                            
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+        
+<main class="container-fluid px-4">
+  <article id="main">
+    <h1 id="title">Hugo教程系列（十一）</h1>
+    <div class="row justify-content-end mx-2 mx-sm-4">
+        
+          <span class="custom-span-meta">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-biaoqian3"></use>
+              </svg>
+              
+              <a class="custom-text-muted custom-a" href="https://busui.github.io/tags/hugo/">Hugo</a>&shortmid;
+              
+              <a class="custom-text-muted custom-a" href="https://busui.github.io/tags/%e6%95%99%e7%a8%8b/">教程</a>&shortmid;
+              
+              <a class="custom-text-muted custom-a" href="https://busui.github.io/tags/%e9%83%a8%e7%bd%b2%e7%bd%91%e7%ab%99/">部署网站</a>&shortmid;
+              
+          </span>&nbsp;
+        
+        
+          <span class="custom-span-meta">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-fenlei2"></use>
+              </svg>
+              
+              <a class="custom-text-muted custom-a" href="https://busui.github.io/categories/">Hugo教程</a>&shortmid;
+              
+          </span>&nbsp;
+        
+      <span class="custom-span-meta">
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-time"></use>
+        </svg>2019-09-12</span>&nbsp;
+      <span class="custom-span-meta">
+          <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-count"></use>
+          </svg>3176字
+      </span>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-12 px-2 px-md-3">
+          
+
+<p>部署网站的一个很重要目的就是令得你的网站可以被所有互联网用户访问到（请自行忽略某种不可抗拒因素）。</p>
+
+<p>由于Hugo网站是静态网站，基本上没涉及到什么web运行环境的部署，因此发布Hugo网站其实是相当简单的。<a href="https://gohugo.io/hosting-and-deployment/">Hugo Hosting</a>里几乎谈到了所有部署Hugo网站的方式，我们这里主要谈其中的两种：</p>
+
+<ol>
+<li>部署到github pages；</li>
+<li>部署到某主机（以阿里云为例，其他的其实也一样）</li>
+</ol>
+
+<h2 id="1-简单介绍github-pages">1. 简单介绍github pages</h2>
+
+<aside class="alert alert-danger" role="alert">如果此前你有<a href="https://hexo.io/">Hexo</a>的操作经验，那么这一小节的内容可能会令你觉得无聊。</aside>
+
+<p><a href="https://pages.github.com/">Github Pages</a>为我们提供了免费的空间，我们只需要简单的一个脚本（或几个步骤）就可以将我们的网站托管在Github的空间里，剩下的，Github Pages会帮你完成。</p>
+
+<p>在部署之前，请保证你满足下面条件：</p>
+
+<ol>
+<li>在你的电脑上至少有2.8G的硬盘剩余容量；</li>
+<li>已经在Github上注册账号，如果你还没注册，请点击<a href="https://github.com/join">Signing up</a>；</li>
+<li>一个已经生成好的静态网站，如果你还没有，请先完成<a href="https://codepool.top/posts/hugo-tutorial/">Hugo教程系列（一）</a>。</li>
+</ol>
+
+<hr />
+
+<p>有两种类型的Github Pages：</p>
+
+<ol>
+<li>User/Organization Pages：通过<code>https://&lt;USERNAME|ORGANIZATION&gt;.github.io/</code>访问</li>
+<li>Project Pages：通过<code>https://&lt;USERNAME|ORGANIZATION&gt;.github.io/&lt;PROJECT&gt;/</code>访问。</li>
+</ol>
+
+<p>我们这里只是涉及到第一种。其中,<code>USERNAME</code>是你的github用户名。比如我的用户名是busui，那么把我们的网站上传之后，我就可以通过<a href="https://busui.github.io">https://busui.github.io</a> 访问我的网站。</p>
+
+<h2 id="2-部署到github-pages和网站更新">2. 部署到Github Pages和网站更新</h2>
+
+<p>其实部署到Github Pages上，也就是将我们的静态网站上传到名为<code>&lt;USERNAME&gt;.github.io</code>的仓库里面。</p>
+
+<p>由于我们每次写文章都是在电脑本地完成的，而且每次完成都会重新生成一个新的静态网站，因此，我们在往后还是会不断的将网站一次次上传到同一个仓库里。我们称这一过程是网站更新。</p>
+
+<p>到了这里，你就要明白，使用Github Pages我们要做的工作就是：</p>
+
+<ol>
+<li>部署网站</li>
+<li>更新网站</li>
+</ol>
+
+<p>部署和更新都是将网站上传到GitHub Pages上，那它们的区别是什么呢？额，部署网站是第一次上传网站，第一次嘛，肯定难点，要做的准备也多点。</p>
+
+<p>好，下面我们就来看看到底部署网站有多“难”。</p>
+
+<h3 id="2-1-创建新仓库">2-1. 创建新仓库</h3>
+
+<p>首先，第一步就能让你蒙圈。因为在这一步我们会创建两个仓库。（ps：当然，另一个仓库是可选的，但还是建议你创建两个）</p>
+
+<p>在前面谈到Github Papes的时候我们反复强调，我们只是将生成的静态网站（也就是项目下的public文件夹）上传到名为<code>&lt;USERNAME&gt;.github.io</code>的仓库里。为了方便，我把这个仓库称作<code>网站仓库</code>。</p>
+
+<p>其实，我们还得创建另一个仓库，这个仓库，作用是备份你的Hugo项目。为了方便，我把这个仓库称为<code>项目仓库</code>。<strong>这样，无论你走到天涯海角，只要你记得你的github账号密码，你就可以在很短时间内在电脑中恢复你的Hugo写作环境。</strong></p>
+
+<p>到了这里，我们先捋清一些思路：</p>
+
+<ol>
+<li><code>项目仓库</code>: 存放Hugo项目的，如在<a href="https://codepool.top/posts/hugo-tutorial/">Hugo教程系列（一）</a>我们创建的quickstart项目；</li>
+<li><code>网站仓库</code>: 存放public文件夹的，需要注意的是这个public文件夹在Hugo项目里面；</li>
+<li><code>项目仓库</code>包含<code>网站仓库</code>（别看这句话短，真正理解可不容易）😂</li>
+</ol>
+
+<h4 id="创建项目仓库">创建项目仓库</h4>
+
+<p>我们先去Github上新建一个<strong>远程仓库</strong>：先登录你的github账号，然后访问<a href="https://github.com/new">新建仓库</a>，如图，新建一个名为quickstart的仓库（ps：名字你可以另外自己取）：</p>
+
+<p><img src="https://codepool.oss-cn-shenzhen.aliyuncs.com/Hugotutorial/hugo11-github0.png" alt="github view0" /></p>
+
+<p>点击<code>Create repository</code>后：</p>
+
+<p><img src="https://codepool.oss-cn-shenzhen.aliyuncs.com/Hugotutorial/hugo11-github1.png" alt="github view0" /></p>
+
+<p>此时，我们已经完成远程仓库的创建。现在它是空的，我们需要把我们本地的quickstart传输上去。按照上图的提示，我们知道，要先将本地的quickstart文件夹初始化为<strong>本地仓库</strong>，接下来运用相关指令就可以把本地仓库和远程仓库就链接起来了。</p>
+
+<p>在终端操作如下：</p>
+
+<pre><code># 初始化一个本地仓库
+~/quickstart            # ------&gt; 在quickstart根目录下
+➜ git init
+Initialized empty Git repository in /Users/codepool/quickstart/.git/
+
+quickstart on master [?]    # 告诉git不要把theme目录同步到远程仓库
+➜ echo &quot;themes/&quot; &gt;&gt; .gitignore
+
+quickstart on master [?]    
+➜ git add .
+
+quickstart on master [+]
+➜ git commit -m &quot;my first commit&quot;
+[master (root-commit) 2a1f96a] my first commit
+ 15 files changed, 265 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 archetypes/default.md
+ create mode 100644 config.toml
+ create mode 100644 content/about/_index.md
+ ...省略部分输出...
+ create mode 100644 package-lock.json
+
+quickstart on master    # 将本地仓库和远程仓库建立关系
+➜ git remote add origin git@github.com:Busui/quickstart.git
+
+quickstart on master
+➜ git push -u origin master             #将本地仓库上传到远程仓库 
+Counting objects: 20, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (17/17), done.
+Writing objects: 100% (20/20), 3.24 KiB | 664.00 KiB/s, done.
+Total 20 (delta 9), reused 0 (delta 0)
+remote: Resolving deltas: 100% (9/9), done.
+To github.com:Busui/quickstart.git
+ * [new branch]      master -&gt; master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+</code></pre>
+
+<p>此时，如果没有意外，你的远程仓库已经有内容了。</p>
+
+<h4 id="创建网站仓库">创建网站仓库</h4>
+
+<p>如上，这一步才是真正将你的静态网站部署到Github Pages上。这里以我的github为例，我的github名称为busui，因此，新建的仓库名只能（只能！！！）是busui.github.io，如下：</p>
+
+<p><img src="https://codepool.oss-cn-shenzhen.aliyuncs.com/Hugotutorial/hugo11-github2.png" alt="github view0" /></p>
+
+<p>创建之后，你要注意，因为我们是要把项目仓库里的public文件夹上传到这个网站仓库里，可以很容易想到，两个仓库会发生冲突。现在的解决方案是：<strong>将public文件夹作为项目仓库的submodule（子模块）</strong>。</p>
+
+<p>在quickstart根目录下，终端操作如下：</p>
+
+<pre><code>quickstart on master
+➜ rm -rf public     # 先将之前的public目录删除掉
+
+quickstart on master
+➜ git submodule add -b master git@github.com:busui/busui.github.io.git public
+Cloning into '/Users/codepool/quickstart/public'...
+warning: You appear to have cloned an empty repository.
+fatal: 'origin/master' is not a commit and a branch 'master' cannot be created from it
+Unable to checkout submodule 'public'
+
+# 在上面的输出中有错误提示，因为现在我们的busui.github.io远程仓库是空的
+# 列出public的内容就可以看到已经成功初始化了一个本地仓库
+quickstart on master
+➜ ls -al public
+total 8
+drwxr-xr-x   3 codepool  staff   96 Sep 12 20:46 .
+drwxr-xr-x  13 codepool  staff  416 Sep 12 20:46 ..
+-rw-r--r--   1 codepool  staff   31 Sep 12 20:46 .git
+</code></pre>
+
+<p>到了这里，还差最后一步！！先在本地生成静态网站，再把静态网站上传到远程的网站仓库中：</p>
+
+<pre><code>quickstart on master
+➜ hugo                      # 生成静态网站
+
+                   | EN
++------------------+----+
+  Pages            | 49
+  Paginator pages  |  0
+  Non-page files   |  0
+  Static files     |  2
+  Processed images |  0
+  Aliases          |  0
+  Sitemaps         |  1
+  Cleaned          |  0
+
+Total in 39 ms
+
+
+quickstart on master
+➜ cd public             # 进入public目录（很重要！！）
+
+
+public on master [?]
+➜ git add .
+
+
+public on master [+]
+➜ git commit -m &quot;my first blog&quot;
+[master (root-commit) 545a79a] my first blog
+ 52 files changed, 4715 insertions(+)
+ create mode 100644 404.html
+ ...省略部分输出...
+ create mode 100644 &quot;\347\254\254\344\272\214\347\257\207\346\226\207\347\253\240/index.html&quot;
+
+
+public on master
+➜ git push              # 把静态网站上传到远程的网站仓库中
+Counting objects: 84, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (71/71), done.
+Writing objects: 100% (84/84), 16.75 KiB | 1.40 MiB/s, done.
+Total 84 (delta 44), reused 0 (delta 0)
+remote: Resolving deltas: 100% (44/44), done.
+remote: This repository moved. Please use the new location:
+remote:   git@github.com:Busui/busui.github.io.git
+To github.com:busui/busui.github.io.git
+ * [new branch]      master -&gt; master
+</code></pre>
+
+<p>没有意外，访问<a href="https://busui.github.io">https://busui.github.io</a> 就可以看到你的成果了。</p>
+
+<aside class="alert alert-danger" role="alert">注意：<a href="https://busui.github.io">https://busui.github.io</a> 中的busui是我的用户名，你需要（需要！！！！）改为你自己的！</aside>
+
+<h3 id="2-2-更新网站">2-2. 更新网站</h3>
+
+<p>更新网站相对就简单很多了，先在<code>config.toml</code>设置对应的值：</p>
+
+<pre><code>baseURL = &quot;https://busui.github.io&quot;   # 把busui更改为你的github名称
+
+# 剩下的值你自己酌情修改
+</code></pre>
+
+<p>之后每次写完文章，<strong>在网站根目录下</strong>，逐条输入下面的指令即可：</p>
+
+<pre><code>rm -rf public
+hugo
+cd public
+git add .
+git commit -m &quot;这次更新的说明&quot;
+git push
+</code></pre>
+
+<blockquote>
+<p>每次输入上面的指令有点烦，有没有一条指令解决所有事情的呢？有！</p>
+</blockquote>
+
+<p>我们先在项目根目录下创建一个名为<code>deploy.sh</code>的文件，然后在里面写入下面内容：</p>
+
+<pre><code>#!/bin/sh
+
+# If a command fails then the deploy stops
+set -e
+
+printf &quot;\033[0;32mDeploying updates to GitHub...\033[0m\n&quot;
+
+# Build the project.
+hugo # if using a theme, replace with `hugo -t &lt;YOURTHEME&gt;`
+
+# Go To Public folder
+cd public
+
+# Add changes to git.
+git add .
+
+# Commit changes.
+msg=&quot;rebuilding site $(date)&quot;
+if [ -n &quot;$*&quot; ]; then
+	msg=&quot;$*&quot;
+fi
+git commit -m &quot;$msg&quot;
+
+# Push source and build repos.
+git push origin master
+</code></pre>
+
+<p>之后，每次写完文章，只需要在终端下（注意路径在项目根目录喜爱），输入：</p>
+
+<pre><code>./deploy
+</code></pre>
+
+<p>完美！</p>
+
+<h2 id="3-部署到阿里云">3. 部署到阿里云</h2>
+
+<p>这个其实是相当简单的。在购买云主机之后我们会得到一个主机密码。你可以创建一个普通用户，之后安装一个web服务器，比如<a href="https://www.nginx.com/">Nginx</a>。</p>
+
+<p>之后购买域名，备案。比如我的域名是codepool.top。</p>
+
+<p>最后写一个名为ali-deploy.sh的脚本：</p>
+
+<pre><code>#!/bin/sh
+USER=在云主机上你的登录名
+HOST=主机ip地址
+DIR=www/   # might sometimes be empty!
+
+
+# --baseURL的值改为你的域名
+hugo --baseURL=&quot;https://codepool.top&quot; &amp;&amp; rsync -avz --delete public/ ${USER}@${HOST}:~/${DIR}
+
+exit 0
+</code></pre>
+
+<p>每次更新是至于要在终端下输入：</p>
+
+<pre><code>./ali-deploy.sh
+</code></pre>
+
+<p>全文完。感谢阅读！</p>
+<div class="container custom-copyright-style border-warning m-2 my-md-4 p-2 shadow-sm">
+    <div >
+        <span>
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-woshizuozhe"></use>
+        </svg>作者：
+        <a href="http://codepool.top/about/">不谇</a>
+        </span>
+    </div>
+    <div>
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-suoding"></use>
+        </svg>版权：此文章版权归<a href="https://codepool.top">CODEPOOL</a>所有。允许转载，但禁止商用！
+    </div>
+</div></div>
+    </div>
+  </article>
+  <div class="hr-box">
+      <div class="hr-box-sm hr-red"></div>
+      <div class="hr-box-sm hr-orange"></div>
+      <div class="hr-box-sm hr-yellow "></div>
+      <div class="hr-box-sm hr-green "></div>
+      <div class="hr-box-sm hr-blue "></div>
+      <div class="hr-box-sm hr-purple"></div>
+  </div>
+  <aside id="meta">
+    <div class="row justify-content-between py-2 py-md-3">
+        
+        <div class="col-12 col-md-5">
+          <span><svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-PrevioustrackFill"></use>
+            </svg>上一篇<a class="text-dark custom-a" href="https://busui.github.io/posts/hugo-tutorial-10/"> Hugo教程系列（十）</a>
+          </span>
+        </div>
+        
+        
+          
+              <div class="col-12 col-md-5">
+                  <span class="float-md-right">
+          
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-NexttrackFilled"></use>
+            </svg>下一篇<a class="text-dark custom-a" href="https://busui.github.io/posts/xiamentour/"> 厦门之旅</a>
+          </span>
+        </div>
+        
+    </div>
+  </aside>
+</main>
+
+        <footer class="custom-border-top mt-3 py-3 custom-footer">
+    <aside>
+        <span>CODEPOOL&nbsp;&COPY;&nbsp;2018-2019</span>
+    </asite>
+    <aside>
+        <span>
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-powerstation"></use>
+        </svg>
+        POWER BY <a href="https://gohugo.io/" class="custom-footer-a">HUGO</a>&shortmid;</span>
+        <span>
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-library_theme_select"></use>
+        </svg>
+        THEME BY <a href="https://github.com/Busui/gohugo-theme-yellow" class="custom-footer-a">BUSUI</a></span>
+    </aside>
+    <div class="footerest">
+        <span>
+            
+                粤ICP备19088648号-1&shortmid;
+            
+        </span>
+        <span>
+            All Rights Reverse.
+        </span>
+        
+        <span>
+                &shortmid;欢迎来访CODEPOOL，本站所有言行仅代表个人观点，无关任何其他个体/组织。
+        </span>
+        
+    </div>
+</footer>
+      </div>
+      
+<button onclick="topFunction()" id="myBtn" title="Go to top">
+    <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-top2"></use>
+    </svg>
+</button>
+
+<script>
+    
+    window.onscroll = function () {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+
+    
+    function topFunction() {
+        document.body.scrollTop = 0; 
+        document.documentElement.scrollTop = 0; 
+    }
+</script>
+      
+
+  <script src="/js/jquery-3.3.1.slim.min.js"></script>
+
+  <script src="/js/bootstrap.bundle.min.js"></script>
+
+  <script src="/js/iconfont.js"></script>
+
+  <script src="/js/highlight.pack.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+      
+  </body>
+</html>

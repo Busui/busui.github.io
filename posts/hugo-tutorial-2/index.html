@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>CODEPOOL  | Hugo教程系列（二）</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.57.0" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/css/bootstrap.min.css" rel="stylesheet">
+    
+      <link href="/css/github.css" rel="stylesheet">
+    
+      <link href="/css/style.css" rel="stylesheet">
+    
+
+
+    
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/favicon144.png">
+    
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/favicon114.png">
+    
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/img/favicon72.png">
+    
+    <link rel="apple-touch-icon-precomposed" href="/img/favicon57.png">
+    
+    <link rel="shortcut icon" href="/img/favicon32.png">
+
+    
+
+    
+    
+  </head>
+
+  <body>
+       <script>
+          if (/android/i.test(navigator.userAgent) || /(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent) || /mobile/i.test(navigator.userAgent))
+          {
+              document.body.classList.add('custom-mobile');
+          }
+       </script>
+      <div class="container px-0" id="content">
+        <header class="container" id="header-id">
+    <div class="row justify-content-center">
+        <div class="col-12 text-center">
+            <div class="my-3" style="font-size:2rem;">
+                <a href="https://busui.github.io" class="px-3 px-md-5 badge custom-badge-dark text-wrap py-1 py-md-2">CODEPOOL</a>
+            </div>
+        </div>
+        <div class="w-100"></div>
+        
+        <div>
+            <p class="text-muted text-center custom-text-muted mobile-custom-size">
+                我至今无法否认学习是一件快乐的事儿
+            </p>
+        </div>
+        
+    </div>
+    <div class="row justify-content-center">
+        <nav class="navbar navbar-expand-md justify-content-center">
+            <div class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span> 
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-xinxiaoxixiangxiajiantou"></use>
+                    </svg>
+                </span>
+            </div>
+            <div class="border-warning collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav d-flex">
+                    
+                    
+                    <li class="">
+                        <a class="nav-link custom-link-color " href="/" style="text-align: center;">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-ziyuan2"></use>
+                            </svg>
+                            <span>首页</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="">
+                        <a class="nav-link custom-link-color " href="/categories/" style="text-align: center;">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-ziyuan"></use>
+                            </svg>
+                            <span>分类</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="">
+                        <a class="nav-link custom-link-color " href="/tags/" style="text-align: center;">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-ziyuan4"></use>
+                            </svg>
+                            <span>标签</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="">
+                        <a class="nav-link custom-link-color " href="/archive/" style="text-align: center;">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-ziyuan5"></use>
+                            </svg>
+                            <span>归档</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="">
+                        <a class="nav-link custom-link-color " href="/about/" style="text-align: center;">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-ziyuan1"></use>
+                            </svg>
+                            <span>关于</span>
+                            
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+        
+<main class="container-fluid px-4">
+  <article id="main">
+    <h1 id="title">Hugo教程系列（二）</h1>
+    <div class="row justify-content-end mx-2 mx-sm-4">
+        
+          <span class="custom-span-meta">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-biaoqian3"></use>
+              </svg>
+              
+              <a class="custom-text-muted custom-a" href="https://busui.github.io/tags/hugo/">Hugo</a>&shortmid;
+              
+              <a class="custom-text-muted custom-a" href="https://busui.github.io/tags/%e6%95%99%e7%a8%8b/">教程</a>&shortmid;
+              
+          </span>&nbsp;
+        
+        
+          <span class="custom-span-meta">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-fenlei2"></use>
+              </svg>
+              
+              <a class="custom-text-muted custom-a" href="https://busui.github.io/categories/">Hugo教程</a>&shortmid;
+              
+          </span>&nbsp;
+        
+      <span class="custom-span-meta">
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-time"></use>
+        </svg>2019-08-20</span>&nbsp;
+      <span class="custom-span-meta">
+          <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-count"></use>
+          </svg>4291字
+      </span>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-12 px-2 px-md-3">
+          
+
+<p>如果你还没有安装Hugo，请先查看<a href="https://codepool.top/posts/hugo-tutorial/">Hugo教程系列（一）</a></p>
+
+<aside class="alert alert-success" role="alert">看完系列一，你已经可以发布文章了。但实际上进一步操作，你还不会。这需要进一步学习，需要知道各个功能，才能掌握好Hugo。这篇文章看起来可能会吃力，但耐心看到后面系列，再回过头来看时，才能有一个比较成熟完整的概念。我作为一名开发者，也要看两遍官方文档才把Hugo搞清楚的。</aside>
+
+<h3 id="directory-structure">Directory Structure</h3>
+
+<p>当你敲下<code>hugo new site quickstart</code>时，到底发生了什么？如果列出quickstart下的内容，很容易看到，这条命令创建了一堆文件：</p>
+
+<pre><code class="language-bash">.
+├── archetypes
+├── config.toml
+├── content
+├── data
+├── layouts
+├── static
+└── themes
+</code></pre>
+
+<p>这堆文件结合起来就形成了某种结构，官方称之为<a href="https://gohugo.io/getting-started/directory-structure/">Directory Structure</a>(目录结构)。</p>
+
+<aside class="alert alert-info" role="alert"><strong>Info</strong>：能够阅读英文文档和将它们翻译出来还是有一定差距的。英文中有很多东西还是需要有较好的专业素养才能翻译好的，因此，涉及到一些专有名词，为了不造成误导，我翻译原则是保留英文优先，个人翻译放后。格式如：Directory Structure(目录结构)</aside>
+
+<p>Hugo&rsquo;s CLI(hugo的命令行接口)根据你新建的quickstart项目里面的文件，按目录结构，统一到某个虚拟的文件里，然后将这个统一的虚拟文件作为输入，生产出你的整个网站。</p>
+
+<p>而从技术上来讲，hugo实际上是根据你源文件的目录和模板来作为输入，进而输出整个静态网站（下面图片的<a href="https://gohugo.io/about/what-is-hugo/#what-does-hugo-do">画图依据</a>）：</p>
+
+<p><img src="https://codepool.oss-cn-shenzhen.aliyuncs.com/Hugotutorial/understandHugo.png" alt="understand Hugo" /></p>
+
+<p><strong>按个人理解来讲，templates（模板）就是我们接下来要编写主题要做的大多数事情，模板决定了你的网站的样子。</strong></p>
+
+<p>而源文件目录的文件一般理解为资源（比如图片，文章源文件，音频&hellip;&hellip;），它是你网站上的文字（图片/视频/音频等等）内容。</p>
+
+<hr />
+
+<p>“整个静态网站”怎么理解呢？这其实涉及到了动态网站和静态网站的概念，动/静态网站之间的最大区别在于它们渲染出html（一般是html，这里就以之为例）页面的时机不同：</p>
+
+<ul>
+<li><p>动态网站：当你访问网站的某个页面时，后端代码(python,java,golang&hellip;)根据你请求的页面的需求，[可能]会查询数据库，动态生成某些信息(比如你的用户名）等等后端操作，之后才渲染成html文件，交由web服务器发给相应的浏览器。生成html页面的<strong>时机</strong>是每当有新的请求进来，web端会实时地动态地生成一个html页面。而且是每一个新的请求进来，web端都会重新生成一个html页面。（现在有缓冲技术，不一定每次都生成新的html页面文件。）</p></li>
+
+<li><p>静态网站：早在用户访问之前，所有页面已经存在。当有新的请求进来，web端只不过把已经存在的html页面文件返回给相应浏览器。生成html页面的<strong>时机</strong>是：用户访问之前，甚至可以说是网站发布之前。html页面文件可以是程序员自己写的，也可以交由static site generator(静态网站生成器)来生成。</p></li>
+</ul>
+
+<p>如你所料，Hugo就是一个相当厉害的static site generator。所以hugo是干什么的，起码在你心中有个位置才对。</p>
+
+<h3 id="directory-structure佛系解读">Directory Structure佛系解读</h3>
+
+<p>在前面，我们只是列出quickstart项目下的内容，在这一小节，我们可以大概了解一下这些文件夹的作用，如果你想真正了解每一个细节，请直接去官网查看。</p>
+
+<h4 id="themes-目录">themes 目录</h4>
+
+<p>安装主题就是安装在这个目录下。可以存放多个主题，在根目录下的<code>config.toml</code>文件可以配置使用哪个主题。</p>
+
+<h4 id="archetypes-目录">archetypes 目录</h4>
+
+<p>前一篇文章你已经知道，使用<code>hugo new</code>命令你可以创建新的content files(内容文件，一般是网站的文章)：</p>
+
+<p>下面<strong>再</strong>来演示<strong>在quickstart目录下</strong>，使用<code>hugo new</code>命令新建一篇名为“这是测试hugo new命令”的文章：</p>
+
+<pre><code class="language-bash">~/quickstart
+➜ hugo new &quot;这是测试hugo new命令.md&quot;
+/Users/codepool/quickstart/content/这是测试hugo new命令.md created
+</code></pre>
+
+<p>后缀md代表这个文件格式是markdown格式。</p>
+
+<p>这时候，你的content目录下会有一个名为“这是测试hugo new命令.md”的文件。（从命令的输出我们也可以看到新的文件是放在content目录下的，这是默认的），如果你点开新建的这个文件，你就会发现，里面已经存在一些东西:</p>
+
+<pre><code>---
+title: &quot;这是测试hugo New命令&quot;
+date: 2019-08-22T21:30:08+08:00
+draft: true
+---
+</code></pre>
+
+<p>默认下，<strong>根据archetypes目录下的default.md文件</strong>，<code>hugo new</code>命令创建出的新文件里至少包含：</p>
+
+<ul>
+<li><p>date：创建content file的时间，格式是：2019-08-20T15:43:55+08:00；</p></li>
+
+<li><p>title：标题，这个标题根据你创建的file名来自动生成，看它不爽，你可以随意修改。</p></li>
+
+<li><p>draft：这是一个布尔值，默认值为true，代表[文章]是草稿，当值为false时，代表[文章]为非草稿。这个值会影响到你这篇文章是否被最终发布。</p></li>
+</ul>
+
+<p>这些字段，被称为front matter。这种格式清晰简单，作用是让hugo（或其它程序）识别出你需要表达的一些信息。比如hugo通过title字段可以识别出你文章的标题。</p>
+
+<hr />
+
+<p>再次提醒，<code>hugo new</code>命令是根据archetypes目录下的文件来决定新建文件里面的front matter的。</p>
+
+<p>打开上面提到的default.md，你会发现里面也预先存了一些东西：</p>
+
+<pre><code>---
+title: &quot;{{ replace .Name &quot;-&quot; &quot; &quot; | title }}&quot;
+date: {{ .Date }}
+draft: true
+---
+</code></pre>
+
+<p>和front matter很像，但又有不同。以date举例，date对应的值不是一个具体的时间戳，而是一个表达式<code>{{ .Date }}</code>，当你运行<code>hugo new</code>命令时，<code>{{ .Date }}</code>会生成你输入命令摁下回车时的时间戳。default.md里面这种格式的字段被称为preconfigured front matter（预配置的front matter）。</p>
+
+<p><img src="https://codepool.oss-cn-shenzhen.aliyuncs.com/Hugotutorial/archetype2content.png" alt="archetypetocontent" /></p>
+
+<hr />
+
+<p>或许你会想，这看不出<code>front matter</code>有多大用处啊。非也，用处可大了：</p>
+
+<ul>
+<li><p>这是一种统一的格式，很多软件都可以识别这种字段里面的信息。也就是说你写好一篇文章，可以拿到各种支持的平台下发布。统一意味着什么，我现在是深有体会了，真的省了很多麻烦。</p></li>
+
+<li><p>里面的字段是可以自定义的，而且front matter可以表达关于文章的几乎所有信息，比如作者，分类，标签&hellip;&hellip;</p></li>
+</ul>
+
+<h4 id="content-目录">content 目录</h4>
+
+<p>事实上，你写的所有文章都会放到content目录下。</p>
+
+<p>如果在content目录里新建一个文件夹，那么这个文件夹是content目录里的<code>top-level folder</code>（顶层文件夹），每一个<code>top-level folder</code>会被考虑为一个content section。</p>
+
+<p>例如：如果你的网站有三个主要的<strong>sections</strong>: blog, articles和tutirials，那么在你的content目录下应该有三个<code>top-level folder</code>：</p>
+
+<ol>
+<li><p>content/blogs；</p></li>
+
+<li><p>content/articles；</p></li>
+
+<li><p>content/tutorials.</p></li>
+</ol>
+
+<p>hugo使用<code>sections</code>来决定默认的<code>content types</code>。比如blog下的文件，会被判定为blog type。</p>
+
+<p>这有什么用呢？其中一个用处就是<strong>Hugo根据section来寻找archetypes</strong>。比如blogs session下的文件会找到archetypes/blog.md来配合<code>hugo new</code>命令生成新文件。<strong>如果找不到archetypes/blogs.md才会用archetypes/default.md</strong>。</p>
+
+<h4 id="config-目录">config 目录</h4>
+
+<p>config，顾名思义，配置。你网站的所有配置，都是利用<code>config</code>来完成的。换句话说，通过config，可以控制hugo的行为，进而最终控制你的网站。config的形式有两种：</p>
+
+<ol>
+<li><p>单一的<code>config.toml</code>文件。一般情况下，用单一的文件就好了。（ps:我的网站就是选择这种）</p></li>
+
+<li><p>按目的或功能的不同，将各种配置按类别，分别存在不同的文件里，最后才放在config目录里。这种情况稍微复杂。如果你想进一步了解，请看<a href="https://gohugo.io/getting-started/configuration/#configuration-file">configure</a>。</p></li>
+</ol>
+
+<aside class="alert alert-dark" role="alert">配置文件支持JSON,YAML,或者TOML三种格式，本站一律采用TOML格式。如果你对TOML有门户之见，可以查看<a href="https://gohugo.io/getting-started/configuration/#configuration-file">configure</a>，改用你喜欢的。</aside>
+
+<h4 id="assets-目录">assets 目录</h4>
+
+<p>如果你是linux或者mac用户，那你大概知道pipe（管道）这么一个概念。如果你不知道管道是什么，也没关系，先跳过这个概念。</p>
+
+<p>简单来说，assets目录下的文件是专门给Hugo Pipes（Hugo 管道）使用的。Hugo中有专门的办法来获取assets目录下的任意资源来作为管道的输入。</p>
+
+<aside class="alert alert-info" role="alert">默认下，assets文件夹未被创建，需要用户自己创建。</aside>
+
+<h4 id="data-目录">data 目录</h4>
+
+<p><code>data</code>目录的作用有点像数据库，你可以想象一下：“在Hugo生成网站的时候，如果发现你的文章需要调用某些存储在data目录的数据，那么Hugo就会到data目录下寻找需要的数据，最后Hugo才生成最终的网站。”</p>
+
+<p>一般来讲，在data目录下的数据都会呈现出某种规律，现在我们举例，假设下面的内容存在于<code>data/testData.toml</code>文件内：</p>
+
+<pre><code>discography = [
+&quot;1974 – Modern American Music … Period! The Criteria Sessions&quot;,
+&quot;1974 – Jaco&quot;,
+&quot;1976 - Jaco Pastorius&quot;,
+&quot;1981 - Word of Mouth&quot;,
+&quot;1981 - The Birthday Concert (released in 1995)&quot;,
+&quot;1982 - Twins I &amp; II (released in 1999)&quot;,
+&quot;1983 - Invitation&quot;,
+&quot;1986 - Broadway Blues (released in 1998)&quot;,
+&quot;1986 - Honestly Solo Live (released in 1990)&quot;,
+&quot;1986 - Live In Italy (released in 1991)&quot;,
+&quot;1986 - Heavy'n Jazz (released in 1992)&quot;,
+&quot;1991 - Live In New York City, Volumes 1-7.&quot;,
+&quot;1999 - Rare Collection (compilation)&quot;,
+&quot;2003 - Punk Jazz: The Jaco Pastorius Anthology (compilation)&quot;,
+&quot;2007 - The Essential Jaco Pastorius (compilation)&quot;
+]
+</code></pre>
+
+<p>Hugo这么调用呢这些数据呢？只要使用变量<code>.Site.Data</code>就可以快速定位到data目录下的数据。之后就可以读取里面的数据了。如下：</p>
+
+<pre><code>{{ with $.Site.Data.testData }}
+    &lt;ul&gt;
+        {{ range .discography }}
+            &lt;li&gt;{{ . }}&lt;/li&gt;
+        {{ end }}
+    &lt;/ul&gt;
+{{ end }}
+</code></pre>
+
+<p>上面代码的作用是将testData.toml里面的数据以列表的形式输出。如果将<code>testData.toml</code>的数据增加到10000条，那么，你就能体会data目录威力的强大了。这也是我个人为什么觉得它的作用像数据库。</p>
+
+<p>当然，这已经属于编程范畴了。如果你不会编程，看不懂也别慌。以后会学到。</p>
+
+<p>注意：data目录下的文件格式也是支持json和yaml的。</p>
+
+<h4 id="layouts-目录">layouts 目录</h4>
+
+<p>存放template的地方。前面已经提到过，hugo根据我们的templates，生成静态网站。所以你的网站看起来漂不漂亮，就看layout目录下的文件了。template文件是html格式。</p>
+
+<p>模板内容十分多，是我们学习的重点。</p>
+
+<h4 id="static-目录">static 目录</h4>
+
+<p>所有的静态内容（通常是CSS，JS，Images）都是存在在static目录下的。最大的特点就是Hugo生成静态网站时，会将整个static文件夹复制到public文件夹内。</p>
+
+<h4 id="public-目录">public 目录</h4>
+
+<p>当你运行<code>hugo</code>命令，Hugo就会创建public目录。</p>
+
+<p>public目录里的<strong>内容</strong>就是当你运行<code>hugo</code>命令时，产生的整个静态网站。换句话将，所谓的发布网站，其实就是发布<code>public</code>文件夹。</p>
+
+<hr />
+
+<p>下一篇文章，将会介绍Content Management（内容管理）。</p>
+<div class="container custom-copyright-style border-warning m-2 my-md-4 p-2 shadow-sm">
+    <div >
+        <span>
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-woshizuozhe"></use>
+        </svg>作者：
+        <a href="http://codepool.top/about/">不谇</a>
+        </span>
+    </div>
+    <div>
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-suoding"></use>
+        </svg>版权：此文章版权归<a href="https://codepool.top">CODEPOOL</a>所有。允许转载，但禁止商用！
+    </div>
+</div></div>
+    </div>
+  </article>
+  <div class="hr-box">
+      <div class="hr-box-sm hr-red"></div>
+      <div class="hr-box-sm hr-orange"></div>
+      <div class="hr-box-sm hr-yellow "></div>
+      <div class="hr-box-sm hr-green "></div>
+      <div class="hr-box-sm hr-blue "></div>
+      <div class="hr-box-sm hr-purple"></div>
+  </div>
+  <aside id="meta">
+    <div class="row justify-content-between py-2 py-md-3">
+        
+        <div class="col-12 col-md-5">
+          <span><svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-PrevioustrackFill"></use>
+            </svg>上一篇<a class="text-dark custom-a" href="https://busui.github.io/posts/hugo-tutorial/"> Hugo教程系列（一）</a>
+          </span>
+        </div>
+        
+        
+          
+              <div class="col-12 col-md-5">
+                  <span class="float-md-right">
+          
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-NexttrackFilled"></use>
+            </svg>下一篇<a class="text-dark custom-a" href="https://busui.github.io/posts/hugo-tutorial-3/"> Hugo教程系列（三）</a>
+          </span>
+        </div>
+        
+    </div>
+  </aside>
+</main>
+
+        <footer class="custom-border-top mt-3 py-3 custom-footer">
+    <aside>
+        <span>CODEPOOL&nbsp;&COPY;&nbsp;2018-2019</span>
+    </asite>
+    <aside>
+        <span>
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-powerstation"></use>
+        </svg>
+        POWER BY <a href="https://gohugo.io/" class="custom-footer-a">HUGO</a>&shortmid;</span>
+        <span>
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-library_theme_select"></use>
+        </svg>
+        THEME BY <a href="https://github.com/Busui/gohugo-theme-yellow" class="custom-footer-a">BUSUI</a></span>
+    </aside>
+    <div class="footerest">
+        <span>
+            
+                粤ICP备19088648号-1&shortmid;
+            
+        </span>
+        <span>
+            All Rights Reverse.
+        </span>
+        
+        <span>
+                &shortmid;欢迎来访CODEPOOL，本站所有言行仅代表个人观点，无关任何其他个体/组织。
+        </span>
+        
+    </div>
+</footer>
+      </div>
+      
+<button onclick="topFunction()" id="myBtn" title="Go to top">
+    <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-top2"></use>
+    </svg>
+</button>
+
+<script>
+    
+    window.onscroll = function () {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+
+    
+    function topFunction() {
+        document.body.scrollTop = 0; 
+        document.documentElement.scrollTop = 0; 
+    }
+</script>
+      
+
+  <script src="/js/jquery-3.3.1.slim.min.js"></script>
+
+  <script src="/js/bootstrap.bundle.min.js"></script>
+
+  <script src="/js/iconfont.js"></script>
+
+  <script src="/js/highlight.pack.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+      
+  </body>
+</html>

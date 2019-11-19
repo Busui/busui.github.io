@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>编写Hugo主题 on CODEPOOL</title>
+    <link>https://busui.github.io/tags/%E7%BC%96%E5%86%99hugo%E4%B8%BB%E9%A2%98/</link>
+    <description>Recent content in 编写Hugo主题 on CODEPOOL</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 08 Sep 2019 15:41:05 +0800</lastBuildDate>
+    
+	<atom:link href="https://busui.github.io/tags/%E7%BC%96%E5%86%99hugo%E4%B8%BB%E9%A2%98/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo教程系列（十）</title>
+      <link>https://busui.github.io/posts/hugo-tutorial-10/</link>
+      <pubDate>Sun, 08 Sep 2019 15:41:05 +0800</pubDate>
+      
+      <guid>https://busui.github.io/posts/hugo-tutorial-10/</guid>
+      <description>本文的内容是Hugo教程系列（九）的延续。 此刻，如果访问的你的网站，就会发现，除了“关于”页面外，每个页面都可以访问了。（因为在config.toml的[taxonomies]中，你没有把about写</description>
+    </item>
+    
+    <item>
+      <title>Hugo教程系列（九）</title>
+      <link>https://busui.github.io/posts/hugo-tutorial-9/</link>
+      <pubDate>Thu, 05 Sep 2019 23:45:31 +0800</pubDate>
+      
+      <guid>https://busui.github.io/posts/hugo-tutorial-9/</guid>
+      <description>在上一篇文章我们提过，不细分的话，其实Hugo可以分为两种页面： single page（包含Regular Pages） list page（包含Home pages，Section Pages，Taxonomy List Pages，T</description>
+    </item>
+    
+    <item>
+      <title>Hugo教程系列（八）</title>
+      <link>https://busui.github.io/posts/hugo-tutorial-8/</link>
+      <pubDate>Tue, 03 Sep 2019 12:50:30 +0800</pubDate>
+      
+      <guid>https://busui.github.io/posts/hugo-tutorial-8/</guid>
+      <description>这篇文章所讲的内容，将正式进入编写Hugo主题的范畴。但前面文章说过，编写主题，实际上就是编写模板，所以这篇文章实际上还是说模板。 1. Hugo&amp;rsquo;s Lookup Order（Hugo模板搜索顺序） 前提：为了简单起见，我们的模板</description>
+    </item>
+    
+  </channel>
+</rss>

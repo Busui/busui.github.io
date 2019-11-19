@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>CODEPOOL  | Hugo教程系列（八）</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.57.0" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/css/bootstrap.min.css" rel="stylesheet">
+    
+      <link href="/css/github.css" rel="stylesheet">
+    
+      <link href="/css/style.css" rel="stylesheet">
+    
+
+
+    
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/favicon144.png">
+    
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/favicon114.png">
+    
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/img/favicon72.png">
+    
+    <link rel="apple-touch-icon-precomposed" href="/img/favicon57.png">
+    
+    <link rel="shortcut icon" href="/img/favicon32.png">
+
+    
+
+    
+    
+  </head>
+
+  <body>
+       <script>
+          if (/android/i.test(navigator.userAgent) || /(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent) || /mobile/i.test(navigator.userAgent))
+          {
+              document.body.classList.add('custom-mobile');
+          }
+       </script>
+      <div class="container px-0" id="content">
+        <header class="container" id="header-id">
+    <div class="row justify-content-center">
+        <div class="col-12 text-center">
+            <div class="my-3" style="font-size:2rem;">
+                <a href="https://busui.github.io" class="px-3 px-md-5 badge custom-badge-dark text-wrap py-1 py-md-2">CODEPOOL</a>
+            </div>
+        </div>
+        <div class="w-100"></div>
+        
+        <div>
+            <p class="text-muted text-center custom-text-muted mobile-custom-size">
+                我至今无法否认学习是一件快乐的事儿
+            </p>
+        </div>
+        
+    </div>
+    <div class="row justify-content-center">
+        <nav class="navbar navbar-expand-md justify-content-center">
+            <div class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span> 
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-xinxiaoxixiangxiajiantou"></use>
+                    </svg>
+                </span>
+            </div>
+            <div class="border-warning collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav d-flex">
+                    
+                    
+                    <li class="">
+                        <a class="nav-link custom-link-color " href="/" style="text-align: center;">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-ziyuan2"></use>
+                            </svg>
+                            <span>首页</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="">
+                        <a class="nav-link custom-link-color " href="/categories/" style="text-align: center;">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-ziyuan"></use>
+                            </svg>
+                            <span>分类</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="">
+                        <a class="nav-link custom-link-color " href="/tags/" style="text-align: center;">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-ziyuan4"></use>
+                            </svg>
+                            <span>标签</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="">
+                        <a class="nav-link custom-link-color " href="/archive/" style="text-align: center;">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-ziyuan5"></use>
+                            </svg>
+                            <span>归档</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="">
+                        <a class="nav-link custom-link-color " href="/about/" style="text-align: center;">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-ziyuan1"></use>
+                            </svg>
+                            <span>关于</span>
+                            
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+        
+<main class="container-fluid px-4">
+  <article id="main">
+    <h1 id="title">Hugo教程系列（八）</h1>
+    <div class="row justify-content-end mx-2 mx-sm-4">
+        
+          <span class="custom-span-meta">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-biaoqian3"></use>
+              </svg>
+              
+              <a class="custom-text-muted custom-a" href="https://busui.github.io/tags/hugo/">Hugo</a>&shortmid;
+              
+              <a class="custom-text-muted custom-a" href="https://busui.github.io/tags/%e6%95%99%e7%a8%8b/">教程</a>&shortmid;
+              
+              <a class="custom-text-muted custom-a" href="https://busui.github.io/tags/%e7%bc%96%e5%86%99hugo%e4%b8%bb%e9%a2%98/">编写Hugo主题</a>&shortmid;
+              
+          </span>&nbsp;
+        
+        
+          <span class="custom-span-meta">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-fenlei2"></use>
+              </svg>
+              
+              <a class="custom-text-muted custom-a" href="https://busui.github.io/categories/">Hugo教程</a>&shortmid;
+              
+          </span>&nbsp;
+        
+      <span class="custom-span-meta">
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-time"></use>
+        </svg>2019-09-03</span>&nbsp;
+      <span class="custom-span-meta">
+          <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-count"></use>
+          </svg>4865字
+      </span>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-12 px-2 px-md-3">
+          
+
+<p>这篇文章所讲的内容，将正式进入编写Hugo主题的范畴。但前面文章说过，编写主题，实际上就是编写模板，所以这篇文章实际上还是说模板。</p>
+
+<h3 id="1-hugo-s-lookup-order-hugo模板搜索顺序">1. Hugo&rsquo;s Lookup Order（Hugo模板搜索顺序）</h3>
+
+<aside class="alert alert-danger" role="alert"><strong>前提：为了简单起见，我们的模板文件都是放在主题下的<code>layouts</code>目录下的。</strong></aside>
+
+<p>Hugo会根据一些“参数”，为指定页面选择最合适的布局（模板）。下面列出来的参数指标是<strong>按优先级从高到低</strong>排列的：</p>
+
+<ol>
+<li>kind；</li>
+<li>Output format;</li>
+<li>Language;</li>
+<li>Layout;</li>
+<li>Type;</li>
+<li>Section.</li>
+</ol>
+
+<p>事实上要理解上面这些参数到底不是一件容易的事情。因为它们涉及的知识面太广。不过我们可以谈一下这个“顺序”到底如何运作:</p>
+
+<p>比方说，有这么一个文件，位置是<code>content/posts/testlookuporder.md</code>，文件的内容是：</p>
+
+<pre><code>---
+title: &quot;testlookuporder&quot;
+date: 2019-07-28T11:46:49+08:00
+---
+
+This is testlookuporder content.
+</code></pre>
+
+<p>在为<code>testlookuporder.md</code>寻找模板的时候，会先从优先级低的选起（就像过滤，先把优先级低的过滤掉，优先级越高，对模板的决定权就越高）：</p>
+
+<ol>
+<li>先查找section，发现section是posts，因此，定位到layouts/posts/目录；</li>
+<li>然后找type，发现在front matter里没有设置type。因此跟随<a href="https://gohugo.io/content-management/sections/">root section</a>的设置，也就是说依然定位到layouts/posts/目录；</li>
+<li>再找layout，发现front matter没有设置，跳过；</li>
+<li>再找language，发现没有设置，跳过；</li>
+<li>然后再找output format，默认下，<a href="https://gohugo.io/templates/output-formats#default-output-formats">单篇文章的output format默认是HTML</a>。因此，先定位到<strong>后缀名</strong>为<code>.html.html</code>的文件，如果这个文件不存在，再定位到<strong>后缀名</strong>为<code>.html</code>的文件；</li>
+<li>再找kind，发现testlookuporder.md的kind是single page(或者说是Regular Pages)，因此定位到<code>layouts/posts/</code>目录下的<code>single.html.html</code>，如果不存在，再定位到<code>single.html</code>。</li>
+</ol>
+
+<hr />
+
+<p>按照上面的逻辑，其实对于<code>content/posts/testlookuporder.md</code>文件，搜索模板的顺序是：</p>
+
+<ol>
+<li>第一步，先看layouts/posts/single.html.html存不存在，如果存在，则将之作为testlookuporder.md的模板，如果不存在，则执行第二步；</li>
+<li>第二步，查看layouts/posts/single.html存不存在。如果存在，则将之作为testlookuporder.md的模板。</li>
+</ol>
+
+<hr />
+
+<p>那如果<code>layouts/posts/single.html.html</code>和<code>layouts/posts/single.html</code>都不存在怎么办？莫慌，Hugo都考虑到这种情况了。那就是采用<strong>默认模板</strong>来解决。默认模板的作用就是当没有找到对应section下的模板时，作为一个替代品来使用。所以说，对于<code>content/posts/testlookuporder.md</code>文件，真正的模板搜索顺序是：</p>
+
+<ol>
+<li>layouts/posts/single.html.html</li>
+<li>layouts/posts/single.html</li>
+<li>layouts/_default/single.html.html</li>
+<li>layouts/_default/single.html</li>
+</ol>
+
+<p>额，如你所见，默认模板是放在<code>_dedault</code>目录下的。</p>
+
+<h3 id="2-页面类型">2. 页面类型</h3>
+
+<p>你仔细观察本博客，看看到底有几个页面类型。其实<strong>细分</strong>的话，有如下几个：</p>
+
+<ul>
+<li><p>Regular Pages：也就是我们常说的single page。比如你正在看的这篇文章所对应的页面就是一个single page；</p></li>
+
+<li><p>Home Page：每个网站肯定都有一个主页的，对吧？</p></li>
+
+<li><p>Section Pages：额，<code>content/section-name/</code>，其中，<code>section-name</code>所对应的页面就是section page。比如我们多次提到的content/posts/就是一个section page；</p></li>
+
+<li><p>Taxonomy List Pages： 分类列表页面。最常见的就是某个标签/分类所对应的页面，比如本站<a href="https://codepool.top/tags/hugo/">Hugo</a>所对应的页面；</p></li>
+
+<li><p>Taxonomy Terms Pages：分类术语页面。一个网站的标签是有多个的。现实多个标签的页面就是Taxonomy Terms Pages。比如本站的<a href="https://codepool.top/tags/">tags</a>页面。</p></li>
+</ul>
+
+<hr />
+
+<p>其实如果<strong>不细分</strong>的话，就两种页面：</p>
+
+<ol>
+<li>single page（包含Regular Pages）</li>
+<li>list page（包含Home pages，Section Pages，Taxonomy List Pages，Taxonomy Terms Pages）</li>
+</ol>
+
+<h3 id="3-主题编写">3. 主题编写</h3>
+
+<p>按照对页面类型的划分，加上默认模板，使得做出一个的简单主题，变得十分容易。也就是说，一个主题只需要有3个文件：</p>
+
+<pre><code>└── _default
+    ├── baseof.html
+    ├── list.html
+    └── single.html
+</code></pre>
+
+<p>但由于home page的特殊性，我们单独为它实现一个页面。因此，我们构建的主题，起主要作用的有下面4个文件：</p>
+
+<pre><code>├── _default
+│   ├── baseof.html
+│   ├── list.html
+│   └── single.html
+└── index.html
+</code></pre>
+
+<p>当然，实际上还会有其他文件。其他文件起辅助作用。往下看吧。</p>
+
+<h4 id="3-1-创建主题">3-1. 创建主题</h4>
+
+<p>首先，我们先来到quickstart根目录下，然后利用hugo new theme注册（或者说创建）一个主题目录：</p>
+
+<pre><code>~/quickstart
+➜ hugo new theme &quot;smalltheme&quot;
+Creating theme at /Users/codepool/quickstart/themes/smalltheme
+</code></pre>
+
+<p>然后你会发现，themes目录下已经存在一个smalltheme目录，这个目录的内容如下：</p>
+
+<pre><code>.
+├── LICENSE
+├── archetypes
+│   └── default.md
+├── layouts
+│   ├── 404.html
+│   ├── _default
+│   │   ├── baseof.html
+│   │   ├── list.html
+│   │   └── single.html
+│   ├── index.html
+│   └── partials
+│       ├── footer.html
+│       ├── head.html
+│       └── header.html
+├── static
+│   ├── css
+│   └── js
+└── theme.toml
+</code></pre>
+
+<p>此时，见到这个目录结构，你不应该还觉得陌生的了：</p>
+
+<ol>
+<li>partials目录在<a href="https://codepool.top/posts/hugo-tutorial-5/">Hugo教程系列（五）</a>讲过；</li>
+<li>404.html我们应该见很多了。访问“不存在”网页时会出现404页面，这个文件不是一定要存在的；</li>
+<li>_default目录刚刚才讲过；</li>
+<li>LICENSE：声明版权的文件。作用的话，说大，可捅破天，说小，可无人理。</li>
+<li>剩下的大多可以在<a href="https://codepool.top/posts/hugo-tutorial-2/">Hugo教程系列（二）</a>找到。</li>
+</ol>
+
+<p>我个人还是十分建议你花点时间认认真真看一下smalltheme里面的内容，这些内容十分简单，却对你下一步学习的帮助巨大。</p>
+
+<h4 id="3-2-一些对smalltheme的窥视">3-2. 一些对smalltheme的窥视</h4>
+
+<aside class="alert alert-info" role="alert">为了方便测试，请确保quickstart/content/目录下没有内容。如果有，将它们删了。</aside>
+
+<p>先将主题激活,config.toml文件的内容就一行配置语句：</p>
+
+<pre><code>theme = &quot;smalltheme&quot;        # 激活主题就这么简单。
+</code></pre>
+
+<p>此时。运行命令<code>hugo server -D</code>：</p>
+
+<pre><code>~/quickstart
+➜ hugo server -D
+                   | EN  
++------------------+----+
+  Pages            |  3     # 默认有三个页面
+  Paginator pages  |  0  
+  Non-page files   |  0  
+  Static files     |  0  
+  Processed images |  0  
+  Aliases          |  0  
+  Sitemaps         |  1     # 一个sitemap文件。sitemap文件是给搜索引擎爬取你网站数据用的
+  Cleaned          |  0  
+
+Total in 9 ms
+Watching for changes in /Users/codepool/quickstart/{archetypes,content,data,layouts,static}
+Watching for config changes in /Users/codepool/quickstart/config.toml   # 配置文件的位置
+Environment: &quot;development&quot;
+Serving pages from memory
+Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
+Web Server is available at //localhost:1313/ (bind address 127.0.0.1)
+Press Ctrl+C to stop
+</code></pre>
+
+<p>上面的输出信息可以好好揣摩。比如“Web Server is available at //localhost:1313/ (bind address 127.0.0.1)”的意思是：服务器已经开启，通过<a href="http://localhost:1313">http://localhost:1313</a> 可访问到你的网站内容。（ps：你可以试着访问一下，会发现这个页面一片空白。莫要慌张，现在我们什么都没写呢。）<strong>再次提醒，1313是绑定的端口号，也可能是其他的数字</strong>。</p>
+
+<hr />
+
+<p><br>
+到了此时，如果在命令行输入<code>hugo</code>命令，会生成一个最原始的public文件夹。仔仔细细查看这个文件夹，对你帮助绝对巨大：</p>
+
+<pre><code>~/quickstart                # 确保在根目录下
+➜ hugo                      # 输入hugo命令
+
+                   | EN  
++------------------+----+
+  Pages            |  3     # 3个页面
+  Paginator pages  |  0  
+  Non-page files   |  0  
+  Static files     |  0  
+  Processed images |  0  
+  Aliases          |  0  
+  Sitemaps         |  1     # 一个sitemap
+  Cleaned          |  0  
+
+Total in 12 ms
+
+~/quickstart 
+➜ tree public               #生成的public文件夹里的内容。3个`index.xml`页面，一个sitemap页面
+public
+├── categories
+│   └── index.xml
+├── css                     # css和js文件夹是空的。因为我们还没有往static文件夹新建内容
+├── index.xml
+├── js
+├── sitemap.xml
+└── tags
+    └── index.xml
+</code></pre>
+
+<p>ps：什么叫“最原始的public文件夹”？你可以这么理解吧，就是你什么都没写进主题的情况下，Hugo根据该主题生成的public文件夹。</p>
+
+<hr />
+
+<p><br>
+如上所示，现在我们整个网站还没有能够访问的html页面。我们从最简单的开始，先构建homepage。此时smalltheme/layouts/index.html内容如下：</p>
+
+<pre><code>{{ define &quot;main&quot; }}
+    &lt;h1&gt;This is homepage&lt;/h1&gt;
+{{ end }}
+</code></pre>
+
+<p>然后运行指令：</p>
+
+<pre><code>~/quickstart     # 再次强调，确保在在根目录路径下
+➜ hugo server -D --port &quot;52011&quot;
+
+                   | EN  
++------------------+----+
+  Pages            |  4     # 多了一个页面。就是我们刚刚写得homepage
+  Paginator pages  |  0  
+  Non-page files   |  0  
+  Static files     |  0  
+  Processed images |  0  
+  Aliases          |  0  
+  Sitemaps         |  1  
+  Cleaned          |  0  
+
+Total in 11 ms
+Watching for changes in /Users/codepool/quickstart/{archetypes,content,data,static,themes}
+Watching for config changes in /Users/codepool/quickstart/config.toml
+Environment: &quot;development&quot;
+Serving pages from memory
+Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
+Web Server is available at //localhost:52011/ (bind address 127.0.0.1)
+Press Ctrl+C to stop
+</code></pre>
+
+<p>有一处地方和以前不太一样：<code>hugo server -D --port &quot;52011&quot;</code>，没错，我们可以通过<code>--port &quot;52011&quot;</code>指定我们喜欢绑定的端口。此时如果访问<a href="http://loclahost:52011">http://loclahost:52011</a> 会得到下面页面：</p>
+
+<p><img src="https://codepool.oss-cn-shenzhen.aliyuncs.com/Hugotutorial/origin-homepage.png" alt="origin-homepage" /></p>
+
+<p>发现端倪了没有，页面里的“This is homepage”不就是我们刚才写进smalltheme/layouts/index.html这个homepage模板的内容嘛？不管你承不承认，做到这里，你已经完成了一个最简单不过的Hugo主题了。</p>
+
+<hr />
+
+<p>但实际情况我们不会止步于此，我们想把我们的网站做成我们心中希望的样子。我们会用css/js来装饰我们的网站。除了自己硬核code（编写）原生css/js，还可以借用前端框架的帮助来美化网页。因此，为了方便简单，下一步我们会引入<a href="https://getbootstrap.com/docs/4.3/getting-started/introduction/#quick-start">bootstrap前端框架</a>。</p>
+
+<h4 id="3-3-引入bootstrap">3-3. 引入bootstrap</h4>
+
+<p>由于我们整个网站都需要来自bootstrap框架的资源，因此，在baseof.html里将之引入，这样的话，所以继承于<code>baseof.html</code>的模板都会自动获取bootstrap的资源。</p>
+
+<p>一般来说，引入css资源的link是放在<code>head</code>标签内。而引入js资源的script则放在<code>&lt;/body&gt;</code>标签上方。</p>
+
+<p>打开baseof.html后，发现内容如下：</p>
+
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    {{- partial &quot;head.html&quot; . -}}
+    &lt;body&gt;
+        {{- partial &quot;header.html&quot; . -}}
+        &lt;div id=&quot;content&quot;&gt;
+        {{- block &quot;main&quot; . }}{{- end }}
+        &lt;/div&gt;
+        {{- partial &quot;footer.html&quot; . -}}
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p>其中的<code>{{- partial &quot;head.html&quot; . -}}</code>，意思是写在<code>partials/head.html</code>的内容会直接被导入到<code>baseof.html</code>中。本着模块化的思想，我们还是决定将css的引入写在head.html内，不要忘记引入css的link是放在head标签内的，因此head.html的内容如下：</p>
+
+<pre><code>&lt;head&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css&quot; integrity=&quot;sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T&quot; crossorigin=&quot;anonymous&quot;&gt;
+&lt;/head&gt;
+</code></pre>
+
+<p>引入js资源的script则放在<code>&lt;/body&gt;</code>标签上方，因此，此时的<code>baseof.html</code>内容如下：</p>
+
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    {{- partial &quot;head.html&quot; . -}}
+    &lt;body&gt;
+        {{- partial &quot;header.html&quot; . -}}
+        &lt;div id=&quot;content&quot;&gt;
+        {{- block &quot;main&quot; . }}{{- end }}
+        &lt;/div&gt;
+        {{- partial &quot;footer.html&quot; . -}}
+        &lt;script src=&quot;https://code.jquery.com/jquery-3.3.1.slim.min.js&quot; integrity=&quot;sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js&quot; integrity=&quot;sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js&quot; integrity=&quot;sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p>至此，你已经为smalltheme主题引入了bootstrap前端框架。有了这个框架，我们就能快速构建出漂亮的主题。ps:你可以调出浏览器的调试工具，查看网页源代码，会真实地看到网页已经成功引入bootstrap框架（如果你使用的是chrome浏览器，那么macOS调出调试工具的快捷键是option+command+i，Windows是F12），如下：</p>
+
+<p><img src="https://codepool.oss-cn-shenzhen.aliyuncs.com/Hugotutorial/injectbootstrap.png" alt="inject bootstrap" /></p>
+
+<aside class="alert alert-success" role="alert">前端框架本质上是将一些常用的前端功能打包起来，供你快速调用。本系列文章不是教你使用bootstrap的，如果你不会使用bootstrap也没事，因为这里调用的都是十分简单的功能，稍微看一下就懂了。如果你精力旺盛，还是建议你去看看<a href="https://getbootstrap.com/docs/4.3/getting-started/introduction/">Bootstrap教程</a>。</aside>
+
+<hr />
+
+<h4 id="3-3-使用bootstrap框架">3-3. 使用bootstrap框架！！</h4>
+
+<p>参考<a href="https://getbootstrap.com/docs/4.3/layout/overview/">bootstrap</a>教程，我们知道了bootstrap里有许多class（类）供我们调用。其中的container类是用来调整屏幕宽度的。它能够随着屏幕大小自动调节宽度，也就是说，它是responsible（可响应的）。</p>
+
+<p>调用这些类可以说是十分简单的。只需要在对于标签的class属性内填写bootstrap提过的类即可。比如我要调用上面提到的container类，只需要在baseof.html内做到如下：</p>
+
+<pre><code>&lt;div id=&quot;content&quot; class=&quot;container bg-warning&quot;&gt;   #在&lt;div id=&quot;content&quot;&gt;内添加对于class
+</code></pre>
+
+<p><a href="https://getbootstrap.com/docs/4.3/utilities/colors/#background-color">bg-warning</a>是bootstrap提供的另一个类，是配置背景颜色的。访问<a href="http://localhost:52011">http://localhost:52011</a> 得到下面网页：</p>
+
+<p><img src="https://codepool.oss-cn-shenzhen.aliyuncs.com/Hugotutorial/hugototurial8-bs1.png" alt="use bootstrap1" /></p>
+
+<p>如上所说，container是配置块的宽度的。如果你变换浏览器窗口的大小，你会发现，这个宽度也会随之动态变化，bg-warning配置颜色，这样你就可以感知到块宽度的变化了（默认下container没有配置颜色，因此为了看见它的宽度，你需要配置一个背景颜色）。</p>
+
+<hr />
+
+<p>本文【完】。下一步，我们将继续调试这个主题。进一步了解各种pages（页面）。</p>
+<div class="container custom-copyright-style border-warning m-2 my-md-4 p-2 shadow-sm">
+    <div >
+        <span>
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-woshizuozhe"></use>
+        </svg>作者：
+        <a href="http://codepool.top/about/">不谇</a>
+        </span>
+    </div>
+    <div>
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-suoding"></use>
+        </svg>版权：此文章版权归<a href="https://codepool.top">CODEPOOL</a>所有。允许转载，但禁止商用！
+    </div>
+</div></div>
+    </div>
+  </article>
+  <div class="hr-box">
+      <div class="hr-box-sm hr-red"></div>
+      <div class="hr-box-sm hr-orange"></div>
+      <div class="hr-box-sm hr-yellow "></div>
+      <div class="hr-box-sm hr-green "></div>
+      <div class="hr-box-sm hr-blue "></div>
+      <div class="hr-box-sm hr-purple"></div>
+  </div>
+  <aside id="meta">
+    <div class="row justify-content-between py-2 py-md-3">
+        
+        <div class="col-12 col-md-5">
+          <span><svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-PrevioustrackFill"></use>
+            </svg>上一篇<a class="text-dark custom-a" href="https://busui.github.io/posts/hugo-tutorial-7/"> Hugo教程系列（七）</a>
+          </span>
+        </div>
+        
+        
+          
+              <div class="col-12 col-md-5">
+                  <span class="float-md-right">
+          
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-NexttrackFilled"></use>
+            </svg>下一篇<a class="text-dark custom-a" href="https://busui.github.io/posts/hugo-tutorial-9/"> Hugo教程系列（九）</a>
+          </span>
+        </div>
+        
+    </div>
+  </aside>
+</main>
+
+        <footer class="custom-border-top mt-3 py-3 custom-footer">
+    <aside>
+        <span>CODEPOOL&nbsp;&COPY;&nbsp;2018-2019</span>
+    </asite>
+    <aside>
+        <span>
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-powerstation"></use>
+        </svg>
+        POWER BY <a href="https://gohugo.io/" class="custom-footer-a">HUGO</a>&shortmid;</span>
+        <span>
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-library_theme_select"></use>
+        </svg>
+        THEME BY <a href="https://github.com/Busui/gohugo-theme-yellow" class="custom-footer-a">BUSUI</a></span>
+    </aside>
+    <div class="footerest">
+        <span>
+            
+                粤ICP备19088648号-1&shortmid;
+            
+        </span>
+        <span>
+            All Rights Reverse.
+        </span>
+        
+        <span>
+                &shortmid;欢迎来访CODEPOOL，本站所有言行仅代表个人观点，无关任何其他个体/组织。
+        </span>
+        
+    </div>
+</footer>
+      </div>
+      
+<button onclick="topFunction()" id="myBtn" title="Go to top">
+    <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-top2"></use>
+    </svg>
+</button>
+
+<script>
+    
+    window.onscroll = function () {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+
+    
+    function topFunction() {
+        document.body.scrollTop = 0; 
+        document.documentElement.scrollTop = 0; 
+    }
+</script>
+      
+
+  <script src="/js/jquery-3.3.1.slim.min.js"></script>
+
+  <script src="/js/bootstrap.bundle.min.js"></script>
+
+  <script src="/js/iconfont.js"></script>
+
+  <script src="/js/highlight.pack.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+      
+  </body>
+</html>

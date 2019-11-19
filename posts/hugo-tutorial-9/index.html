@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>CODEPOOL  | Hugo教程系列（九）</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.57.0" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/css/bootstrap.min.css" rel="stylesheet">
+    
+      <link href="/css/github.css" rel="stylesheet">
+    
+      <link href="/css/style.css" rel="stylesheet">
+    
+
+
+    
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/favicon144.png">
+    
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/favicon114.png">
+    
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/img/favicon72.png">
+    
+    <link rel="apple-touch-icon-precomposed" href="/img/favicon57.png">
+    
+    <link rel="shortcut icon" href="/img/favicon32.png">
+
+    
+
+    
+    
+  </head>
+
+  <body>
+       <script>
+          if (/android/i.test(navigator.userAgent) || /(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent) || /mobile/i.test(navigator.userAgent))
+          {
+              document.body.classList.add('custom-mobile');
+          }
+       </script>
+      <div class="container px-0" id="content">
+        <header class="container" id="header-id">
+    <div class="row justify-content-center">
+        <div class="col-12 text-center">
+            <div class="my-3" style="font-size:2rem;">
+                <a href="https://busui.github.io" class="px-3 px-md-5 badge custom-badge-dark text-wrap py-1 py-md-2">CODEPOOL</a>
+            </div>
+        </div>
+        <div class="w-100"></div>
+        
+        <div>
+            <p class="text-muted text-center custom-text-muted mobile-custom-size">
+                我至今无法否认学习是一件快乐的事儿
+            </p>
+        </div>
+        
+    </div>
+    <div class="row justify-content-center">
+        <nav class="navbar navbar-expand-md justify-content-center">
+            <div class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span> 
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-xinxiaoxixiangxiajiantou"></use>
+                    </svg>
+                </span>
+            </div>
+            <div class="border-warning collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav d-flex">
+                    
+                    
+                    <li class="">
+                        <a class="nav-link custom-link-color " href="/" style="text-align: center;">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-ziyuan2"></use>
+                            </svg>
+                            <span>首页</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="">
+                        <a class="nav-link custom-link-color " href="/categories/" style="text-align: center;">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-ziyuan"></use>
+                            </svg>
+                            <span>分类</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="">
+                        <a class="nav-link custom-link-color " href="/tags/" style="text-align: center;">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-ziyuan4"></use>
+                            </svg>
+                            <span>标签</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="">
+                        <a class="nav-link custom-link-color " href="/archive/" style="text-align: center;">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-ziyuan5"></use>
+                            </svg>
+                            <span>归档</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="">
+                        <a class="nav-link custom-link-color " href="/about/" style="text-align: center;">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-ziyuan1"></use>
+                            </svg>
+                            <span>关于</span>
+                            
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+        
+<main class="container-fluid px-4">
+  <article id="main">
+    <h1 id="title">Hugo教程系列（九）</h1>
+    <div class="row justify-content-end mx-2 mx-sm-4">
+        
+          <span class="custom-span-meta">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-biaoqian3"></use>
+              </svg>
+              
+              <a class="custom-text-muted custom-a" href="https://busui.github.io/tags/hugo/">Hugo</a>&shortmid;
+              
+              <a class="custom-text-muted custom-a" href="https://busui.github.io/tags/%e6%95%99%e7%a8%8b/">教程</a>&shortmid;
+              
+              <a class="custom-text-muted custom-a" href="https://busui.github.io/tags/%e7%bc%96%e5%86%99hugo%e4%b8%bb%e9%a2%98/">编写Hugo主题</a>&shortmid;
+              
+          </span>&nbsp;
+        
+        
+          <span class="custom-span-meta">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-fenlei2"></use>
+              </svg>
+              
+              <a class="custom-text-muted custom-a" href="https://busui.github.io/categories/">Hugo教程</a>&shortmid;
+              
+          </span>&nbsp;
+        
+      <span class="custom-span-meta">
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-time"></use>
+        </svg>2019-09-05</span>&nbsp;
+      <span class="custom-span-meta">
+          <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-count"></use>
+          </svg>3167字
+      </span>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-12 px-2 px-md-3">
+          
+
+<p>在上一篇文章我们提过，不细分的话，其实Hugo可以分为两种页面：</p>
+
+<ol>
+<li>single page（包含Regular Pages）</li>
+<li>list page（包含Home pages，Section Pages，Taxonomy List Pages，Taxonomy Terms Pages）</li>
+</ol>
+
+<p>由于HomePage的特殊性，我们单独为它做一个页面。因此，起主要作用的文件如下：</p>
+
+<pre><code>├── _default
+│   ├── baseof.html
+│   ├── list.html
+│   └── single.html
+└── index.html
+</code></pre>
+
+<h3 id="1-完善baseof-html">1. 完善baseof.html</h3>
+
+<p>我们把一些<strong>每个页面都需要的内容</strong>集中到baseof.html中。这样，就不用重复地在每个页面编写这些内容了。那每个页面都需要的内容是什么呢？我们很容易想到其中的3种类型：</p>
+
+<ol>
+<li><code>head</code>标签里的内容：主要作用是提供一些十分重要的页面信息。注意它与<code>header</code>标签是完全不同的东西；</li>
+<li><code>footer</code>标签里的内容；</li>
+<li><code>header</code>标签里的内容。</li>
+</ol>
+
+<p>一般来说，我们可以直接在<code>baseof.html</code>里面直接完成head/footer标签内容的编写。但正如上篇文章所说，将内容模块化，会使得程序开发变得更加清晰。<code>baseof.html</code>下面有两句语句：</p>
+
+<pre><code>{{- partial &quot;head.html&quot; . -}}
+{{- partial &quot;footer.html&quot; . -}}
+</code></pre>
+
+<p>这两句语句的作用就是：在Hugo运行时，head.html和footer.html的内容会被加载到baseof.html内，从而达到和直接在baseof.html编写对应标签内容一样的效果。</p>
+
+<h4 id="1-1-编写head-html">1-1. 编写head.html</h4>
+
+<p>head标签内有很多需要告知浏览器的信息。浏览器根据这些信息，作出相应的反应。现在，<code>head.html</code>的内容如下：</p>
+
+<pre><code>&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge,chrome=1&quot;&gt;
+    {{/* 网站标题，如果进入某个page，对应page的标题也会被追加 */}}
+    &lt;title&gt;{{ block &quot;title&quot; . }}{{ .Site.Title }} {{ with .Params.Title }} | {{ . }}{{ end }}{{ end }}&lt;/title&gt;
+    &lt;meta name=&quot;HandheldFriendly&quot; content=&quot;True&quot;&gt;
+    &lt;meta name=&quot;MobileOptimized&quot; content=&quot;320&quot;&gt;
+
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,minimum-scale=1&quot;&gt;
+    {{ hugo.Generator }}
+    {{/* NOTE: 在生产环境的情况下，才允许爬虫爬取网站内容。生产环境可以通过HUGO_ENV来设置：`HUGO_ENV=&quot;production&quot;` */}}
+    {{ if eq (getenv &quot;HUGO_ENV&quot;) &quot;production&quot; | or (eq .Site.Params.env &quot;production&quot;)  }}
+        &lt;META NAME=&quot;ROBOTS&quot; CONTENT=&quot;INDEX, FOLLOW&quot;&gt;
+    {{ else }}
+        &lt;META NAME=&quot;ROBOTS&quot; CONTENT=&quot;NOINDEX, NOFOLLOW&quot;&gt;
+    {{ end }}
+
+    &lt;!-- basic favicon --&gt;
+    &lt;link rel=&quot;shortcut icon&quot; href=&quot;{{ relURL ($.Site.BaseURL) }}img/favicon32.png&quot;&gt;
+
+    {{ range .Site.Params.custom_css }}
+      &lt;link rel=&quot;stylesheet&quot; href=&quot;{{ relURL ($.Site.BaseURL) }}{{ . }}&quot;&gt;
+    {{ end }}
+
+    {{ with .OutputFormats.Get &quot;RSS&quot; }}
+        &lt;link href=&quot;{{ .RelPermalink }}&quot; rel=&quot;alternate&quot; type=&quot;application/rss+xml&quot; title=&quot;{{ $.Site.Title }}&quot; /&gt;
+        &lt;link href=&quot;{{ .RelPermalink }}&quot; rel=&quot;feed&quot; type=&quot;application/rss+xml&quot; title=&quot;{{ $.Site.Title }}&quot; /&gt;
+    {{ end }}
+
+    {{/* 生产环境下才嵌入谷歌分析 */}}
+    {{ if eq (getenv &quot;HUGO_ENV&quot;) &quot;production&quot; | or (eq .Site.Params.env &quot;production&quot;)  }}
+        {{ template &quot;_internal/google_analytics_async.html&quot; . }}
+    {{ end }}
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css&quot; integrity=&quot;sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T&quot; crossorigin=&quot;anonymous&quot;&gt;
+&lt;/head&gt;
+</code></pre>
+
+<hr />
+
+<p><br>
+以<code>.Site</code>开头的变量是<a href="https://gohugo.io/variables/site/">Site Varialable</a>（网站变量）。在head.html中有三个网站变量：</p>
+
+<ol>
+<li><code>.Site.Title</code>;</li>
+<li><code>.Site.Params.custom_css</code>;</li>
+<li><code>.Site.Params.env</code>.</li>
+</ol>
+
+<p>这意味这我们需要在config.toml里设置这些变量的值。如下：</p>
+
+<pre><code>theme = &quot;smalltheme&quot;
+title = &quot;MySmalltheme&quot;
+
+[params]
+  custom_css = [&quot;custom_css/style.css&quot;]             # 是一个数组，可以存放多个文件名称。
+  # env = &quot;production&quot;                              # 发布网站的时候，要设置env的值为production。现在是development阶段，不要设置。因此将之注释掉。
+</code></pre>
+
+<hr />
+
+<p><br></p>
+
+<p>在head.html中，语句：</p>
+
+<pre><code>&lt;link rel=&quot;shortcut icon&quot; href=&quot;{{ relURL ($.Site.BaseURL) }}img/favicon32.png&quot;&gt;
+</code></pre>
+
+<p>作用是从static目录下加载img静态资源展示到浏览器tab窗口处的。我们需要准备相应的img。在smalltheme/static/目录下新建一个img文件夹。然后再放一张名字为<code>favicon32.png</code>，尺寸是32*32的图片到该目录下。</p>
+
+<aside class="alert alert-info" role="alert">yellow/static/img/目录下有一张名为<code>favicon32.png</code>，尺寸是32*32的图片。你可以直接将之复制到smalltheme/static/img/目录下</aside>
+
+<p>此时，如果你运行hugo服务器，将会发现<code>.Site.Title</code>和<code>favicon32.png</code>显示出来了：</p>
+
+<p><img src="https://codepool.oss-cn-shenzhen.aliyuncs.com/Hugotutorial/hugo-head-display.png" alt="hugo-head-display" /></p>
+
+<aside class="alert alert-warning" role="alert">注意：如果你修改了代码，但在浏览器没有看到对应的效果，请先<strong>强制刷新</strong>浏览器。因为浏览器有缓冲机制，你修改的代码可能浏览器没有加载到。windows下chrome浏览器的强制刷新快捷键是“ctrl+F5”，MacOS则是“command+shift+r”。</aside>
+
+<hr />
+
+<p>那下面语句的作用是什么呢？</p>
+
+<pre><code>{{ range .Site.Params.custom_css }}
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;{{ . }}&quot;&gt;
+{{ end }}
+</code></pre>
+
+<p>答：作用是加载static目录下的css文件。</p>
+
+<p>在config.toml中，我们已经指定了css存储的路径和名称：<code>custom_css/style.css</code>。那么我们需要在static目录下新建一个custom_css目录，然后再在这个目录下新建一个<code>style.css</code>文件。如果你没弄错，现在你的static目录结构如下：</p>
+
+<pre><code>themes/smalltheme/static
+➜ tree
+.
+├── css         # 默认存在一个css文件夹
+├── custom_css
+│   └── style.css
+├── img
+│   └── favicon32.png
+└── js          # 默认存在一个js文件夹
+</code></pre>
+
+<hr />
+
+<p>然后我们往style.css写点东西：</p>
+
+<pre><code>.custom-container {
+    height: 100vh;
+}
+</code></pre>
+
+<p><code>.custom-container</code>类的高度属性值是100vh，也就是100%的高度。接下来，我们就可以在模板里使用<code>custom-container</code>这个类了。如在<code>baseof.html</code>中：</p>
+
+<pre><code>&lt;div id=&quot;content&quot; class=&quot;container bg-warning custom-container&quot;&gt;
+    {{- block &quot;main&quot; . }}{{- end }}
+&lt;/div&gt;
+</code></pre>
+
+<p>接下来，开启hugo服务器，在浏览器输入正确url即可看到效果。</p>
+
+<h4 id="1-2-编写header-html">1-2. 编写header.html</h4>
+
+<p>header和footer标签里的内容，是直接展示到浏览器页面上的。</p>
+
+<p>header标签，顾名思义，就是页面的“头部”，头部一般有什么呢？一个导航栏；header.html内容如下：</p>
+
+<pre><code>&lt;div class=&quot;container px-0&quot;&gt;
+    &lt;nav class=&quot;navbar navbar-expand-lg navbar-dark bg-dark&quot;&gt;
+        &lt;a class=&quot;navbar-brand font-weight-bold text-warning&quot; href=&quot;{{ .Site.BaseURL }}&quot;&gt;{{ .Site.Params.siteBrand | default &quot;codepool&quot; }}&lt;/a&gt;
+        &lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#navbarNavAltMarkup&quot;
+            aria-controls=&quot;navbarNavAltMarkup&quot; aria-expanded=&quot;false&quot; aria-label=&quot;Toggle navigation&quot;&gt;
+            &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
+        &lt;/button&gt;
+        &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbarNavAltMarkup&quot;&gt;
+            &lt;div class=&quot;navbar-nav&quot;&gt;
+                {{ $currentPage := . }}
+                {{ range .Site.Menus.main }}                
+                &lt;a class=&quot;nav-item nav-link {{ if or ($currentPage.IsMenuCurrent &quot;main&quot; .) ($currentPage.HasMenuCurrent &quot;main&quot; .) }}active{{ end }}&quot; href=&quot;{{ .URL }}&quot; style=&quot;text-align: center;&quot;&gt;
+                    {{ .Name }}
+                    {{ if or ($currentPage.IsMenuCurrent &quot;main&quot; .) ($currentPage.HasMenuCurrent &quot;main&quot; .) }}
+                        &lt;span class=&quot;sr-only&quot;&gt;(current)&lt;/span&gt;
+                    {{ end }}
+                &lt;/a&gt;
+                {{ end }}
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/nav&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>我们需要注意3个地方：</p>
+
+<pre><code>{{ .Site.BaseURL }}
+
+{{ .Site.Params.siteBrand }}
+
+{{ range .Site.Menus.main }} 
+</code></pre>
+
+<p>以<code>.Site</code>开头，说明我们需要在config.toml里设置这些变量，现在config.toml变成这样了：</p>
+
+<pre><code>theme = &quot;smalltheme&quot;
+title = &quot;MySmalltheme&quot;
+baseURL = &quot;http://example.com&quot;  #.Site.BaseURL
+
+
+# .Site.Menus.main
+[[menu.main]]                        # config your menu  # 配置菜单
+  name = &quot;首页&quot;
+  weight = 10
+  identifier = &quot;home&quot;
+  url = &quot;/&quot;
+[[menu.main]]
+  name = &quot;分类&quot;
+  weight = 20
+  identifier = &quot;categories&quot;
+  url = &quot;/categories/&quot;
+[[menu.main]]
+  name = &quot;标签&quot;
+  weight = 30
+  identifier = &quot;tags&quot;
+  url = &quot;/tags/&quot;
+[[menu.main]]
+  name = &quot;归档&quot;
+  weight = 40
+  identifier = &quot;archive&quot;
+  url = &quot;/archive/&quot;
+[[menu.main]]
+  name = &quot;关于&quot;
+  weight = 50
+  identifier = &quot;about&quot;
+  url = &quot;/about/&quot;
+
+[params]
+  custom_css = [&quot;custom_css/style.css&quot;]             # 是一个数组，可以存放多个文件名称。
+  # env = &quot;production&quot;                              # 发布网站的时候，要设置env的值为production。现在是development阶段，不要设置。因此将之注释掉。
+  siteBrand = &quot;MyBrand&quot;                             # .Site.Params.siteBrand
+</code></pre>
+
+<p>如果没有意外，你的网站应该这样了：</p>
+
+<p><img src="https://codepool.oss-cn-shenzhen.aliyuncs.com/Hugotutorial/HOMEPAGE.png" alt="home page view" /></p>
+
+<p>你是这变换浏览器窗口大小。你会发现这个导航栏也是responsible（可响应的，即可随窗口大小而变换形态）的。你可以试着点击一下其他页面，你会发现是一片空白。我们说过，归档/分类/关于/标签都是list page。等一下我们完善list.html相关内容。那么，每一页面都可以点击了。</p>
+
+<h4 id="1-3-编写footer-html">1-3. 编写footer.html</h4>
+
+<p>footer可复杂可简单。这里就编写一个十分简单的footer出来，footer.html内容如下：</p>
+
+<pre><code>&lt;footer class=&quot;container px-0 bg-dark text-light &quot;&gt;
+    &lt;aside class=&quot;text-center&quot;&gt;
+        &lt;span&gt;Copyright &amp;copy; 2019&lt;/span&gt;
+    &lt;/aside&gt;
+&lt;/footer&gt;
+</code></pre>
+
+<p>调整style.css里面的内容：</p>
+
+<pre><code>.custom-container {
+    min-height: 90vh;
+}
+</code></pre>
+
+<p>如果没意外，现在网站如下：</p>
+
+<p><img src="https://codepool.oss-cn-shenzhen.aliyuncs.com/Hugotutorial/footer.png" alt="footer view" /></p>
+
+<h3 id="2-美化homepage">2. 美化HomePage</h3>
+
+<p>我们单独为HomePage做了一个模板（index.html），在之前我们已经在<code>index.html</code>写了一些内容。现在我们进一步美化HomePage，内容如下：</p>
+
+<pre><code># 用不标准的话来说，我们在baseof.html用语句“{{- block &quot;main&quot; . }}{{- end }}”挖了一个坑。
+# 现在这里用{{ define &quot;main&quot; }}{{ end }}来填坑。从而，index.html就继承了baseof.html的所有内容：
+# 在目前，继承的内容有：bootstrap框架资源，head内容，footer，header。
+{{ define &quot;main&quot; }}
+&lt;div class=&quot;text-center font-weight-bold&quot; style=&quot;font-size: 1.2rem; padding-top: 30vh;&quot;&gt;
+    &lt;ul class=&quot;list-group list-group-flush&quot;&gt;
+        &lt;li class=&quot;list-group-item border-0 bg-warning&quot;&gt;知识就这样&lt;/li&gt;
+        &lt;li class=&quot;list-group-item border-0 bg-warning&quot;&gt;你学，或不学&lt;/li&gt;
+        &lt;li class=&quot;list-group-item border-0 bg-warning&quot;&gt;她都在那里&lt;/li&gt;
+        &lt;li class=&quot;list-group-item border-0 bg-warning&quot;&gt;没人能真正毁灭知识&lt;/li&gt;
+        &lt;li class=&quot;list-group-item border-0 bg-warning&quot;&gt;也没人能逼你喜欢知识&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+{{ end }}
+</code></pre>
+
+<p>如果没意外，现在网站变成这样：</p>
+
+<p><img src="https://codepool.oss-cn-shenzhen.aliyuncs.com/Hugotutorial/homepage-1.png" alt="new homepage view" /></p>
+
+<hr />
+
+<p>本篇文章【完】，下一篇文章，我们将直接编写list.html</p>
+<div class="container custom-copyright-style border-warning m-2 my-md-4 p-2 shadow-sm">
+    <div >
+        <span>
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-woshizuozhe"></use>
+        </svg>作者：
+        <a href="http://codepool.top/about/">不谇</a>
+        </span>
+    </div>
+    <div>
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-suoding"></use>
+        </svg>版权：此文章版权归<a href="https://codepool.top">CODEPOOL</a>所有。允许转载，但禁止商用！
+    </div>
+</div></div>
+    </div>
+  </article>
+  <div class="hr-box">
+      <div class="hr-box-sm hr-red"></div>
+      <div class="hr-box-sm hr-orange"></div>
+      <div class="hr-box-sm hr-yellow "></div>
+      <div class="hr-box-sm hr-green "></div>
+      <div class="hr-box-sm hr-blue "></div>
+      <div class="hr-box-sm hr-purple"></div>
+  </div>
+  <aside id="meta">
+    <div class="row justify-content-between py-2 py-md-3">
+        
+        <div class="col-12 col-md-5">
+          <span><svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-PrevioustrackFill"></use>
+            </svg>上一篇<a class="text-dark custom-a" href="https://busui.github.io/posts/hugo-tutorial-8/"> Hugo教程系列（八）</a>
+          </span>
+        </div>
+        
+        
+          
+              <div class="col-12 col-md-5">
+                  <span class="float-md-right">
+          
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-NexttrackFilled"></use>
+            </svg>下一篇<a class="text-dark custom-a" href="https://busui.github.io/posts/hugo-tutorial-10/"> Hugo教程系列（十）</a>
+          </span>
+        </div>
+        
+    </div>
+  </aside>
+</main>
+
+        <footer class="custom-border-top mt-3 py-3 custom-footer">
+    <aside>
+        <span>CODEPOOL&nbsp;&COPY;&nbsp;2018-2019</span>
+    </asite>
+    <aside>
+        <span>
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-powerstation"></use>
+        </svg>
+        POWER BY <a href="https://gohugo.io/" class="custom-footer-a">HUGO</a>&shortmid;</span>
+        <span>
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-library_theme_select"></use>
+        </svg>
+        THEME BY <a href="https://github.com/Busui/gohugo-theme-yellow" class="custom-footer-a">BUSUI</a></span>
+    </aside>
+    <div class="footerest">
+        <span>
+            
+                粤ICP备19088648号-1&shortmid;
+            
+        </span>
+        <span>
+            All Rights Reverse.
+        </span>
+        
+        <span>
+                &shortmid;欢迎来访CODEPOOL，本站所有言行仅代表个人观点，无关任何其他个体/组织。
+        </span>
+        
+    </div>
+</footer>
+      </div>
+      
+<button onclick="topFunction()" id="myBtn" title="Go to top">
+    <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-top2"></use>
+    </svg>
+</button>
+
+<script>
+    
+    window.onscroll = function () {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+
+    
+    function topFunction() {
+        document.body.scrollTop = 0; 
+        document.documentElement.scrollTop = 0; 
+    }
+</script>
+      
+
+  <script src="/js/jquery-3.3.1.slim.min.js"></script>
+
+  <script src="/js/bootstrap.bundle.min.js"></script>
+
+  <script src="/js/iconfont.js"></script>
+
+  <script src="/js/highlight.pack.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+      
+  </body>
+</html>

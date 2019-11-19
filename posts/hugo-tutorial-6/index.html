@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>CODEPOOL  | Hugo教程系列（六）</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.57.0" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/css/bootstrap.min.css" rel="stylesheet">
+    
+      <link href="/css/github.css" rel="stylesheet">
+    
+      <link href="/css/style.css" rel="stylesheet">
+    
+
+
+    
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/favicon144.png">
+    
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/favicon114.png">
+    
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/img/favicon72.png">
+    
+    <link rel="apple-touch-icon-precomposed" href="/img/favicon57.png">
+    
+    <link rel="shortcut icon" href="/img/favicon32.png">
+
+    
+
+    
+    
+  </head>
+
+  <body>
+       <script>
+          if (/android/i.test(navigator.userAgent) || /(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent) || /mobile/i.test(navigator.userAgent))
+          {
+              document.body.classList.add('custom-mobile');
+          }
+       </script>
+      <div class="container px-0" id="content">
+        <header class="container" id="header-id">
+    <div class="row justify-content-center">
+        <div class="col-12 text-center">
+            <div class="my-3" style="font-size:2rem;">
+                <a href="https://busui.github.io" class="px-3 px-md-5 badge custom-badge-dark text-wrap py-1 py-md-2">CODEPOOL</a>
+            </div>
+        </div>
+        <div class="w-100"></div>
+        
+        <div>
+            <p class="text-muted text-center custom-text-muted mobile-custom-size">
+                我至今无法否认学习是一件快乐的事儿
+            </p>
+        </div>
+        
+    </div>
+    <div class="row justify-content-center">
+        <nav class="navbar navbar-expand-md justify-content-center">
+            <div class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span> 
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-xinxiaoxixiangxiajiantou"></use>
+                    </svg>
+                </span>
+            </div>
+            <div class="border-warning collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav d-flex">
+                    
+                    
+                    <li class="">
+                        <a class="nav-link custom-link-color " href="/" style="text-align: center;">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-ziyuan2"></use>
+                            </svg>
+                            <span>首页</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="">
+                        <a class="nav-link custom-link-color " href="/categories/" style="text-align: center;">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-ziyuan"></use>
+                            </svg>
+                            <span>分类</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="">
+                        <a class="nav-link custom-link-color " href="/tags/" style="text-align: center;">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-ziyuan4"></use>
+                            </svg>
+                            <span>标签</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="">
+                        <a class="nav-link custom-link-color " href="/archive/" style="text-align: center;">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-ziyuan5"></use>
+                            </svg>
+                            <span>归档</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="">
+                        <a class="nav-link custom-link-color " href="/about/" style="text-align: center;">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-ziyuan1"></use>
+                            </svg>
+                            <span>关于</span>
+                            
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+        
+<main class="container-fluid px-4">
+  <article id="main">
+    <h1 id="title">Hugo教程系列（六）</h1>
+    <div class="row justify-content-end mx-2 mx-sm-4">
+        
+          <span class="custom-span-meta">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-biaoqian3"></use>
+              </svg>
+              
+              <a class="custom-text-muted custom-a" href="https://busui.github.io/tags/hugo/">Hugo</a>&shortmid;
+              
+              <a class="custom-text-muted custom-a" href="https://busui.github.io/tags/%e6%95%99%e7%a8%8b/">教程</a>&shortmid;
+              
+              <a class="custom-text-muted custom-a" href="https://busui.github.io/tags/template/">template</a>&shortmid;
+              
+          </span>&nbsp;
+        
+        
+          <span class="custom-span-meta">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-fenlei2"></use>
+              </svg>
+              
+              <a class="custom-text-muted custom-a" href="https://busui.github.io/categories/">Hugo教程</a>&shortmid;
+              
+          </span>&nbsp;
+        
+      <span class="custom-span-meta">
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-time"></use>
+        </svg>2019-08-31</span>&nbsp;
+      <span class="custom-span-meta">
+          <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-count"></use>
+          </svg>3570字
+      </span>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-12 px-2 px-md-3">
+          
+
+<p>template介绍的第二部分。接着上一篇文章，我们继续介绍template。</p>
+
+<h3 id="1-logic-逻辑">1. Logic （逻辑）</h3>
+
+<p>Go模板提供最基础的Iteration（迭代）逻辑和conditional（条件）逻辑。</p>
+
+<h4 id="1-1-iteration-迭代">1-1. Iteration（迭代）</h4>
+
+<p>所谓迭代，其实就是对某个可迭代的集合按某种顺序逐一输出。在go模板中，可迭代的集合有三种：</p>
+
+<ol>
+<li>map（映射）；</li>
+<li>array（数组）；</li>
+<li>slice（切片）。</li>
+</ol>
+
+<p>ps：如果你学过python，那么上面的内容你绝对不会陌生。没学过也没事，请继续看。</p>
+
+<p>可以说，<code>range</code>是Go模板里最常用的函数了。它的作用是对可迭代集合进行取出操作。</p>
+
+<aside class="alert alert-danger" role="alert">Iteration（迭代）下面的五个例子只是为了演示某函数/某变量背后的原理。语法层面上来说，这些例子在Go模板中是运行不通的。</aside>
+
+<hr />
+
+<p><strong>例子 1: Using Context (.) （使用上下文）</strong>:</p>
+
+<p>我们假设$array数组的内容是[&ldquo;one&rdquo;, &ldquo;two&rdquo;, &ldquo;three&rdquo;]：</p>
+
+<pre><code>{{ range $array }}
+    {{ . }} &lt;!-- `.` 代表$array数组中的一个成员 --&gt;
+{{ end }}
+</code></pre>
+
+<p>上面代码输出大概是：</p>
+
+<pre><code>&quot;one&quot;
+&quot;two&quot;
+&quot;three&quot;
+</code></pre>
+
+<p>如果$array里面的内容是一篇篇文章，那么上面短短几行代码，就可以输出$array所有的文章。下面这种文章排列的效果就是<code>range</code>函数的功劳：</p>
+
+<p><img src="https://codepool.oss-cn-shenzhen.aliyuncs.com/Hugotutorial/rangeex1.png" alt="range example 1" /></p>
+
+<hr />
+
+<p><strong>例子 2: 为每个array数组成员的值声明一个变量名：</strong></p>
+
+<pre><code>{{ range $elem_val := $array }}
+    {{ $elem_val }}
+{{ end }}
+</code></pre>
+
+<p>输出和例子1一样</p>
+
+<hr />
+
+<p><strong>例子 3: 为每个array成员的index(索引)和value(值)分别声明变量名</strong></p>
+
+<p>对于array和slice来说，声明的第一个变量是指向其成员的index(索引)</p>
+
+<pre><code>{{ range $elem_index, $elem_val := $array }}
+   {{ $elem_index }} -- {{ $elem_val }}
+{{ end }}
+</code></pre>
+
+<p>上面代码的输出大概是：</p>
+
+<pre><code>0 -- &quot;one&quot;
+1 -- &quot;two&quot;
+2 -- &quot;three&quot;
+</code></pre>
+
+<hr />
+
+<p><strong>例子 4: 为每个map的key（键）和value（值）分别声明一个变量名：</strong></p>
+
+<p>对于map来说，声明的第一个变量名会指向其成员的key（键）。</p>
+
+<pre><code>{{ range $elem_key, $elem_val := $map }}
+   {{ $elem_key }} -- {{ $elem_val }}
+{{ end }}
+</code></pre>
+
+<hr />
+
+<p><strong>例子 5: map, array, 或者slice内容为空时的操作：</strong></p>
+
+<pre><code>{{ range $array }}
+    {{ . }}
+{{else}}
+    &lt;!-- 当$array内容为空时，此处的代码将被执行 --&gt;
+{{ end }}
+</code></pre>
+
+<h4 id="1-2-conditionals-条件语句">1-2. Conditionals (条件语句)</h4>
+
+<p>在Go模板中中，使用<code>if</code>,<code>else</code>,<code>with</code>,和<code>and</code>实现条件语句逻辑。就像<code>range</code>，每一个语句后都需要追加<code>{{ end }}</code>以代表结束。</p>
+
+<p>Go模板认为下面的值为false:</p>
+
+<ol>
+<li>false(boolean布尔值)；</li>
+<li>0（整数）；</li>
+<li>任何长度为0的array,slice,map或者string。</li>
+</ol>
+
+<hr />
+
+<p><strong>例子 1: with :</strong></p>
+
+<p>使用with来表达“如果某事为真，则做&hellip;&hellip;”逻辑，是十分普遍的事。</p>
+
+<p>就像<code>range</code>一样，with也会在使用<code>.</code>符号来绑定它<strong>自己的上下文</strong>。关于什么是上下文，文章下面会提到。</p>
+
+<p>如果<code>.Params.title</code>的值为空，则不执行with和end之间的语句块（即不执行<code>&lt;h4&gt;{{ . }}&lt;/h4&gt;</code>），反之，则执行。</p>
+
+<pre><code>{{ with .Params.title }}
+    &lt;h4&gt;{{ . }}&lt;/h4&gt;
+{{ end }}
+</code></pre>
+
+<hr />
+
+<p><strong>例子 2: with .. else:</strong></p>
+
+<p>下面代码片段的功能是：如果在文章的front matter已经设置description的值，则使用这个description的值，否则使用默认的<code>{{ .Summary }}:</code></p>
+
+<pre><code>{{ with .Param &quot;description&quot; }}
+    {{ . }}
+{{ else }}
+    {{ .Summary }}
+{{ end }}
+</code></pre>
+
+<p><code>.Summary</code>变量是Hugo内置变量，功能是截取你写的文章开头一部分来作为文章的简介。</p>
+
+<p>而关于<code>.Param</code>,请看<a href="https://gohugo.io/functions/param/">.Param function</a>。</p>
+
+<hr />
+
+<p><strong>例子 3: if：</strong></p>
+
+<p>实现条件语句逻辑的一个备用方案是使用<code>if</code>语句。但if语句<strong>没有绑定 <code>.</code> 上下文</strong>。所以说，with语句实际上是if语句的升级版本。</p>
+
+<p>下面的例子实现了和“例子 1”一模一样的效果。很明显，使用if语句代码量多了。</p>
+
+<pre><code>{{ if isset .Params &quot;title&quot; }}
+    &lt;h4&gt;{{ index .Params &quot;title&quot; }}&lt;/h4&gt;
+{{ end }}
+</code></pre>
+
+<p><strong>例子 4: if .. else：</strong></p>
+
+<p>下面例子实现了和“例子 2”一模一样的效果。</p>
+
+<pre><code>{{ if .Param &quot;description&quot; }}
+    {{ index .Params &quot;description&quot; }}
+{{ else }}
+    {{ .Summary }}
+{{ end }}
+</code></pre>
+
+<hr />
+
+<p><strong>例子 5: if .. else if .. else：</strong></p>
+
+<p>和with函数不同，if语句可以使用else if语句：</p>
+
+<pre><code>{{ if (isset .Params &quot;description&quot;) }}
+    {{ index .Params &quot;description&quot; }}
+{{ else if (isset .Params &quot;summary&quot;) }}
+    {{ index .Params &quot;summary&quot; }}
+{{ else }}
+    {{ .Summary }}
+{{ end }}
+</code></pre>
+
+<hr />
+
+<p><strong>例子 6: and &amp; or：</strong></p>
+
+<pre><code>{{ if (and (or (isset .Params &quot;title&quot;) (isset .Params &quot;caption&quot;)) (isset .Params &quot;attr&quot;)) }}
+</code></pre>
+
+<p>关于isset，请看<a href="https://gohugo.io/functions/isset/">isset function</a>。</p>
+
+<h3 id="2-pipes-管道">2. Pipes（管道）</h3>
+
+<p>其实在<a href="https://codepool.top/posts/hugo-tutorial-2/">Hugo教程系列二</a>我们提过pipes（管道）这个概念。由于将来我们构建主题会多次用到管道，所以这里详细说一下所谓管道到底是个什么。</p>
+
+<p>函数被执行的时候，会产生某些操作。我们将这些操作，叫“actions（动作）”。Go模板最强大的功能之一就是：能够将一个个动作压栈（可以暂时理解压栈就是存储）。这个功能是通过pipes（管道）来实现的。这个功能借鉴于<strong>Unix pipes</strong>，概念十分简单：每个管道的输出作为下一个管道的输入。</p>
+
+<p>因为Go模板的语法相当简单，所以pipes必须要兼容这种简单，因此，pipe必须能够将函数调用链接（是链接，像锁链一样，环环相扣）起来。这么造成了一个限制：<strong>管道只能传递单个值。</strong>具体的链接结构如下：</p>
+
+<p><img src="https://codepool.oss-cn-shenzhen.aliyuncs.com/Hugotutorial/pipes.png" alt="pipes" /></p>
+
+<aside class="alert alert-info" role="alert"><strong>管道只能传递单个值。</strong>可要好好理解这句话的意思。其实我觉得应该翻译成管道只能传递单个参数才对。</aside>
+
+<p><strong>下面简单的例子应该能让你快速学会使用pipes：</strong></p>
+
+<p><strong>例子 1: shuffle：</strong></p>
+
+<p>首先我们先来看seq函数的作用：</p>
+
+<pre><code>{{ seq 1 5}}    # 输出 [1 2 3 4 5]
+</code></pre>
+
+<p>再来看shuffle函数的作用：</p>
+
+<pre><code>{{ shuffle (seq 1 5) }}     #输出[4 3 2 1 5]
+</code></pre>
+
+<p>每次运行时，shuffle的输出结果都是不一样的。说明shuffle是将数组里面成员顺序打乱的函数。</p>
+
+<p>接下来，别眨眼，看我们如何用管道来实现上面代码的功能：</p>
+
+<pre><code>{{ (seq 1 5) | shuffle }}
+</code></pre>
+
+<p>函数seq的执行结果，通过管道，作为shuffle的输入。</p>
+
+<hr />
+
+<h3 id="3-context-aka-the-dot">3. Context (aka “the dot”)</h3>
+
+<p>Context，中文意思是“上下文”，又名“the dot”。在Go模板中，最难理解的就是上下文。Go模板中的<code>{{ . }}</code>始终指向当前上下文。什么意思呢？就是说<code>{{ . }}</code>等于<code>当前上下文</code>。但，什么是当前上下文呢？</p>
+
+<p>首先，什么是上下文？<strong>往大的方向去理解</strong>，上下文，就是使得某些事物/事件奏效的<strong>环境</strong>。怎么说呢？举个十分简单的例子吧：</p>
+
+<blockquote>
+<p>“鱼游泳，有效范围是在水里。脱离了水这个环境，鱼还能游泳吗？所以说，在水这个上下文（环境）内，鱼游泳这件事儿才能奏效”</p>
+</blockquote>
+
+<p>你仔细想想，其实我们也是活在某个上下文（环境）里面的。</p>
+
+<hr />
+
+<p>那对template（模板）来说，上下文是什么呢？</p>
+
+<p>额，<strong>上下文是环境</strong>。环境在哪？这个需要点想象力啊，因为环境是抽象的。hugo运行时，每个模板各自都会形成一个独立的环境。我们处理事情时一般会假设我们在某个上下文中，这个上下文，就是当前上下文。在每一个独立的上下文中，我们都调用所有Hugo支持的内置函数和内置变量。</p>
+
+<p>更详细地说，Go模板形成的上下文其实有两种情况：</p>
+
+<ol>
+<li>每一个模板文件都会形成各自的上下文（即环境），content目录下<strong>不同</strong>文件+同一个模板会形成不同的上下文。这种类型的上下文，是针对page（页面）的。或者说，是针对某个模板的，是全局的。</li>
+<li>在迭代语句里面，循环时会形成自己独立的数据，因此，在迭代语句里面，会形成一个针对循环数据的上下文，这种上下文是局部的。</li>
+</ol>
+
+<p>每一个上下文都会绑定一个数据集。这些数据集是一些内置函数和内置变量，或者是执行迭代语句产生的数据集。它们中很多函数/变量的名称都是相同的，但它们在不同的上下文中，会取到相应的值，各个相同名称的函数/变量<strong>不会</strong>互相冲突。</p>
+
+<aside class="alert alert-info" role="alert">你会发现上下文和作用域的<strong>范围</strong>很像。其实在Hugo里，按照我看文档得出的结论，它们真的很像，甚至可以说是一样的（是说范围一样！！！）。但它们针对的对象是不一样的，作用域针对的是变量，上下文针对的是更大范围的函数和变量。</aside>
+
+<hr />
+
+<p><br>
+<strong>有这么一种情况，比如我们在局部上下文中想访问全局上下文里的变量，这么办？有两种方案，如下：</strong></p>
+
+<h4 id="3-1-define-a-variable-independent-of-context-定义一个独立于上下文的变量">3-1. Define a Variable Independent of Context （定义一个独立于上下文的变量）</h4>
+
+<pre><code>{{ $title := .Site.Title }}
+&lt;ul&gt;
+{{ range .Params.tags }}
+    &lt;li&gt;
+        &lt;a href=&quot;/tags/{{ . | urlize }}&quot;&gt;{{ . }}&lt;/a&gt;
+        - {{ $title }}
+    &lt;/li&gt;
+{{ end }}
+&lt;/ul&gt;
+</code></pre>
+
+<p>在range语句里面，<code>.Site.Title</code>是不存在的。因为range语句里面形成的上下文并没有绑定<code>.Site.Title</code>这个变量。因此，我们在全局上下文中将<code>.Site.Title</code>的值存储在$title中，因为$title是独立于上下文的，所以在range语句内也能访问到它。</p>
+
+<aside class="alert alert-danger" role="alert">有一个十分要注意的地方是 <code>{{ . }}</code>代表的是当前上下文。也就是说，在全局环境中，<code>{{ . }}</code>代表的是“全局”上下文。而在range语句里，<code>{{ . }}</code>代表的是“局部”上下文。</aside>
+
+<h4 id="3-2-use-to-access-the-global-context">3-2. Use $. to Access the Global Context</h4>
+
+<p>在局部上下文内，使用<code>$.</code>可以访问全局上下文。这种情况我们建立主题的时候没用到，因此需要了解更多，请查看<a href="https://gohugo.io/templates/introduction/#2-use-to-access-the-global-context">Use $. to Access the Global Context</a>。</p>
+
+<h3 id="4-whitespace-空白">4. Whitespace （空白）</h3>
+
+<p>在将go模板渲染成html文件时，会产生空格(假设.Title的值是Hello,world!)：</p>
+
+<pre><code>&lt;div&gt;
+  {{ .Title }}
+&lt;/div&gt;
+</code></pre>
+
+<p>渲染成html是，会变成下面这样：</p>
+
+<pre><code>&lt;div&gt;
+  Hello, World!
+&lt;/div&gt;
+</code></pre>
+
+<hr />
+
+<p>Go模板提供了消除空格的方法：</p>
+
+<pre><code>&lt;div&gt;
+  {{- .Title -}}
+&lt;/div&gt;
+</code></pre>
+
+<p>渲染成html后是这样：</p>
+
+<pre><code>&lt;div&gt;Hello, World!&lt;/div&gt;
+</code></pre>
+
+<p>Go模板能够消除的空白有下面四种：</p>
+
+<ol>
+<li>空格；</li>
+<li>换行；</li>
+<li>回车；</li>
+<li>tab。</li>
+</ol>
+
+<hr />
+
+<p>本文完。下一篇文章，将会介绍在模板如何引用config.toml文件里面的值和post中的front matter。</p>
+<div class="container custom-copyright-style border-warning m-2 my-md-4 p-2 shadow-sm">
+    <div >
+        <span>
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-woshizuozhe"></use>
+        </svg>作者：
+        <a href="http://codepool.top/about/">不谇</a>
+        </span>
+    </div>
+    <div>
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-suoding"></use>
+        </svg>版权：此文章版权归<a href="https://codepool.top">CODEPOOL</a>所有。允许转载，但禁止商用！
+    </div>
+</div></div>
+    </div>
+  </article>
+  <div class="hr-box">
+      <div class="hr-box-sm hr-red"></div>
+      <div class="hr-box-sm hr-orange"></div>
+      <div class="hr-box-sm hr-yellow "></div>
+      <div class="hr-box-sm hr-green "></div>
+      <div class="hr-box-sm hr-blue "></div>
+      <div class="hr-box-sm hr-purple"></div>
+  </div>
+  <aside id="meta">
+    <div class="row justify-content-between py-2 py-md-3">
+        
+        <div class="col-12 col-md-5">
+          <span><svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-PrevioustrackFill"></use>
+            </svg>上一篇<a class="text-dark custom-a" href="https://busui.github.io/posts/hugo-tutorial-5/"> Hugo教程系列（五）</a>
+          </span>
+        </div>
+        
+        
+          
+              <div class="col-12 col-md-5">
+                  <span class="float-md-right">
+          
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-NexttrackFilled"></use>
+            </svg>下一篇<a class="text-dark custom-a" href="https://busui.github.io/posts/hugo-tutorial-7/"> Hugo教程系列（七）</a>
+          </span>
+        </div>
+        
+    </div>
+  </aside>
+</main>
+
+        <footer class="custom-border-top mt-3 py-3 custom-footer">
+    <aside>
+        <span>CODEPOOL&nbsp;&COPY;&nbsp;2018-2019</span>
+    </asite>
+    <aside>
+        <span>
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-powerstation"></use>
+        </svg>
+        POWER BY <a href="https://gohugo.io/" class="custom-footer-a">HUGO</a>&shortmid;</span>
+        <span>
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-library_theme_select"></use>
+        </svg>
+        THEME BY <a href="https://github.com/Busui/gohugo-theme-yellow" class="custom-footer-a">BUSUI</a></span>
+    </aside>
+    <div class="footerest">
+        <span>
+            
+                粤ICP备19088648号-1&shortmid;
+            
+        </span>
+        <span>
+            All Rights Reverse.
+        </span>
+        
+        <span>
+                &shortmid;欢迎来访CODEPOOL，本站所有言行仅代表个人观点，无关任何其他个体/组织。
+        </span>
+        
+    </div>
+</footer>
+      </div>
+      
+<button onclick="topFunction()" id="myBtn" title="Go to top">
+    <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-top2"></use>
+    </svg>
+</button>
+
+<script>
+    
+    window.onscroll = function () {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+
+    
+    function topFunction() {
+        document.body.scrollTop = 0; 
+        document.documentElement.scrollTop = 0; 
+    }
+</script>
+      
+
+  <script src="/js/jquery-3.3.1.slim.min.js"></script>
+
+  <script src="/js/bootstrap.bundle.min.js"></script>
+
+  <script src="/js/iconfont.js"></script>
+
+  <script src="/js/highlight.pack.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+      
+  </body>
+</html>

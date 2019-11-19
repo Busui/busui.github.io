@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>CODEPOOL  | Hugo教程系列（四）</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.57.0" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/css/bootstrap.min.css" rel="stylesheet">
+    
+      <link href="/css/github.css" rel="stylesheet">
+    
+      <link href="/css/style.css" rel="stylesheet">
+    
+
+
+    
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/favicon144.png">
+    
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/favicon114.png">
+    
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/img/favicon72.png">
+    
+    <link rel="apple-touch-icon-precomposed" href="/img/favicon57.png">
+    
+    <link rel="shortcut icon" href="/img/favicon32.png">
+
+    
+
+    
+    
+  </head>
+
+  <body>
+       <script>
+          if (/android/i.test(navigator.userAgent) || /(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent) || /mobile/i.test(navigator.userAgent))
+          {
+              document.body.classList.add('custom-mobile');
+          }
+       </script>
+      <div class="container px-0" id="content">
+        <header class="container" id="header-id">
+    <div class="row justify-content-center">
+        <div class="col-12 text-center">
+            <div class="my-3" style="font-size:2rem;">
+                <a href="https://busui.github.io" class="px-3 px-md-5 badge custom-badge-dark text-wrap py-1 py-md-2">CODEPOOL</a>
+            </div>
+        </div>
+        <div class="w-100"></div>
+        
+        <div>
+            <p class="text-muted text-center custom-text-muted mobile-custom-size">
+                我至今无法否认学习是一件快乐的事儿
+            </p>
+        </div>
+        
+    </div>
+    <div class="row justify-content-center">
+        <nav class="navbar navbar-expand-md justify-content-center">
+            <div class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span> 
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-xinxiaoxixiangxiajiantou"></use>
+                    </svg>
+                </span>
+            </div>
+            <div class="border-warning collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav d-flex">
+                    
+                    
+                    <li class="">
+                        <a class="nav-link custom-link-color " href="/" style="text-align: center;">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-ziyuan2"></use>
+                            </svg>
+                            <span>首页</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="">
+                        <a class="nav-link custom-link-color " href="/categories/" style="text-align: center;">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-ziyuan"></use>
+                            </svg>
+                            <span>分类</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="">
+                        <a class="nav-link custom-link-color " href="/tags/" style="text-align: center;">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-ziyuan4"></use>
+                            </svg>
+                            <span>标签</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="">
+                        <a class="nav-link custom-link-color " href="/archive/" style="text-align: center;">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-ziyuan5"></use>
+                            </svg>
+                            <span>归档</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="">
+                        <a class="nav-link custom-link-color " href="/about/" style="text-align: center;">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-ziyuan1"></use>
+                            </svg>
+                            <span>关于</span>
+                            
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+        
+<main class="container-fluid px-4">
+  <article id="main">
+    <h1 id="title">Hugo教程系列（四）</h1>
+    <div class="row justify-content-end mx-2 mx-sm-4">
+        
+          <span class="custom-span-meta">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-biaoqian3"></use>
+              </svg>
+              
+              <a class="custom-text-muted custom-a" href="https://busui.github.io/tags/hugo/">Hugo</a>&shortmid;
+              
+              <a class="custom-text-muted custom-a" href="https://busui.github.io/tags/%e6%95%99%e7%a8%8b/">教程</a>&shortmid;
+              
+              <a class="custom-text-muted custom-a" href="https://busui.github.io/tags/content-sections/">content sections</a>&shortmid;
+              
+          </span>&nbsp;
+        
+        
+          <span class="custom-span-meta">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-fenlei2"></use>
+              </svg>
+              
+              <a class="custom-text-muted custom-a" href="https://busui.github.io/categories/">Hugo教程</a>&shortmid;
+              
+          </span>&nbsp;
+        
+      <span class="custom-span-meta">
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-time"></use>
+        </svg>2019-08-29</span>&nbsp;
+      <span class="custom-span-meta">
+          <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-count"></use>
+          </svg>3895字
+      </span>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-12 px-2 px-md-3">
+          
+
+<p>这篇文章将讲解Content Sections和templates。</p>
+
+<p>其实在<a href="https://codepool.top/posts/hugo-tutorial-2/">hugo教程系列（二）</a>我们已经谈过content sections的相关概念了。但content sections实在太重要了，我们有必要再强调一下，认认真真地见识一下<code>Content Sections</code>的庐山真面目。</p>
+
+<h3 id="何谓content-sections">何谓content sections</h3>
+
+<p>Hugo会根据你<code>content</code>目录下的目录/内容生成一棵section树。</p>
+
+<p>所谓section，就是<strong>你</strong>（是你，你，你！！！）根据你自己需要的结构，对<code>content/</code>目录下的内容进行组织，将一些相关的页面，收集放在一起，形成一个个集合。同一个集合里的内容，一般是有联系的。这一个个集合，就是一个个section。</p>
+
+<p>比如，教程类的文章就放在<code>content/tutorial</code> section中，生活记录类的文章就放在<code>content/life</code> section中。</p>
+
+<p><strong>也就是说，content下有多少个section，哪篇文章放在哪个section，是由你决定的。</strong></p>
+
+<aside class="alert alert-info" role="alert">上面所说的section，都是直接（直接！！！！）在content目录下的。如果你想在更深层的目录下创建一个section，比如你想在content/tutorial/下再建一个<code>Hugo</code> section，那么，在这个hugo目录下，要创建一个<code>_index.md</code>文件，即content/tutorial/hugo/_index.md。这样，这个Hugo目录才会本认为是一个section。</aside>
+
+<h3 id="nested-sections-嵌套sections">Nested Sections （嵌套sections）</h3>
+
+<p>section是可以根据你的需要嵌套多层的：</p>
+
+<pre><code>content
+└── blog        &lt;-- 是Section, 因为直接（直接！！）在content/目录下
+    ├── funny-cats
+    │   ├── mypost.md
+    │   └── kittens         &lt;-- 是Section, 因为包含 _index.md
+    │       └── _index.md
+    └── tech                &lt;-- 是Section, 因为包含 _index.md
+        └── _index.md
+</code></pre>
+
+<p><strong>对于sections最重要的是，让整个section树都可访问。</strong>因此，每一个section都需要有内容（比如文章post），如果某个section里面不需要post，至少也要有一个_index.md文件。比如<a href="https://codepool.top/about/">CodePool</a>的about页面就是一个section，但这个section里面不需要post，因此，在里面只有一个_index.md文件：</p>
+
+<pre><code>about
+└── _index.md
+</code></pre>
+
+<p>这样，我就能通过<code>https://codepool.top/about/</code>访问到about这个section了。</p>
+
+<h3 id="section-page-variables-and-methods-section页面的变量和方法">Section Page Variables and Methods(section页面的变量和方法)</h3>
+
+<p>接下来，就要涉及到一个十分重要的概念了。</p>
+
+<p>我们先来想象一个场景：</p>
+
+<p>“我们这篇文章都在讨论Hugo如何根据content里面的内容生成section树，又如何使得content里面的内容都可访问。”那么：</p>
+
+<ol>
+<li>Hugo是怎么获取到content目录里面的内容的呢？</li>
+<li>content目录里面的section可能有许多个，Hugo是怎么知道我们在访问哪个section的呢？</li>
+</ol>
+
+<p><strong>答案就是通过Variables（变量）和Method（方法）。</strong></p>
+
+<hr />
+
+<p>&ldquo;section page variables&rdquo;是<a href="https://gohugo.io/variables/page/">Page Variables</a>的子集。</p>
+
+<p>对于section page variables，我们可以简单举例：</p>
+
+<ul>
+<li><p>变量<code>.CurrentSection</code>: 通过.CurrentSection变量，我们可以获取当前正在访问的section。</p></li>
+
+<li><p>变量<code>.Sections</code>： 通过.Section变量我们可以获取content目录下的所有顶层sections。</p></li>
+</ul>
+
+<p>当然，变量不可能这么少，相反，hugo里面的内置变量挺多的，这样可以保证你可以通过变量，获取你需要的相关内容。更加详细的内容请阅读<a href="https://gohugo.io/content-management/sections/#section-page-variables-and-methods">官方 Section Page Variables and Methods</a></p>
+
+<p>至于方法，目前你只需要知道，方法是变量更强大的东西，方法可以操作数据。</p>
+
+<h3 id="一些总结">一些总结</h3>
+
+<p>到了此时此刻，或许你还是不明白section存在的意义。你还不知到Variable和method到底有什么用。莫要慌张，因为目前你还缺乏一些相关知识，当这些知识足够了，在你脑海里自然而然就会形成一张完整的知识网。</p>
+
+<p>在前面的教程中，我们知道了两个十分重要的指令：</p>
+
+<ol>
+<li><p><code>hugo new &quot;[section/]文章.md&quot;</code>: 这是创建post的命令。其中，[section/]是可选的，它代表这你希望这篇文章属于content目录下哪个section，然后hugo会根据这个section找到对应的archetype，最后在post内部生成合适的front matter。如果你不指定section，则使用archetype/default.md生成对应的front matter：(下图没有指定[section],所以采取默认的archetype)
+<img src="https://codepool.oss-cn-shenzhen.aliyuncs.com/Hugotutorial/archetype2content.png" alt="archetypetocontent" /></p></li>
+
+<li><p><code>hugo [-D]</code>: &ldquo;-D&rdquo;，可选，代表你希望把草稿也输出到public目录中。hugo根据post所处的section，在layouts目录中选取相应的templates（模板）文件，进而渲染出对应的页面。比如你现在看的这篇文章，它属于posts这个section的，然后hugo会根据这个section，找到layouts/posts/single.html这个template（模板），渲染出你现在看到的这篇文章的这种效果。</p></li>
+</ol>
+
+<hr />
+
+<p>两个指令，<code>hugo new</code>是创建post，<code>hugo</code>生成网站。两个如此重要的步骤中，都有section的身影。我觉得现在可以将之前学的东西，大概串联起来了：</p>
+
+<p><strong>“你决定section，section决定选取哪个archetype，哪个layout布局。”</strong></p>
+
+<hr />
+
+<p>前面你看到，横在content和archetype目录之间的是: <strong>如何通过section决定选择archetype目录下的哪个文件，进而决定新建文章的front matter。</strong></p>
+
+<p>那么，横在content和layouts目录之间的则是: <strong>如何通过section决定使用哪个layout，进而选取对应layout的template，然后这个template通过Variable，Method和Function获取content里面的相关信息</strong>（这相关信息可能是一张图片资源，你写的文章的标题，你写的文章的内容&hellip;&hellip;）</p>
+
+<p>我们可以通过图片来表达一下它们之间的关系：</p>
+
+<p><img src="https://codepool.oss-cn-shenzhen.aliyuncs.com/Hugotutorial/content-section-archetype.png" alt="content-section-archetype" /></p>
+
+<p><img src="https://codepool.oss-cn-shenzhen.aliyuncs.com/Hugotutorial/content-section-layouts.png" alt="content-section-layouts" /></p>
+
+<h3 id="templates-模板">templates 模板</h3>
+
+<p>终于要真正接触<code>Templates</code>的概念了么？templates实际上就放在layouts或者theme/your-theme/layouts目录下。</p>
+
+<p>前面我们说过，content目录决定你网站的结构（就像房子的骨骼），而layouts目录里的内容则决定你的网站美不美（就像对房子进行装修）。</p>
+
+<p>就像房子一样，一般不会每个房间都装修得一模一样。同样的，你的网站一般也不会每个页面都一模一样。不同页面的样子应该也是不同的。怎么决定不同的页面有不同的样子呢？</p>
+
+<p>答案是：<strong>通过layouts（布局）目录里面的templates。每一个templates代表一种页面样式。</strong></p>
+
+<p>不过到了这里，我想我们应该看看一个正常的网站的layouts目录到底啥样。没错，yellow主题里面的layouts目录就是现成的案例(为了契合这里的话题，已对layouts的输出内容进行删减)：</p>
+
+<pre><code>.
+├── 404.html
+├── _default
+│   ├── baseof.html
+│   ├── list.html
+│   └── summary.html
+├── about
+│   └── list.html
+├── archive
+│   └── list.html
+├── categories
+│   └── list.html
+├── posts
+│   └── single.html
+└── tags
+    ├── list.html
+    └── terms.html
+</code></pre>
+
+<p>看到layouts目录的输出内容，我想，你已经发现了某些规律。没错，layouts里面的目录结构和<a href="https://codepool.top">codepool</a>里的页面是可以一一对上号的：</p>
+
+<pre><code>.
+├── _default
+│   ├── baseof.html # 把一些最基本的html结构放在一起，作为一切的起点，其他的template可以继承这里面的内容
+│   ├── list.html   # 对应首页。首页没有写独立的template，因此使用默认的。
+│   └── summary.html #作为一个小的template，被其他template调用。
+├── about
+│   └── list.html   # 对应关于页面
+├── archive
+│   └── list.html   # 对应归档页面
+├── categories      # 对应分类页面
+│   └── list.html
+└── tags
+    ├── list.html   # 对应某个标签的页面,比如https://codepool.top/tags/hugo/
+    └── terms.html  # 对应标签页面，比如https://codepool.top/tags/
+</code></pre>
+
+<p>仔细观察layouts目录的内容，你会发现有两个template十分抢眼。一个是list.html,另一个是single.html。</p>
+
+<h3 id="list-page和-single-page">List Page和 Single Page</h3>
+
+<p>list.html对应的就是list page。single.html对应的就是single page。这里我就不严谨地以我们学过的内容来解释一下它们的区别。</p>
+
+<p><strong>List Page：</strong></p>
+
+<p>content下某个目录里面可能有多篇文章。获取这些文章后，会生成一个list（列表）。比如<strong>posts页面就是一个list页面</strong>（注意这里！！），现在它里面有你之前创建的3篇文章:</p>
+
+<pre><code>.
+└── content
+    └── posts
+        ├── firstpost.md
+        ├── secondpost.md
+        └── thirdpost.md
+</code></pre>
+
+<p>这3篇文章组成一个list。可以对这些list排序操作，这样在首页（或归档/分类等等）页面就可以按你喜欢的顺序展示文章。</p>
+
+<hr />
+
+<p><strong>Single Page：</strong></p>
+
+<p>其实就是展示单篇文章的页面。比如单独一个<code>firstpost/index.html</code>页面就是一个Single Page。又比如你现在阅读这篇教程也是一个Single Page。</p>
+
+<aside class="alert alert-danger" role="alert">上面的解释只是为了简单描述什么是list page，什么是single page。这些描述是十分不严谨的。如果看表面现象，你会觉得<code>https://codepool.top/about/</code>是一个single page。但实际上它是list page。只不过这个list page里面没有文章。</aside>
+
+<h3 id="下一步">下一步？</h3>
+
+<p>上面说的内容其实已经暗示了hugo模板一些十分重要的概念。下一篇文章，我们将会继续探索这些概念！</p>
+<div class="container custom-copyright-style border-warning m-2 my-md-4 p-2 shadow-sm">
+    <div >
+        <span>
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-woshizuozhe"></use>
+        </svg>作者：
+        <a href="http://codepool.top/about/">不谇</a>
+        </span>
+    </div>
+    <div>
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-suoding"></use>
+        </svg>版权：此文章版权归<a href="https://codepool.top">CODEPOOL</a>所有。允许转载，但禁止商用！
+    </div>
+</div></div>
+    </div>
+  </article>
+  <div class="hr-box">
+      <div class="hr-box-sm hr-red"></div>
+      <div class="hr-box-sm hr-orange"></div>
+      <div class="hr-box-sm hr-yellow "></div>
+      <div class="hr-box-sm hr-green "></div>
+      <div class="hr-box-sm hr-blue "></div>
+      <div class="hr-box-sm hr-purple"></div>
+  </div>
+  <aside id="meta">
+    <div class="row justify-content-between py-2 py-md-3">
+        
+        <div class="col-12 col-md-5">
+          <span><svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-PrevioustrackFill"></use>
+            </svg>上一篇<a class="text-dark custom-a" href="https://busui.github.io/posts/hugo-tutorial-3/"> Hugo教程系列（三）</a>
+          </span>
+        </div>
+        
+        
+          
+              <div class="col-12 col-md-5">
+                  <span class="float-md-right">
+          
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-NexttrackFilled"></use>
+            </svg>下一篇<a class="text-dark custom-a" href="https://busui.github.io/posts/hugo-tutorial-5/"> Hugo教程系列（五）</a>
+          </span>
+        </div>
+        
+    </div>
+  </aside>
+</main>
+
+        <footer class="custom-border-top mt-3 py-3 custom-footer">
+    <aside>
+        <span>CODEPOOL&nbsp;&COPY;&nbsp;2018-2019</span>
+    </asite>
+    <aside>
+        <span>
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-powerstation"></use>
+        </svg>
+        POWER BY <a href="https://gohugo.io/" class="custom-footer-a">HUGO</a>&shortmid;</span>
+        <span>
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-library_theme_select"></use>
+        </svg>
+        THEME BY <a href="https://github.com/Busui/gohugo-theme-yellow" class="custom-footer-a">BUSUI</a></span>
+    </aside>
+    <div class="footerest">
+        <span>
+            
+                粤ICP备19088648号-1&shortmid;
+            
+        </span>
+        <span>
+            All Rights Reverse.
+        </span>
+        
+        <span>
+                &shortmid;欢迎来访CODEPOOL，本站所有言行仅代表个人观点，无关任何其他个体/组织。
+        </span>
+        
+    </div>
+</footer>
+      </div>
+      
+<button onclick="topFunction()" id="myBtn" title="Go to top">
+    <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-top2"></use>
+    </svg>
+</button>
+
+<script>
+    
+    window.onscroll = function () {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+
+    
+    function topFunction() {
+        document.body.scrollTop = 0; 
+        document.documentElement.scrollTop = 0; 
+    }
+</script>
+      
+
+  <script src="/js/jquery-3.3.1.slim.min.js"></script>
+
+  <script src="/js/bootstrap.bundle.min.js"></script>
+
+  <script src="/js/iconfont.js"></script>
+
+  <script src="/js/highlight.pack.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+      
+  </body>
+</html>

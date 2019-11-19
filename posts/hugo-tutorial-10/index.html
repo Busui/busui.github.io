@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>CODEPOOL  | Hugo教程系列（十）</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.57.0" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/css/bootstrap.min.css" rel="stylesheet">
+    
+      <link href="/css/github.css" rel="stylesheet">
+    
+      <link href="/css/style.css" rel="stylesheet">
+    
+
+
+    
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/favicon144.png">
+    
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/favicon114.png">
+    
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/img/favicon72.png">
+    
+    <link rel="apple-touch-icon-precomposed" href="/img/favicon57.png">
+    
+    <link rel="shortcut icon" href="/img/favicon32.png">
+
+    
+
+    
+    
+  </head>
+
+  <body>
+       <script>
+          if (/android/i.test(navigator.userAgent) || /(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent) || /mobile/i.test(navigator.userAgent))
+          {
+              document.body.classList.add('custom-mobile');
+          }
+       </script>
+      <div class="container px-0" id="content">
+        <header class="container" id="header-id">
+    <div class="row justify-content-center">
+        <div class="col-12 text-center">
+            <div class="my-3" style="font-size:2rem;">
+                <a href="https://busui.github.io" class="px-3 px-md-5 badge custom-badge-dark text-wrap py-1 py-md-2">CODEPOOL</a>
+            </div>
+        </div>
+        <div class="w-100"></div>
+        
+        <div>
+            <p class="text-muted text-center custom-text-muted mobile-custom-size">
+                我至今无法否认学习是一件快乐的事儿
+            </p>
+        </div>
+        
+    </div>
+    <div class="row justify-content-center">
+        <nav class="navbar navbar-expand-md justify-content-center">
+            <div class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span> 
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-xinxiaoxixiangxiajiantou"></use>
+                    </svg>
+                </span>
+            </div>
+            <div class="border-warning collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav d-flex">
+                    
+                    
+                    <li class="">
+                        <a class="nav-link custom-link-color " href="/" style="text-align: center;">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-ziyuan2"></use>
+                            </svg>
+                            <span>首页</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="">
+                        <a class="nav-link custom-link-color " href="/categories/" style="text-align: center;">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-ziyuan"></use>
+                            </svg>
+                            <span>分类</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="">
+                        <a class="nav-link custom-link-color " href="/tags/" style="text-align: center;">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-ziyuan4"></use>
+                            </svg>
+                            <span>标签</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="">
+                        <a class="nav-link custom-link-color " href="/archive/" style="text-align: center;">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-ziyuan5"></use>
+                            </svg>
+                            <span>归档</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="">
+                        <a class="nav-link custom-link-color " href="/about/" style="text-align: center;">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-ziyuan1"></use>
+                            </svg>
+                            <span>关于</span>
+                            
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+        
+<main class="container-fluid px-4">
+  <article id="main">
+    <h1 id="title">Hugo教程系列（十）</h1>
+    <div class="row justify-content-end mx-2 mx-sm-4">
+        
+          <span class="custom-span-meta">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-biaoqian3"></use>
+              </svg>
+              
+              <a class="custom-text-muted custom-a" href="https://busui.github.io/tags/hugo/">Hugo</a>&shortmid;
+              
+              <a class="custom-text-muted custom-a" href="https://busui.github.io/tags/%e6%95%99%e7%a8%8b/">教程</a>&shortmid;
+              
+              <a class="custom-text-muted custom-a" href="https://busui.github.io/tags/%e7%bc%96%e5%86%99hugo%e4%b8%bb%e9%a2%98/">编写Hugo主题</a>&shortmid;
+              
+          </span>&nbsp;
+        
+        
+          <span class="custom-span-meta">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-fenlei2"></use>
+              </svg>
+              
+              <a class="custom-text-muted custom-a" href="https://busui.github.io/categories/">Hugo教程</a>&shortmid;
+              
+          </span>&nbsp;
+        
+      <span class="custom-span-meta">
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-time"></use>
+        </svg>2019-09-08</span>&nbsp;
+      <span class="custom-span-meta">
+          <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-count"></use>
+          </svg>4465字
+      </span>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-12 px-2 px-md-3">
+          
+
+<p>本文的内容是<a href="https://codepool.top/posts/hugo-tutorial-9/">Hugo教程系列（九）</a>的延续。</p>
+
+<p>此刻，如果访问的你的网站，就会发现，除了“关于”页面外，每个页面都可以访问了。（因为在config.toml的[taxonomies]中，你没有把about写上去。）你迫不及待地点击每个页面，<strong>发现每个页面都有相同的header和footer，因为它们继承于同一个baseof.html</strong>。但很快你就失望了，因为它们都长得一样。内容里只有一句话：“this is list page”。</p>
+
+<h3 id="1-完善list-html">1. 完善list.html</h3>
+
+<p>我们现在知道，smalltheme主题里的“分类/标签/归档”页面都是使用list.html模板。（注意：复杂的主题基本会为每个页面都设置单独的模板）</p>
+
+<p>现在要解决的难题是：“分类/标签/归档”里面虽然都是list page（对于我们来说也就是文章列表），但这些列表的内容基本上都是不一样的，怎么使得同一个list.html模板，能够完美地为多个不同page（页面）服务呢？</p>
+
+<p>答案是通过functions（函数）和varialbles（变量）。其实各种类型的页面都会有其对应的模板函数/变量：</p>
+
+<ol>
+<li><a href="https://gohugo.io/templates/lists/">List Page Templates</a>;</li>
+<li><a href="https://gohugo.io/templates/homepage/">Homepage Templates</a>;</li>
+<li><a href="https://gohugo.io/templates/section-templates/">Section Templates</a>;</li>
+<li><a href="https://gohugo.io/templates/taxonomy-templates/">Taxonomy Templates</a>;</li>
+<li><a href="https://gohugo.io/templates/single-page-templates/">Single Page Templates</a>：这种稍后再说。</li>
+</ol>
+
+<p>我们反复强调，其实Home pages，Section Pages，Taxonomy List Pages，Taxonomy Terms Pages都属于<code>List Page</code>。因此，解决方案也会呼之欲出了：</p>
+
+<blockquote>
+<p><strong>我们可以在list.html中调用“Home pages,Section Pages，Taxonomy List Pages，Taxonomy Terms Pages”对应的模板函数和变量</strong></p>
+</blockquote>
+
+<hr />
+
+<p>现在，我们便来一步步看list.html如何写吧。Hugo模板是渲染content目录下的各种posts的。所以开始之前，我们需要现在content目录创建一些posts，我已经将这些posts准备好了，通过git可快速下载：</p>
+
+<pre><code>~/quickstart    # 记得在根目录下
+➜ git clone git@github.com:Busui/PostsForHugoTest.git content/
+
+~/quickstart    # 记得在根目录下
+➜ rm content/README.md
+
+~/quickstart    # 记得在根目录下
+➜ rm -rf content/.git
+</code></pre>
+
+<p>如果没有问题的话，你的content目录下应该有10篇文章的：</p>
+
+<pre><code>~/quickstart
+➜ tree content 
+content
+├── 第10篇文章.md
+├── 第3篇文章.md
+├── 第4篇文章.md
+├── 第5篇文章.md
+├── 第6篇文章.md
+├── 第7篇文章.md
+├── 第8篇文章.md
+├── 第9篇文章.md
+├── 第一篇文章.md
+└── 第二篇文章.md
+</code></pre>
+
+<p>你应该点进去看看每一篇文章的内容，特别是front matter。</p>
+
+<h4 id="1-1-获取某个页面的所有items-条目">1-1. 获取某个页面的所有items（条目）</h4>
+
+<p>list.html内容如下:</p>
+
+<pre><code>{{ define &quot;main&quot; }}
+&lt;main&gt;
+    &lt;section&gt;
+        {{ range .Pages }}
+        &lt;article&gt;
+            {{ . }}
+        &lt;/article&gt;
+        {{ end }}
+    &lt;/section&gt;
+&lt;/main&gt;
+{{ end }}
+</code></pre>
+
+<p>保存后查看浏览器我们就可以马上看到效果：</p>
+
+<ol>
+<li>分类页面：</li>
+</ol>
+
+<p><img src="https://codepool.oss-cn-shenzhen.aliyuncs.com/Hugotutorial/categories1.png" alt="categories1" /></p>
+
+<ol>
+<li>标签页面：</li>
+</ol>
+
+<p><img src="https://codepool.oss-cn-shenzhen.aliyuncs.com/Hugotutorial/tags1.png" alt="tags1" /></p>
+
+<p>清晰地看到，虽然使用相同的list.html,但不同页面展示出来的内容是不一样的。这是<code>.Pages</code>变量的功劳，<code>.Pages</code>是<strong>相关页面</strong>的一个posts集合。</p>
+
+<hr />
+
+<p>稍微改动一下list.html的内容：</p>
+
+<pre><code>{{ define &quot;main&quot; }}
+&lt;main&gt;
+    &lt;section&gt;
+        {{ range .Pages }}
+        &lt;article&gt;
+            {{ .Title }}
+        &lt;/article&gt;
+        {{ end }}
+    &lt;/section&gt;
+&lt;/main&gt;
+{{ end }}
+</code></pre>
+
+<p>事实上不过是将<code>{{ . }}</code>改成<code>{{ .Title }}</code>就可以简单获取每个标签的标题（名称），下图是在在tags页面下的截图，你可以直接点击其他页面看看：</p>
+
+<p><img src="https://codepool.oss-cn-shenzhen.aliyuncs.com/Hugotutorial/tags2.png" alt="tags2" /></p>
+
+<h4 id="1-2-完善页面的内容布局">1-2. 完善页面的内容布局</h4>
+
+<p>在官方找到你需要的页面或者函数，然后一点点调试，现在，我们的list.html内容如下：</p>
+
+<pre><code>{{ define &quot;main&quot; }}
+&lt;main&gt;
+    &lt;span class=&quot;d-flex p-4 font-weight-bold&quot;&gt;
+        {{ if eq .Title &quot;Categories&quot; }}
+            本站共有{{ len .Site.Taxonomies.categories }}个分类
+        {{ else if eq .Title &quot;Tags&quot; }}
+            本站共有{{ len .Site.Taxonomies.tags }}个标签
+        {{ else }}
+            {{ .CurrentSection.Title }}&amp;nbsp;--&gt;&amp;nbsp;“{{ .Title }}”下的文章
+        {{ end }}
+    &lt;/span&gt;
+    &lt;section class=&quot;pt-4&quot;&gt;
+        {{ range .Pages }}
+        &lt;article class=&quot;row justify-content-between w-75 mx-auto mb-1 alert alert-danger&quot; role=&quot;alert&quot;&gt;
+            &lt;div class=&quot;col-8&quot;&gt;&lt;a href=&quot;{{ .RelPermalink }}&quot;&gt;{{ .Title }}&lt;/a&gt;&lt;/div&gt;
+            &lt;div class=&quot;col-4&quot;&gt;&lt;span class=&quot;float-right&quot;&gt;{{ .Date.Format &quot;2006-01-02&quot; }}&lt;/span&gt;&lt;/div&gt;
+        &lt;/article&gt;
+        {{ end }}
+    &lt;/section&gt;
+&lt;/main&gt;
+{{ end }}
+</code></pre>
+
+<p><br>
+我们的代码并没有增加多少，但展示出来的页面已经人性化很多了，看起来已经有点博客的样子了：</p>
+
+<p>本网站的分类数/分类名称列表：</p>
+
+<p><img src="https://codepool.oss-cn-shenzhen.aliyuncs.com/Hugotutorial/categories2.png" alt="categories2" /></p>
+
+<p>“复数”这个分类下的文章：</p>
+
+<p><img src="https://codepool.oss-cn-shenzhen.aliyuncs.com/Hugotutorial/fushucategories.png" alt="fushucategories" /></p>
+
+<p><br></p>
+
+<p>本站的标签数/标签称列表：</p>
+
+<p><img src="https://codepool.oss-cn-shenzhen.aliyuncs.com/Hugotutorial/tag2.png" alt="tag2" /></p>
+
+<p>“tenth”这个标签下的文章：</p>
+
+<p><img src="https://codepool.oss-cn-shenzhen.aliyuncs.com/Hugotutorial/tenthtag.png" alt="tenthtag" /></p>
+
+<h3 id="2-待解决的问题">2. 待解决的问题</h3>
+
+<p>如果你认认真真在浏览器浏览目前smalltheme主题的各个部分，你会发现还剩下一些问题：</p>
+
+<ol>
+<li>归档页面没有显示出文章列表；</li>
+<li>“关于”页面空白；</li>
+<li>无法查看特定文章的内容：比如你现在无法在浏览器看到“第一篇文章“的内容；</li>
+<li>404.html为何物？怎么写？</li>
+</ol>
+
+<p>我们接下来，就一步步解决上面的四个问题吧！</p>
+
+<h4 id="2-1-让归档页面燃起来">2-1. 让归档页面燃起来！</h4>
+
+<p>此时此刻，如果点击“归档页面”，你会得到下面的结果：</p>
+
+<p><img src="https://codepool.oss-cn-shenzhen.aliyuncs.com/Hugotutorial/achieve1.png" alt="achieve1" /></p>
+
+<p>为什么没有显示任何文章呢？<strong>答案是Hugo还不知道“归档页面”到底该显示什么文章。默认下，Hugo知道在tags页面下显示的是tags相关的文章，categories页面下显示的是categories相关的文章。</strong></p>
+
+<p>怎么办呢？自然是我们告诉Hugo，“归档”这个页面到底该显示什么文章咯。</p>
+
+<p>归档这个页面的作用是显示我们content目录下的所有post文章。在hugo里，<a href="https://gohugo.io/variables/site/#site-variables-list">RegularPages</a>是post（文章）的集合，因此，我们可以利用<code>.Site.RegularPages</code>这个十分有用的变量来构建我们的“归档页面了”！</p>
+
+<p>list.html内容如下：</p>
+
+<pre><code>{{ define &quot;main&quot; }}
+&lt;main&gt;
+    &lt;span class=&quot;d-flex p-4 font-weight-bold&quot;&gt;
+        {{ if eq .Title &quot;Categories&quot; }}
+            本站共有{{ len .Site.Taxonomies.categories }}个分类
+        {{ else if eq .Title &quot;Tags&quot; }}
+            本站共有{{ len .Site.Taxonomies.tags }}个标签
+        {{ else }}
+            {{ .CurrentSection.Title }}&amp;nbsp;--&gt;&amp;nbsp;“{{ .Title }}”下的文章
+        {{ end }}
+    &lt;/span&gt;
+    &lt;section class=&quot;pt-4&quot;&gt;
+        {{ if eq .Title &quot;Archive&quot; }}
+            {{ range .Site.RegularPages }}
+                &lt;article class=&quot;row justify-content-between w-75 mx-auto mb-1 alert alert-success shadow&quot; role=&quot;alert&quot;&gt;
+                    &lt;div class=&quot;col-8&quot;&gt;&lt;a href=&quot;{{ .RelPermalink }}&quot;&gt;{{ .Title }}&lt;/a&gt;&lt;/div&gt;
+                    &lt;div class=&quot;col-4&quot;&gt;&lt;span class=&quot;float-right&quot;&gt;{{ .Date.Format &quot;2006-01-02&quot; }}&lt;/span&gt;&lt;/div&gt;
+                &lt;/article&gt;
+            {{ end }}
+        {{ else }}
+            {{ range .Pages }}
+            &lt;article class=&quot;row justify-content-between w-75 mx-auto mb-1 alert alert-danger&quot; role=&quot;alert&quot;&gt;
+                &lt;div class=&quot;col-8&quot;&gt;&lt;a href=&quot;{{ .RelPermalink }}&quot;&gt;{{ .Title }}&lt;/a&gt;&lt;/div&gt;
+                &lt;div class=&quot;col-4&quot;&gt;&lt;span class=&quot;float-right&quot;&gt;{{ .Date.Format &quot;2006-01-02&quot; }}&lt;/span&gt;&lt;/div&gt;
+            &lt;/article&gt;
+            {{ end }}
+        {{ end }}
+    &lt;/section&gt;
+&lt;/main&gt;
+{{ end }}
+</code></pre>
+
+<p>归档页面也成功渲染了：</p>
+
+<p><img src="https://codepool.oss-cn-shenzhen.aliyuncs.com/Hugotutorial/archive.png" alt="archive" /></p>
+
+<h4 id="2-2-构建-关于页面">2-2. 构建“关于页面”</h4>
+
+<p>到目前位置，“关于页面”点击还是空白的。事实上，想让“关于页面”能够被渲染出来是很容易的，因为“关于页面”是一个<code>section</code>，换句话说它是属于“list page”，所以只需要在config.toml添加点东西：</p>
+
+<pre><code>[taxonomies]
+  archive = &quot;archive&quot;
+  categories = &quot;categories&quot;
+  tags = &quot;tags&quot;
+  about = &quot;about&quot;   # 增加这行
+</code></pre>
+
+<p>再访问about时如下：</p>
+
+<p><img src="https://codepool.oss-cn-shenzhen.aliyuncs.com/Hugotutorial/10-about-1.png" alt="about page" /></p>
+
+<p><br></p>
+
+<p>但很明显，我们的目的不是这样。我们希望“关于页面”是显示博主个人信息的页面。因此，和HomePage一样，我们要为“关于页面”单独写一个&rdquo;list.html&rdquo;。</p>
+
+<blockquote>
+<p>那layouts下不就有两个list.html了？</p>
+</blockquote>
+
+<p>是的，所以我们要遵守一些规则：</p>
+
+<p><strong>“把这个list.html放在<code>smalltheme/layouts/about/</code>目录下，这样，这个list.html就只是对about这个section有效了。”</strong></p>
+
+<aside class="alert alert-info" role="alert"><strong>再次提醒</strong>，content目录下的顶层文件夹都默认是section，例如<code>content/about/</code>这个文件夹默认下就是一个名称为about的section。</aside>
+
+<p>如下，我们先创建需要的文件/文件夹，我们希望现在你的content目录结构是这样的：</p>
+
+<pre><code>~/quickstart 
+➜ tree content 
+content
+├── about                   # 新建about文件夹
+│   └── _index.md           # 新建_index.md文件
+├── 第10篇文章.md
+├── 第3篇文章.md
+├── 第4篇文章.md
+├── 第5篇文章.md
+├── 第6篇文章.md
+├── 第7篇文章.md
+├── 第8篇文章.md
+├── 第9篇文章.md
+├── 第一篇文章.md
+└── 第二篇文章.md
+</code></pre>
+
+<p>同时我们希望你的layouts目录结构是这样的：</p>
+
+<pre><code>~/quickstart 
+➜ tree themes/smalltheme/layouts
+themes/smalltheme/layouts
+├── 404.html
+├── _default
+│   ├── baseof.html
+│   ├── list.html
+│   └── single.html
+├── about                   # 请新建about文件夹
+│   └── list.html           # 请新建list.html文件
+├── index.html
+└── partials
+    ├── footer.html
+    ├── head.html
+    └── header.html
+</code></pre>
+
+<hr />
+
+<p>到了这里，你应该知道<code>layouts/about/list.html</code>只是对“关于页面”页面有效。（ps：你可以通过front matter的配置，使得它对其他页面也有效）</p>
+
+<p>现在我们看一下content里的内容，其中：</p>
+
+<pre><code>└─ about                   
+   └── _index.md 
+</code></pre>
+
+<p><code>_index.md</code>的作用是什么呢？</p>
+
+<p>官方文档里面说：</p>
+
+<blockquote>
+<p><code>_index.md</code> has a special role in Hugo. It allows you to add front matter and content to your list templates.</p>
+</blockquote>
+
+<p>翻译过来就是：</p>
+
+<blockquote>
+<p><code>_index.html</code>在Hugo扮演了一个特别的角色：它允许你在list templates中添加front matter和content。</p>
+</blockquote>
+
+<p>换句话说，也就是你可以在<code>_index.md</code>里面写任何东西（就像平时写文章一样），然后，在list.html模板中我们可以获取你写的这些东西，从而达到你可以像编辑文章一样随时编辑你的“关于页面”。</p>
+
+<aside class="alert alert-danger" role="alert"><strong>注意</strong>: 我们上面提到的<code>.Site.RegularPages</code>是获取不到_index.md的。因为_index.md不属于regular page。</aside>
+
+<p>我们往<code>_index.md</code>写点内容，如下：</p>
+
+<pre><code>### 欢迎来访smalltheme
+
+这是Hugo教程系列的示例页面
+
+展诗一首，与君共品
+
+&lt;br&gt;
+#### 《将进酒》
+
+君不见，黄河之水天上来，奔流到海不复回
+
+君不见，高堂明镜悲白发，朝如青丝暮成雪
+
+人生得意须尽欢，莫使金樽空对月
+
+天生我材必有用，千金散尽还复来
+
+烹羊宰牛且为乐，会须一饮三百杯
+
+岑夫子，丹丘生，将进酒，杯莫停
+
+与君歌一曲，请君为我倾耳听
+
+钟鼓馔玉不足贵，但愿长醉不复醒
+
+古来圣贤皆寂寞，惟有饮者留其名
+
+陈王昔时宴平乐，斗酒十千恣欢谑
+
+主人何为言少钱，径须沽取对君酌
+
+五花马，千金裘，呼儿将出换美酒，与尔同销万古愁
+</code></pre>
+
+<hr />
+
+<p>现在，我们可以编写<code>smalltheme/layouts/about/list.html</code>这个文件了。一起来看看它是如何来获取<code>_index.md</code>里的内容。如下：</p>
+
+<pre><code>{{ define &quot;main&quot; }}
+&lt;div class=&quot;container&quot;&gt;
+    {{ with .Site.GetPage &quot;/about&quot; }}
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col px-0 text-center pt-4&quot;&gt;
+        {{ .Content }}
+        &lt;/div&gt;
+    &lt;/div&gt;
+    {{ end }}
+&lt;/div&gt;
+{{ end }}
+</code></pre>
+
+<p>如果一切没错，现在，关于页面应该是这样：</p>
+
+<p><img src="https://codepool.oss-cn-shenzhen.aliyuncs.com/Hugotutorial/aboutpage.png" alt="aboutpage" /></p>
+
+<h4 id="2-3-让文章可访问">2-3. 让文章可访问</h4>
+
+<p>其实我们已经提了很多次了，展示文章的页面属于single page（regular page），因此，只需要把<code>smalltheme/layouts/_default/single.html</code>写好就好了。</p>
+
+<p><code>single.html</code>内容如下：</p>
+
+<pre><code>{{ define &quot;main&quot; }}
+&lt;main class=&quot;container-fluid px-1 px-sm-3&quot;&gt;
+  &lt;article id=&quot;main&quot;&gt;
+    &lt;h4 class=&quot;border-bottom p-2 m-auto&quot; id=&quot;title&quot;&gt;{{ .Title }}&lt;/h4&gt;
+    &lt;div class=&quot;row justify-content-end mx-2 mx-sm-4&quot;&gt;
+        {{ with .Params.tags }}
+          标签：&lt;span&gt;
+              {{ range . }}
+              &lt;a href=&quot;{{ &quot;tags&quot; | absURL }}/{{ replace . &quot; &quot; &quot;-&quot; | lower }}/&quot;&gt;{{ . }}&lt;/a&gt;&amp;shortmid;
+              {{ end }}
+          &lt;/span&gt;&amp;nbsp;
+        {{ end }}
+        类别：{{ with .Params.categories }}
+          &lt;span&gt;
+              {{ range . }}
+              &lt;a href=&quot;{{ &quot;categories&quot; | absURL }}/&quot;&gt;{{ . }}&lt;/a&gt;&amp;shortmid;
+              {{ end }}
+          &lt;/span&gt;&amp;nbsp;
+        {{ end }}
+      &lt;span&gt;时间：
+        {{- .Date.Format &quot;2006-01-02&quot; -}}
+      &lt;/span&gt;&amp;nbsp;
+      &lt;span&gt;
+          {{- .WordCount -}} 字
+      &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;br&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-12 px-2 px-md-3&quot; style=&quot;font-size: 1.2rem;&quot;&gt;
+          {{ .Content }}
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/article&gt;
+  &lt;aside id=&quot;meta&quot;&gt;
+    &lt;div class=&quot;row justify-content-between py-2 py-md-3&quot;&gt;
+        {{ with .PrevInSection }}
+        &lt;div class=&quot;col-12 col-md-5&quot;&gt;
+            上一篇&lt;a href=&quot;{{.Permalink}}&quot;&gt; {{.Title}}&lt;/a&gt;
+          &lt;/span&gt;
+        &lt;/div&gt;
+        {{ end }}
+        {{ with .NextInSection }}
+            {{ if $.PrevInSection }}
+                &lt;div class=&quot;col-12 col-md-5&quot;&gt;
+                    &lt;span class=&quot;float-md-right&quot;&gt;
+            {{ else }}
+                &lt;div class=&quot;col-12&quot;&gt;
+                &lt;span&gt;
+            {{ end }}
+            下一篇
+            &lt;a href=&quot;{{.Permalink}}&quot;&gt; {{.Title}}&lt;/a&gt;
+          &lt;/span&gt;
+        &lt;/div&gt;
+        {{ end }}
+    &lt;/div&gt;
+  &lt;/aside&gt;
+&lt;/main&gt;
+{{ end }}
+</code></pre>
+
+<p><code>single.html</code>弄了些花里花俏的东西。但重点不外乎下面几个变量：</p>
+
+<ol>
+<li><code>{{ .Content }}</code>: 获取文章主要内容。</li>
+<li><code>{{ .Title }}</code>: 获取front matter中的标题。</li>
+<li><code>{{ .Permalink }}</code>: 获取文章链接。</li>
+</ol>
+
+<p>如果没有意外，现在点击任何一篇文章，都可以进去看改文章的内容了。如下：</p>
+
+<p><img src="https://codepool.oss-cn-shenzhen.aliyuncs.com/Hugotutorial/showpost.png" alt="show post view" /></p>
+
+<h4 id="2-4-404-html">2-4. 404.html</h4>
+
+<p>如果你没有忘记，在没有实现single.html的时候，如果你访问任何一篇文章，都会看到下面提示：</p>
+
+<blockquote>
+<p>404 page not found.</p>
+</blockquote>
+
+<p>这是因为你访问的页面不存在。因此，404.html的作用就是，当用户访问的页面不存在时，就展示404.html给用户。我们来看一下404.html里面的内容:</p>
+
+<pre><code>{{ define &quot;main&quot; }}
+&lt;div class=&quot;container&quot;&gt;
+    &lt;h4 class=&quot;align-center&quot;&gt;对不起，你访问的页面不存在&lt;/h4&gt;
+&lt;/div&gt;
+{{ end }}
+</code></pre>
+
+<p>由于我们现在是在测试阶段，没有开启web服务器，也没有托管到github上，所以只能手动访问这个页面了。（ps：到时候发布网站，作出相关配置时，访问不存在网页时，会自动跳转到404页面）</p>
+
+<p>404页面如下：</p>
+
+<p><img src="https://codepool.oss-cn-shenzhen.aliyuncs.com/Hugotutorial/404pageview.png" alt="404 page view" /></p>
+
+<hr />
+
+<p>本篇文章【完】，下一篇，我们聊部署网站。</p>
+<div class="container custom-copyright-style border-warning m-2 my-md-4 p-2 shadow-sm">
+    <div >
+        <span>
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-woshizuozhe"></use>
+        </svg>作者：
+        <a href="http://codepool.top/about/">不谇</a>
+        </span>
+    </div>
+    <div>
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-suoding"></use>
+        </svg>版权：此文章版权归<a href="https://codepool.top">CODEPOOL</a>所有。允许转载，但禁止商用！
+    </div>
+</div></div>
+    </div>
+  </article>
+  <div class="hr-box">
+      <div class="hr-box-sm hr-red"></div>
+      <div class="hr-box-sm hr-orange"></div>
+      <div class="hr-box-sm hr-yellow "></div>
+      <div class="hr-box-sm hr-green "></div>
+      <div class="hr-box-sm hr-blue "></div>
+      <div class="hr-box-sm hr-purple"></div>
+  </div>
+  <aside id="meta">
+    <div class="row justify-content-between py-2 py-md-3">
+        
+        <div class="col-12 col-md-5">
+          <span><svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-PrevioustrackFill"></use>
+            </svg>上一篇<a class="text-dark custom-a" href="https://busui.github.io/posts/hugo-tutorial-9/"> Hugo教程系列（九）</a>
+          </span>
+        </div>
+        
+        
+          
+              <div class="col-12 col-md-5">
+                  <span class="float-md-right">
+          
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-NexttrackFilled"></use>
+            </svg>下一篇<a class="text-dark custom-a" href="https://busui.github.io/posts/hugo-tutorial-11/"> Hugo教程系列（十一）</a>
+          </span>
+        </div>
+        
+    </div>
+  </aside>
+</main>
+
+        <footer class="custom-border-top mt-3 py-3 custom-footer">
+    <aside>
+        <span>CODEPOOL&nbsp;&COPY;&nbsp;2018-2019</span>
+    </asite>
+    <aside>
+        <span>
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-powerstation"></use>
+        </svg>
+        POWER BY <a href="https://gohugo.io/" class="custom-footer-a">HUGO</a>&shortmid;</span>
+        <span>
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-library_theme_select"></use>
+        </svg>
+        THEME BY <a href="https://github.com/Busui/gohugo-theme-yellow" class="custom-footer-a">BUSUI</a></span>
+    </aside>
+    <div class="footerest">
+        <span>
+            
+                粤ICP备19088648号-1&shortmid;
+            
+        </span>
+        <span>
+            All Rights Reverse.
+        </span>
+        
+        <span>
+                &shortmid;欢迎来访CODEPOOL，本站所有言行仅代表个人观点，无关任何其他个体/组织。
+        </span>
+        
+    </div>
+</footer>
+      </div>
+      
+<button onclick="topFunction()" id="myBtn" title="Go to top">
+    <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-top2"></use>
+    </svg>
+</button>
+
+<script>
+    
+    window.onscroll = function () {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+
+    
+    function topFunction() {
+        document.body.scrollTop = 0; 
+        document.documentElement.scrollTop = 0; 
+    }
+</script>
+      
+
+  <script src="/js/jquery-3.3.1.slim.min.js"></script>
+
+  <script src="/js/bootstrap.bundle.min.js"></script>
+
+  <script src="/js/iconfont.js"></script>
+
+  <script src="/js/highlight.pack.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+      
+  </body>
+</html>

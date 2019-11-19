@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>CODEPOOL  | Hugo教程系列（一）</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.57.0" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/css/bootstrap.min.css" rel="stylesheet">
+    
+      <link href="/css/github.css" rel="stylesheet">
+    
+      <link href="/css/style.css" rel="stylesheet">
+    
+
+
+    
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/favicon144.png">
+    
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/favicon114.png">
+    
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/img/favicon72.png">
+    
+    <link rel="apple-touch-icon-precomposed" href="/img/favicon57.png">
+    
+    <link rel="shortcut icon" href="/img/favicon32.png">
+
+    
+
+    
+    
+  </head>
+
+  <body>
+       <script>
+          if (/android/i.test(navigator.userAgent) || /(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent) || /mobile/i.test(navigator.userAgent))
+          {
+              document.body.classList.add('custom-mobile');
+          }
+       </script>
+      <div class="container px-0" id="content">
+        <header class="container" id="header-id">
+    <div class="row justify-content-center">
+        <div class="col-12 text-center">
+            <div class="my-3" style="font-size:2rem;">
+                <a href="https://busui.github.io" class="px-3 px-md-5 badge custom-badge-dark text-wrap py-1 py-md-2">CODEPOOL</a>
+            </div>
+        </div>
+        <div class="w-100"></div>
+        
+        <div>
+            <p class="text-muted text-center custom-text-muted mobile-custom-size">
+                我至今无法否认学习是一件快乐的事儿
+            </p>
+        </div>
+        
+    </div>
+    <div class="row justify-content-center">
+        <nav class="navbar navbar-expand-md justify-content-center">
+            <div class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span> 
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-xinxiaoxixiangxiajiantou"></use>
+                    </svg>
+                </span>
+            </div>
+            <div class="border-warning collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav d-flex">
+                    
+                    
+                    <li class="">
+                        <a class="nav-link custom-link-color " href="/" style="text-align: center;">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-ziyuan2"></use>
+                            </svg>
+                            <span>首页</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="">
+                        <a class="nav-link custom-link-color " href="/categories/" style="text-align: center;">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-ziyuan"></use>
+                            </svg>
+                            <span>分类</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="">
+                        <a class="nav-link custom-link-color " href="/tags/" style="text-align: center;">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-ziyuan4"></use>
+                            </svg>
+                            <span>标签</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="">
+                        <a class="nav-link custom-link-color " href="/archive/" style="text-align: center;">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-ziyuan5"></use>
+                            </svg>
+                            <span>归档</span>
+                            
+                        </a>
+                    </li>
+                    
+                    <li class="">
+                        <a class="nav-link custom-link-color " href="/about/" style="text-align: center;">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-ziyuan1"></use>
+                            </svg>
+                            <span>关于</span>
+                            
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+        
+<main class="container-fluid px-4">
+  <article id="main">
+    <h1 id="title">Hugo教程系列（一）</h1>
+    <div class="row justify-content-end mx-2 mx-sm-4">
+        
+          <span class="custom-span-meta">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-biaoqian3"></use>
+              </svg>
+              
+              <a class="custom-text-muted custom-a" href="https://busui.github.io/tags/hugo/">Hugo</a>&shortmid;
+              
+              <a class="custom-text-muted custom-a" href="https://busui.github.io/tags/%e6%95%99%e7%a8%8b/">教程</a>&shortmid;
+              
+          </span>&nbsp;
+        
+        
+          <span class="custom-span-meta">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-fenlei2"></use>
+              </svg>
+              
+              <a class="custom-text-muted custom-a" href="https://busui.github.io/categories/">Hugo教程</a>&shortmid;
+              
+          </span>&nbsp;
+        
+      <span class="custom-span-meta">
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-time"></use>
+        </svg>2019-08-14</span>&nbsp;
+      <span class="custom-span-meta">
+          <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-count"></use>
+          </svg>2056字
+      </span>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-12 px-2 px-md-3">
+          
+
+<h2 id="一些说明">一些说明</h2>
+
+<p>本教程不是从零开始教你写网站，需要你懂一些预备知识：</p>
+
+<ol>
+<li>了解常见的终端命令；</li>
+<li>了解git；</li>
+<li>了解基础的css/html知识；</li>
+</ol>
+
+<p>如果你先前有过部署hexo网站的经验，这个教程会使得你平滑地进入Hugo的世界。</p>
+
+<blockquote>
+<p>我十分希望把教程写得简洁废话少，但每个人的情况不一样，我是把讲清楚放到第一位的。所以有些内容可能会显得唠叨。见谅！</p>
+</blockquote>
+
+<hr />
+
+<p>Hugo教程系列主要介绍Hugo框架的使用方法，涉及内容有Content Management,Templates, Functions, Variables.</p>
+
+<p>同时，这个系列会从头到尾教会你编写一个真正属于你自己的主题。为了保持内容正确性，全程参考<a href="https://gohugo.io/documentation/">官方文档</a>。</p>
+
+<h2 id="快速开始">快速开始</h2>
+
+<p>以本站主题<a href="https://github.com/Busui/gohugo-theme-yellow">yellow</a>为例，快速构建出一个和本站一模一样的博客网站。</p>
+
+<aside class="alert alert-warning" role="alert"><strong>注意</strong>：本系列所有文章以macOS系统为例。如果你是其他系统，请自己参考官方<a href="https://gohugo.io/getting-started/installing">安装教程</a>。</aside>
+
+<p>在开始之前，希望你先完成<a href="https://git-scm.com/downloads">Git安装</a>。</p>
+
+<h3 id="步骤一-安装hugo">步骤一：安装Hugo</h3>
+
+<p>Homebrew是macOS上的一款相当好用的包管理器。如果你还没有安装它，可以在<a href="https://brew.sh/">Homebrew</a>官网上快速找到安装方法。</p>
+
+<p>使用brew安装Hugo：</p>
+
+<pre><code>brew install hugo
+</code></pre>
+
+<p>输入下面命令验证你的安装：</p>
+
+<pre><code>hugo version
+</code></pre>
+
+<h3 id="步骤二-创建一个新的网站">步骤二：创建一个新的网站</h3>
+
+<pre><code>hugo new site quickstart
+</code></pre>
+
+<p>上面的命令会在你当前目录下创建一个名为quickstart的新文件夹。<strong>quickstart就是你的网站的根目录</strong>(根目录是哪里是十分重要的概念)。此后的所有故事，都发生在这个目录里面。</p>
+
+<p><img src="https://codepool.oss-cn-shenzhen.aliyuncs.com/images/hugonewsitequickstart.png" alt="hugo new site quickstart" /></p>
+
+<h3 id="步骤三-添加主题">步骤三：添加主题</h3>
+
+<p>本教程采用<a href="https://github.com/Busui/gohugo-theme-yellow">yellow</a>主题，如果你想查看其他可用主题，可以在<a href="https://themes.gohugo.io/">官方主题</a>上找到。</p>
+
+<p>在安装主题之前，请确保你已经进入了你创建的网站根目录，在这里，我创建的网站根目录是quickstart：</p>
+
+<pre><code>cd quickstart
+</code></pre>
+
+<p>之后使用git直接克隆主题到对应的themes目录下：</p>
+
+<pre><code>git clone git@github.com:Busui/gohugo-theme-yellow.git themes/yellow
+</code></pre>
+
+<p><img src="https://codepool.oss-cn-shenzhen.aliyuncs.com/images/gitcloneyellow.png" alt="git clone yellow theme" /></p>
+
+<h3 id="步骤四-复制配置文件">步骤四：复制配置文件</h3>
+
+<p>如果你前面都操作正确，那么现在你就发现有两个文件：</p>
+
+<p>一个是<code>quickstart/config.toml</code>，另一个是<code>quickstart/themes/yellow/theme.toml</code>。</p>
+
+<p>接下来，你只需要把config.toml的内容先清空，然后将theme.toml的内容复制到config.toml里。</p>
+
+<h3 id="步骤五-测试主题">步骤五：测试主题</h3>
+
+<p>到了这里，其实你已经将你的网站建好了。不信？敲一下下面的命令看看：</p>
+
+<pre><code>hugo server -D
+</code></pre>
+
+<p>你应该能在这条命令下的输出信息看到一个网址，一般是<code>http://localhost:1313</code>。在浏览器访问它，就可以看到一个十分简单的页面：</p>
+
+<p><img src="https://codepool.oss-cn-shenzhen.aliyuncs.com/images/blanksite.png" alt="hugo blank site" /></p>
+
+<p>你可以尝试点击这个网站看看里面的各个页面。现在它很简陋，什么都没有，莫要慌张，你还没有创建文章呢。</p>
+
+<h3 id="步骤六-创建文章">步骤六：创建文章</h3>
+
+<p>创建文章也是无比简单，只需要一个命令：</p>
+
+<pre><code>hugo new &quot;posts/my first post.md&quot;
+</code></pre>
+
+<p>到了这里，quickstart/content/posts目录下会有一个名为<code>my first post.md</code>的新文件。用你喜欢的markdown编辑器，编写文章吧。如果你还不懂markdown语法，百度一下，10分钟内你就能学会怎么用markdown语法写文章。</p>
+
+<p>如果目前还不想学习markdown语法，或者想马上看到自己新建文章的样子，那么你可以将下面的内容复制追加到<code>my first post.md</code>文件里（注意，<code>my first post.md</code>本来已经有一些meta数据，所以这里是追加）：</p>
+
+<pre><code>### 下载Hugo
+
+```
+brew install hugo
+```
+
+### 创建网站
+
+```
+hugo new site quickstart
+```
+
+### 下载主题
+
+```
+cd quickstart &amp;&amp; git clone git@github.com:Busui/gohugo-theme-yellow.git themes/yellow
+```
+
+### 创建文章
+
+先将config.toml配置好。
+
+然后输入下面命令：
+
+```
+hugo new &quot;posts/your new post.md&quot;
+```
+
+### 启动网站
+
+```
+hugo server -D
+```
+</code></pre>
+
+<p><br></p>
+
+<p>如果刚才你没有将hugo关闭，那么现在只要你保存文件，再到浏览器查看，马上就可以看到你刚写的文章。如果你已经关闭了，先保存文件，再用<code>hugo server -D</code>命令重新开启Hugo服务器。（你要注意命令的输出，不一定每次端口都是1313）</p>
+
+<aside class="alert alert-danger" role="alert"><strong>hugo server -D</strong>开启服务器后，除非你自己关闭，否则是一直运行着的。hugo服务器会一直关注着某些重要的文件的变化（需要你按保存，才能监测到），当这些文件发生变化时，hugo服务器能够捕捉到，然后通知浏览器作出对应的更新。</aside>
+
+<p>如果你不知道选用哪个编辑器，那么这里推荐你使用vscode。事实上，本网站所有的东西都是在vscode里面完成编写的。</p>
+
+<h4 id="步骤七-更新主题">步骤七： 更新主题</h4>
+
+<p>不管主题是自己写得还是用别人的，所谓更新主题，就是将最新的主题下载下来，替换掉你themes目录下对于旧的主题。所以说更换主题的方式是多种多样的。</p>
+
+<p>这里我们使用的是最常见的方法，用版本控制软件：git。只需要进入到themes/yellow目录下，在命令行下输入：</p>
+
+<pre><code>git pull
+</code></pre>
+
+<p>一步搞定。</p>
+
+<h3 id="接下来怎么办">接下来怎么办？</h3>
+
+<p>到了这里。实际上你已经完成了你网站的建设了。如果没什么意外，整个过程不到20分钟就完成了。是不是有点惊讶，20分钟就可以搭建出一个相当不错（要看你安装的主题）的网站出来。</p>
+
+<p>对于一般的内容工作者来说，接下来的步骤就是发布网站。然后写文章，更新网站，写文章，更新网站&hellip;&hellip;</p>
+
+<p>所以，如果你是一般内容工作者，可以直接阅读<a href="https://codepool.top/posts/hugo-tutorial-11/">Hugo教程系列（十一）</a>。</p>
+
+<hr />
+
+<p>如果你想真正运营好你的网站，你就得进一步了解Hugo。比如理解Hugo的工作原理，理解函数和变量，然后，你就可以自己开发出一个属于你自己的主题。这也是本系列教程接下来要说的内容。继续吧！</p>
+<div class="container custom-copyright-style border-warning m-2 my-md-4 p-2 shadow-sm">
+    <div >
+        <span>
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-woshizuozhe"></use>
+        </svg>作者：
+        <a href="http://codepool.top/about/">不谇</a>
+        </span>
+    </div>
+    <div>
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-suoding"></use>
+        </svg>版权：此文章版权归<a href="https://codepool.top">CODEPOOL</a>所有。允许转载，但禁止商用！
+    </div>
+</div></div>
+    </div>
+  </article>
+  <div class="hr-box">
+      <div class="hr-box-sm hr-red"></div>
+      <div class="hr-box-sm hr-orange"></div>
+      <div class="hr-box-sm hr-yellow "></div>
+      <div class="hr-box-sm hr-green "></div>
+      <div class="hr-box-sm hr-blue "></div>
+      <div class="hr-box-sm hr-purple"></div>
+  </div>
+  <aside id="meta">
+    <div class="row justify-content-between py-2 py-md-3">
+        
+        <div class="col-12 col-md-5">
+          <span><svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-PrevioustrackFill"></use>
+            </svg>上一篇<a class="text-dark custom-a" href="https://busui.github.io/posts/yellow%E4%B8%BB%E9%A2%98%E7%9A%84%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/"> Yellow主题的使用说明</a>
+          </span>
+        </div>
+        
+        
+          
+              <div class="col-12 col-md-5">
+                  <span class="float-md-right">
+          
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-NexttrackFilled"></use>
+            </svg>下一篇<a class="text-dark custom-a" href="https://busui.github.io/posts/hugo-tutorial-2/"> Hugo教程系列（二）</a>
+          </span>
+        </div>
+        
+    </div>
+  </aside>
+</main>
+
+        <footer class="custom-border-top mt-3 py-3 custom-footer">
+    <aside>
+        <span>CODEPOOL&nbsp;&COPY;&nbsp;2018-2019</span>
+    </asite>
+    <aside>
+        <span>
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-powerstation"></use>
+        </svg>
+        POWER BY <a href="https://gohugo.io/" class="custom-footer-a">HUGO</a>&shortmid;</span>
+        <span>
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-library_theme_select"></use>
+        </svg>
+        THEME BY <a href="https://github.com/Busui/gohugo-theme-yellow" class="custom-footer-a">BUSUI</a></span>
+    </aside>
+    <div class="footerest">
+        <span>
+            
+                粤ICP备19088648号-1&shortmid;
+            
+        </span>
+        <span>
+            All Rights Reverse.
+        </span>
+        
+        <span>
+                &shortmid;欢迎来访CODEPOOL，本站所有言行仅代表个人观点，无关任何其他个体/组织。
+        </span>
+        
+    </div>
+</footer>
+      </div>
+      
+<button onclick="topFunction()" id="myBtn" title="Go to top">
+    <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-top2"></use>
+    </svg>
+</button>
+
+<script>
+    
+    window.onscroll = function () {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+
+    
+    function topFunction() {
+        document.body.scrollTop = 0; 
+        document.documentElement.scrollTop = 0; 
+    }
+</script>
+      
+
+  <script src="/js/jquery-3.3.1.slim.min.js"></script>
+
+  <script src="/js/bootstrap.bundle.min.js"></script>
+
+  <script src="/js/iconfont.js"></script>
+
+  <script src="/js/highlight.pack.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+      
+  </body>
+</html>
