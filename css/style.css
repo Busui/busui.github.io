@@ -231,6 +231,14 @@ a.custom-badge-dark:hover {
     border-bottom: 3px solid; */
 }
 
+.custom-buttom {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background-color: white;
+}
+
 /* for footer.html */
 .custom-footer {
     text-align: center;
