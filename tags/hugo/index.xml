@@ -2,111 +2,111 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo on CODEPOOL</title>
-    <link>https://busui.github.io/tags/hugo/</link>
+    <link>https://codepool.top/tags/hugo/</link>
     <description>Recent content in Hugo on CODEPOOL</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 12 Sep 2019 10:38:14 +0800</lastBuildDate>
     
-	<atom:link href="https://busui.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://codepool.top/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hugo教程系列（十一）</title>
-      <link>https://busui.github.io/posts/hugo-tutorial-11/</link>
+      <link>https://codepool.top/posts/hugo-tutorial-11/</link>
       <pubDate>Thu, 12 Sep 2019 10:38:14 +0800</pubDate>
       
-      <guid>https://busui.github.io/posts/hugo-tutorial-11/</guid>
+      <guid>https://codepool.top/posts/hugo-tutorial-11/</guid>
       <description>部署网站的一个很重要目的就是令得你的网站可以被所有互联网用户访问到（请自行忽略某种不可抗拒因素）。 由于Hugo网站是静态网站，基本上没涉及到什么web运行环境的部署，因此发布Hugo网站其实是相当简单</description>
     </item>
     
     <item>
       <title>Hugo教程系列（十）</title>
-      <link>https://busui.github.io/posts/hugo-tutorial-10/</link>
+      <link>https://codepool.top/posts/hugo-tutorial-10/</link>
       <pubDate>Sun, 08 Sep 2019 15:41:05 +0800</pubDate>
       
-      <guid>https://busui.github.io/posts/hugo-tutorial-10/</guid>
+      <guid>https://codepool.top/posts/hugo-tutorial-10/</guid>
       <description>本文的内容是Hugo教程系列（九）的延续。 此刻，如果访问的你的网站，就会发现，除了“关于”页面外，每个页面都可以访问了。（因为在config.toml的[taxonomies]中，你没有把about写</description>
     </item>
     
     <item>
       <title>Hugo教程系列（九）</title>
-      <link>https://busui.github.io/posts/hugo-tutorial-9/</link>
+      <link>https://codepool.top/posts/hugo-tutorial-9/</link>
       <pubDate>Thu, 05 Sep 2019 23:45:31 +0800</pubDate>
       
-      <guid>https://busui.github.io/posts/hugo-tutorial-9/</guid>
+      <guid>https://codepool.top/posts/hugo-tutorial-9/</guid>
       <description>在上一篇文章我们提过，不细分的话，其实Hugo可以分为两种页面： single page（包含Regular Pages） list page（包含Home pages，Section Pages，Taxonomy List Pages，T</description>
     </item>
     
     <item>
       <title>Hugo教程系列（八）</title>
-      <link>https://busui.github.io/posts/hugo-tutorial-8/</link>
+      <link>https://codepool.top/posts/hugo-tutorial-8/</link>
       <pubDate>Tue, 03 Sep 2019 12:50:30 +0800</pubDate>
       
-      <guid>https://busui.github.io/posts/hugo-tutorial-8/</guid>
+      <guid>https://codepool.top/posts/hugo-tutorial-8/</guid>
       <description>这篇文章所讲的内容，将正式进入编写Hugo主题的范畴。但前面文章说过，编写主题，实际上就是编写模板，所以这篇文章实际上还是说模板。 1. Hugo&amp;rsquo;s Lookup Order（Hugo模板搜索顺序） 前提：为了简单起见，我们的模板</description>
     </item>
     
     <item>
       <title>Hugo教程系列（七）</title>
-      <link>https://busui.github.io/posts/hugo-tutorial-7/</link>
+      <link>https://codepool.top/posts/hugo-tutorial-7/</link>
       <pubDate>Mon, 02 Sep 2019 20:12:42 +0800</pubDate>
       
-      <guid>https://busui.github.io/posts/hugo-tutorial-7/</guid>
+      <guid>https://codepool.top/posts/hugo-tutorial-7/</guid>
       <description>在前面我们已经学习了模板的一些基础语法。这篇文章是template介绍的第三部分，接下来我们将介绍如何给代码添加注释，如何在模板中引用config.toml文件中的配置数据和front matter中的</description>
     </item>
     
     <item>
       <title>Hugo教程系列（六）</title>
-      <link>https://busui.github.io/posts/hugo-tutorial-6/</link>
+      <link>https://codepool.top/posts/hugo-tutorial-6/</link>
       <pubDate>Sat, 31 Aug 2019 23:56:12 +0800</pubDate>
       
-      <guid>https://busui.github.io/posts/hugo-tutorial-6/</guid>
+      <guid>https://codepool.top/posts/hugo-tutorial-6/</guid>
       <description>template介绍的第二部分。接着上一篇文章，我们继续介绍template。 1. Logic （逻辑） Go模板提供最基础的Iteration（迭代）逻辑和conditional（条件）逻辑。 1-1. Iteration（</description>
     </item>
     
     <item>
       <title>Hugo教程系列（五）</title>
-      <link>https://busui.github.io/posts/hugo-tutorial-5/</link>
+      <link>https://codepool.top/posts/hugo-tutorial-5/</link>
       <pubDate>Fri, 30 Aug 2019 10:08:29 +0800</pubDate>
       
-      <guid>https://busui.github.io/posts/hugo-tutorial-5/</guid>
+      <guid>https://codepool.top/posts/hugo-tutorial-5/</guid>
       <description>Hugo使用的是go模板，但只保留了最精髓的功能。学会了go模板的相关内容后，你就可以开始编写主题了。 关于template的介绍内容实在有点多。我把它们分成3部分，这是“template介绍的第一部分</description>
     </item>
     
     <item>
       <title>Hugo教程系列（四）</title>
-      <link>https://busui.github.io/posts/hugo-tutorial-4/</link>
+      <link>https://codepool.top/posts/hugo-tutorial-4/</link>
       <pubDate>Thu, 29 Aug 2019 11:03:35 +0800</pubDate>
       
-      <guid>https://busui.github.io/posts/hugo-tutorial-4/</guid>
+      <guid>https://codepool.top/posts/hugo-tutorial-4/</guid>
       <description>这篇文章将讲解Content Sections和templates。 其实在hugo教程系列（二）我们已经谈过content sections的相关概念了。但content sections实在太重要了，我们</description>
     </item>
     
     <item>
       <title>Hugo教程系列（三）</title>
-      <link>https://busui.github.io/posts/hugo-tutorial-3/</link>
+      <link>https://codepool.top/posts/hugo-tutorial-3/</link>
       <pubDate>Mon, 26 Aug 2019 18:02:19 +0800</pubDate>
       
-      <guid>https://busui.github.io/posts/hugo-tutorial-3/</guid>
+      <guid>https://codepool.top/posts/hugo-tutorial-3/</guid>
       <description>接下来的两篇文章，我们将介绍Content Management（内容管理），所谓Content Management，就是管理你的整个网站，包括你的文章，你的模板文件&amp;hellip;&amp;hellip; Static site</description>
     </item>
     
     <item>
       <title>Hugo教程系列（二）</title>
-      <link>https://busui.github.io/posts/hugo-tutorial-2/</link>
+      <link>https://codepool.top/posts/hugo-tutorial-2/</link>
       <pubDate>Tue, 20 Aug 2019 15:43:55 +0800</pubDate>
       
-      <guid>https://busui.github.io/posts/hugo-tutorial-2/</guid>
+      <guid>https://codepool.top/posts/hugo-tutorial-2/</guid>
       <description>如果你还没有安装Hugo，请先查看Hugo教程系列（一） 看完系列一，你已经可以发布文章了。但实际上进一步操作，你还不会。这需要进一步学习，需要知道各个功能，才能掌握好Hugo。这篇文章看起来可能会吃力</description>
     </item>
     
     <item>
       <title>Hugo教程系列（一）</title>
-      <link>https://busui.github.io/posts/hugo-tutorial/</link>
+      <link>https://codepool.top/posts/hugo-tutorial/</link>
       <pubDate>Wed, 14 Aug 2019 23:44:58 +0800</pubDate>
       
-      <guid>https://busui.github.io/posts/hugo-tutorial/</guid>
+      <guid>https://codepool.top/posts/hugo-tutorial/</guid>
       <description>一些说明 本教程不是从零开始教你写网站，需要你懂一些预备知识： 了解常见的终端命令； 了解git； 了解基础的css/html知识； 如果你先前有过部署hexo网站的经验，这个教程会使得你平滑地进入Hugo的世</description>
     </item>
     

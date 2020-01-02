@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Archive on CODEPOOL</title>
-    <link>https://busui.github.io/archive/</link>
+    <link>https://codepool.top/archive/</link>
     <description>Recent content in Archive on CODEPOOL</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     
-	<atom:link href="https://busui.github.io/archive/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://codepool.top/archive/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

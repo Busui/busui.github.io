@@ -2,102 +2,111 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on CODEPOOL</title>
-    <link>https://busui.github.io/tags/</link>
+    <link>https://codepool.top/tags/</link>
     <description>Recent content in Tags on CODEPOOL</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 12 Sep 2019 10:38:14 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 02 Jan 2020 23:41:58 +0800</lastBuildDate>
     
-	<atom:link href="https://busui.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://codepool.top/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>javaIO开篇</title>
+      <link>https://codepool.top/tags/javaio%E5%BC%80%E7%AF%87/</link>
+      <pubDate>Thu, 02 Jan 2020 23:41:58 +0800</pubDate>
+      
+      <guid>https://codepool.top/tags/javaio%E5%BC%80%E7%AF%87/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Hugo</title>
-      <link>https://busui.github.io/tags/hugo/</link>
+      <link>https://codepool.top/tags/hugo/</link>
       <pubDate>Thu, 12 Sep 2019 10:38:14 +0800</pubDate>
       
-      <guid>https://busui.github.io/tags/hugo/</guid>
+      <guid>https://codepool.top/tags/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>教程</title>
-      <link>https://busui.github.io/tags/%E6%95%99%E7%A8%8B/</link>
+      <link>https://codepool.top/tags/%E6%95%99%E7%A8%8B/</link>
       <pubDate>Thu, 12 Sep 2019 10:38:14 +0800</pubDate>
       
-      <guid>https://busui.github.io/tags/%E6%95%99%E7%A8%8B/</guid>
+      <guid>https://codepool.top/tags/%E6%95%99%E7%A8%8B/</guid>
       <description></description>
     </item>
     
     <item>
       <title>部署网站</title>
-      <link>https://busui.github.io/tags/%E9%83%A8%E7%BD%B2%E7%BD%91%E7%AB%99/</link>
+      <link>https://codepool.top/tags/%E9%83%A8%E7%BD%B2%E7%BD%91%E7%AB%99/</link>
       <pubDate>Thu, 12 Sep 2019 10:38:14 +0800</pubDate>
       
-      <guid>https://busui.github.io/tags/%E9%83%A8%E7%BD%B2%E7%BD%91%E7%AB%99/</guid>
+      <guid>https://codepool.top/tags/%E9%83%A8%E7%BD%B2%E7%BD%91%E7%AB%99/</guid>
       <description></description>
     </item>
     
     <item>
       <title>编写Hugo主题</title>
-      <link>https://busui.github.io/tags/%E7%BC%96%E5%86%99hugo%E4%B8%BB%E9%A2%98/</link>
+      <link>https://codepool.top/tags/%E7%BC%96%E5%86%99hugo%E4%B8%BB%E9%A2%98/</link>
       <pubDate>Sun, 08 Sep 2019 15:41:05 +0800</pubDate>
       
-      <guid>https://busui.github.io/tags/%E7%BC%96%E5%86%99hugo%E4%B8%BB%E9%A2%98/</guid>
+      <guid>https://codepool.top/tags/%E7%BC%96%E5%86%99hugo%E4%B8%BB%E9%A2%98/</guid>
       <description></description>
     </item>
     
     <item>
       <title>template</title>
-      <link>https://busui.github.io/tags/template/</link>
+      <link>https://codepool.top/tags/template/</link>
       <pubDate>Mon, 02 Sep 2019 20:12:42 +0800</pubDate>
       
-      <guid>https://busui.github.io/tags/template/</guid>
+      <guid>https://codepool.top/tags/template/</guid>
       <description></description>
     </item>
     
     <item>
       <title>content sections</title>
-      <link>https://busui.github.io/tags/content-sections/</link>
+      <link>https://codepool.top/tags/content-sections/</link>
       <pubDate>Thu, 29 Aug 2019 11:03:35 +0800</pubDate>
       
-      <guid>https://busui.github.io/tags/content-sections/</guid>
+      <guid>https://codepool.top/tags/content-sections/</guid>
       <description></description>
     </item>
     
     <item>
       <title>content management</title>
-      <link>https://busui.github.io/tags/content-management/</link>
+      <link>https://codepool.top/tags/content-management/</link>
       <pubDate>Mon, 26 Aug 2019 18:02:19 +0800</pubDate>
       
-      <guid>https://busui.github.io/tags/content-management/</guid>
+      <guid>https://codepool.top/tags/content-management/</guid>
       <description></description>
     </item>
     
     <item>
       <title>yellow主题</title>
-      <link>https://busui.github.io/tags/yellow%E4%B8%BB%E9%A2%98/</link>
+      <link>https://codepool.top/tags/yellow%E4%B8%BB%E9%A2%98/</link>
       <pubDate>Sun, 28 Jul 2019 11:46:49 +0800</pubDate>
       
-      <guid>https://busui.github.io/tags/yellow%E4%B8%BB%E9%A2%98/</guid>
+      <guid>https://codepool.top/tags/yellow%E4%B8%BB%E9%A2%98/</guid>
       <description></description>
     </item>
     
     <item>
       <title>使用说明</title>
-      <link>https://busui.github.io/tags/%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/</link>
+      <link>https://codepool.top/tags/%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/</link>
       <pubDate>Sun, 28 Jul 2019 11:46:49 +0800</pubDate>
       
-      <guid>https://busui.github.io/tags/%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/</guid>
+      <guid>https://codepool.top/tags/%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/</guid>
       <description></description>
     </item>
     
     <item>
       <title>心情</title>
-      <link>https://busui.github.io/tags/%E5%BF%83%E6%83%85/</link>
+      <link>https://codepool.top/tags/%E5%BF%83%E6%83%85/</link>
       <pubDate>Thu, 23 Aug 2018 17:04:58 +0800</pubDate>
       
-      <guid>https://busui.github.io/tags/%E5%BF%83%E6%83%85/</guid>
+      <guid>https://codepool.top/tags/%E5%BF%83%E6%83%85/</guid>
       <description></description>
     </item>
     

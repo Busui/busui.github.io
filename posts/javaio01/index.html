@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>CODEPOOL </title>
+    <title>CODEPOOL  | JavaIO开篇</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -36,9 +36,6 @@
     
     <link rel="shortcut icon" href="/img/favicon32.png">
 
-    
-      <link href="/index.xml" rel="alternate" type="application/rss+xml" title="CODEPOOL" />
-      <link href="/index.xml" rel="feed" type="application/rss+xml" title="CODEPOOL" />
     
 
     
@@ -82,14 +79,12 @@
                 <ul class="navbar-nav d-flex">
                     
                     
-                    <li class="active">
+                    <li class="">
                         <a class="nav-link custom-link-color " href="/" style="text-align: center;">
                             <svg class="icon" aria-hidden="true">
                                 <use xlink:href="#icon-ziyuan2"></use>
                             </svg>
                             <span>首页</span>
-                            
-                                <span class="sr-only">(current)</span>
                             
                         </a>
                     </li>
@@ -141,166 +136,106 @@
 </header>
 
         
-<main class="container-fluid px-0">
-    <section>
+<main class="container-fluid px-4">
+  <article id="main">
+    <h1 id="title">JavaIO开篇</h1>
+    <div class="row justify-content-end mx-2 mx-sm-4">
+        
+          <span class="custom-span-meta">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-biaoqian3"></use>
+              </svg>
+              
+              <a class="custom-text-muted custom-a" href="https://codepool.top/tags/javaio%e5%bc%80%e7%af%87/">javaIO开篇</a>&shortmid;
+              
+          </span>&nbsp;
         
         
-        <article>
-            <div class="container-fluid mb-2 mt-2 mt-sm-4 py-2 bg-white custom-border-top position-relative">
-    <div class="row justify-content-center position-static">
-        <div class="col text-center position-static">
-            <div class="custom-sumary-title pt-1 pt-md-2 position-static">
-                <a class="custom-link-color stretched-link" href='/posts/hugo-tutorial-2/'> Hugo教程系列（二）</a>
-            </div>
-            <div class="w-100"></div>
-            <div class="custom-post-meta text-muted">
-                <span>
-                    <svg class="icon" aria-hidden="true">
-                    <use xlink:href="#icon-time"></use>
-                    </svg>2019-08-20</span>&nbsp;&nbsp;
-                <span >
-                  <svg class="icon" aria-hidden="true">
-                      <use xlink:href="#icon-count"></use>
-                  </svg>4291字
-              </span></div>
-        </div>
+          <span class="custom-span-meta">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-fenlei2"></use>
+              </svg>
+              
+              <a class="custom-text-muted custom-a" href="https://codepool.top/categories/">javaIO</a>&shortmid;
+              
+          </span>&nbsp;
+        
+      <span class="custom-span-meta">
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-time"></use>
+        </svg>2020-01-02</span>&nbsp;
+      <span class="custom-span-meta">
+          <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-count"></use>
+          </svg>467字
+      </span>
     </div>
-    
-    <img src="https://codepool.oss-cn-shenzhen.aliyuncs.com/Hugotutorial/understandHugo.png" alt="" class="img-fluid" style="max-width: 95%; box-shadow:0 0 0px #4f5522;">
-    
-</div>
+    <br>
+    <div class="row">
+      <div class="col-12 px-2 px-md-3">
+          
 
-        </article>
-        
-        <article>
-            <div class="container-fluid mb-2 mt-2 mt-sm-4 py-2 bg-white custom-border-top position-relative">
-    <div class="row justify-content-center position-static">
-        <div class="col text-center position-static">
-            <div class="custom-sumary-title pt-1 pt-md-2 position-static">
-                <a class="custom-link-color stretched-link" href='/posts/hugo-tutorial/'> Hugo教程系列（一）</a>
-            </div>
-            <div class="w-100"></div>
-            <div class="custom-post-meta text-muted">
-                <span>
-                    <svg class="icon" aria-hidden="true">
-                    <use xlink:href="#icon-time"></use>
-                    </svg>2019-08-14</span>&nbsp;&nbsp;
-                <span >
-                  <svg class="icon" aria-hidden="true">
-                      <use xlink:href="#icon-count"></use>
-                  </svg>2056字
-              </span></div>
-        </div>
+<p>这篇文章作为javaIO系列笔记的一个开篇，主要描写javaIO里面的一些<strong>重要</strong>基础，必须十分重视，多加复习。</p>
+
+<p>所谓IO，就是Input/Output，中文意思是输入/输出。在这里我希望强调一点，输入输出是相对的，当我们谈论输入输出时，我们必须找到一个中心点，然后根据这个中心点来判断数据流的方向。比如你在用迅雷下载电影，加入你把迅雷当作中心点，那么从网络下载到迅雷的电影数据就是输入，从迅雷将电影数据保存到你电脑磁盘的过程就是输出。</p>
+
+<p>上面提到一个词：数据流，或者我们可以直接称之为<strong>流</strong>，英文名称为Stream。什么意思呢？请看：</p>
+
+<blockquote>
+<p>电子流过导线时我们将流动的电子称之为电流。水流过管道时我们将流动的水称之为水流。计算机内部的数据是通过总线来流动的（数据是用电信号表示的），因此我们将这些流动的数据称之为数据流。</p>
+</blockquote>
+
+<h2 id="javaio">javaIO</h2>
+
+<p>javaIO里面的内容是十分多的。我们只需要记住最核心的几个类和接口：</p>
+
+<p><img src="https://codepool.oss-cn-shenzhen.aliyuncs.com/javaIO/IO01_01.png" alt="" /></p>
+
+<h2 id="流分类">流分类</h2>
+
+<p><img src="https://codepool.oss-cn-shenzhen.aliyuncs.com/javaIO/IO01_02.png" alt="" /></p>
+
+<p>节点流和处理流的关系：
+1. 节点流处于IO操作的第一线，所有操作肯定都是基于节点流的；
+2. 处理流可以对其他流进行处理，这么作的目的是提高对流操作的灵活性或者效率。</p>
+<div class="container custom-copyright-style border-warning m-2 my-md-4 p-2 shadow-sm">
+    <div >
+        <span>
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-woshizuozhe"></use>
+        </svg>作者：
+        <a href="http://codepool.top/about/">BUSUI</a>
+        </span>
     </div>
-    
-    <img src="https://codepool.oss-cn-shenzhen.aliyuncs.com/Hugotutorial/hugo1-bg.png" alt="" class="img-fluid" style="max-width: 95%; box-shadow:0 0 0px #4f5522;">
-    
-</div>
-
-        </article>
-        
-        <article>
-            <div class="container-fluid mb-2 mt-2 mt-sm-4 py-2 bg-white custom-border-top position-relative">
-    <div class="row justify-content-center position-static">
-        <div class="col text-center position-static">
-            <div class="custom-sumary-title pt-1 pt-md-2 position-static">
-                <a class="custom-link-color stretched-link" href='/posts/yellow%E4%B8%BB%E9%A2%98%E7%9A%84%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/'> Yellow主题的使用说明</a>
-            </div>
-            <div class="w-100"></div>
-            <div class="custom-post-meta text-muted">
-                <span>
-                    <svg class="icon" aria-hidden="true">
-                    <use xlink:href="#icon-time"></use>
-                    </svg>2019-07-28</span>&nbsp;&nbsp;
-                <span >
-                  <svg class="icon" aria-hidden="true">
-                      <use xlink:href="#icon-count"></use>
-                  </svg>1623字
-              </span></div>
-        </div>
+    <div>
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-suoding"></use>
+        </svg>版权：此文章版权归<a href="https://codepool.top">CODEPOOL</a>所有。允许转载，但禁止商用！
     </div>
-    
-    <img src="https://codepool.oss-cn-shenzhen.aliyuncs.com/images/blanksite.png" alt="" class="img-fluid" style="max-width: 95%; box-shadow:0 0 0px #4f5522;">
-    
-</div>
-
-        </article>
-        
-        <article>
-            <div class="container-fluid mb-2 mt-2 mt-sm-4 py-2 bg-white custom-border-top position-relative">
-    <div class="row justify-content-center position-static">
-        <div class="col text-center position-static">
-            <div class="custom-sumary-title pt-1 pt-md-2 position-static">
-                <a class="custom-link-color stretched-link" href='/posts/noisy-day/'> 幸好杯盖不会说话</a>
-            </div>
-            <div class="w-100"></div>
-            <div class="custom-post-meta text-muted">
-                <span>
-                    <svg class="icon" aria-hidden="true">
-                    <use xlink:href="#icon-time"></use>
-                    </svg>2018-08-23</span>&nbsp;&nbsp;
-                <span >
-                  <svg class="icon" aria-hidden="true">
-                      <use xlink:href="#icon-count"></use>
-                  </svg>560字
-              </span></div>
-        </div>
+</div></div>
     </div>
-    
-    <img src="https://codepool.oss-cn-shenzhen.aliyuncs.com/life/cup.png" alt="" class="img-fluid" style="max-width: 95%; box-shadow:0 0 0px #4f5522;">
-    
-</div>
-
-        </article>
+  </article>
+  <div class="hr-box">
+      <div class="hr-box-sm hr-red"></div>
+      <div class="hr-box-sm hr-orange"></div>
+      <div class="hr-box-sm hr-yellow "></div>
+      <div class="hr-box-sm hr-green "></div>
+      <div class="hr-box-sm hr-blue "></div>
+      <div class="hr-box-sm hr-purple"></div>
+  </div>
+  <aside id="meta">
+    <div class="row justify-content-between py-2 py-md-3">
         
-    </section>
-    <div class="row justify-content-center mt-4 mt-md-5">
-
-<ul class="pagination">
-    
-    <li class="page-item">
-        <a href="/" class="page-link" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
-    </li>
-    
-    <li class="page-item">
-    <a href="/" class="page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
-    </li>
-    
-    
-    
-    
-    
-    
-    
+        <div class="col-12 col-md-5">
+          <span><svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-PrevioustrackFill"></use>
+            </svg>上一篇<a class="text-dark custom-a" href="https://codepool.top/posts/hugo-tutorial-11/"> Hugo教程系列（十一）</a>
+          </span>
+        </div>
         
         
-    
-    
-    <li class="page-item"><a class="page-link" href="/">1</a></li>
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    <li class="page-item active"><a class="page-link" href="/page/2/">2</a></li>
-    
-    
-    <li class="page-item disabled">
-    <a  class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
-    </li>
-    
-    <li class="page-item">
-        <a href="/page/2/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
-    </li>
-    
-</ul>
-
-</div>
+    </div>
+  </aside>
 </main>
 
         <footer class="custom-border-top mt-3 py-3 custom-footer">

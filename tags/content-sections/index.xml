@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>content sections on CODEPOOL</title>
-    <link>https://busui.github.io/tags/content-sections/</link>
+    <link>https://codepool.top/tags/content-sections/</link>
     <description>Recent content in content sections on CODEPOOL</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 29 Aug 2019 11:03:35 +0800</lastBuildDate>
     
-	<atom:link href="https://busui.github.io/tags/content-sections/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://codepool.top/tags/content-sections/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hugo教程系列（四）</title>
-      <link>https://busui.github.io/posts/hugo-tutorial-4/</link>
+      <link>https://codepool.top/posts/hugo-tutorial-4/</link>
       <pubDate>Thu, 29 Aug 2019 11:03:35 +0800</pubDate>
       
-      <guid>https://busui.github.io/posts/hugo-tutorial-4/</guid>
+      <guid>https://codepool.top/posts/hugo-tutorial-4/</guid>
       <description>这篇文章将讲解Content Sections和templates。 其实在hugo教程系列（二）我们已经谈过content sections的相关概念了。但content sections实在太重要了，我们</description>
     </item>
     

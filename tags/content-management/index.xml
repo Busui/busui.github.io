@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>content management on CODEPOOL</title>
-    <link>https://busui.github.io/tags/content-management/</link>
+    <link>https://codepool.top/tags/content-management/</link>
     <description>Recent content in content management on CODEPOOL</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Mon, 26 Aug 2019 18:02:19 +0800</lastBuildDate>
     
-	<atom:link href="https://busui.github.io/tags/content-management/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://codepool.top/tags/content-management/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hugo教程系列（三）</title>
-      <link>https://busui.github.io/posts/hugo-tutorial-3/</link>
+      <link>https://codepool.top/posts/hugo-tutorial-3/</link>
       <pubDate>Mon, 26 Aug 2019 18:02:19 +0800</pubDate>
       
-      <guid>https://busui.github.io/posts/hugo-tutorial-3/</guid>
+      <guid>https://codepool.top/posts/hugo-tutorial-3/</guid>
       <description>接下来的两篇文章，我们将介绍Content Management（内容管理），所谓Content Management，就是管理你的整个网站，包括你的文章，你的模板文件&amp;hellip;&amp;hellip; Static site</description>
     </item>
     
