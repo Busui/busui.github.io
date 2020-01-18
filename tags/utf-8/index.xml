@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>UTF-8 on CODEPOOL</title>
+    <link>https://codepool.top/tags/utf-8/</link>
+    <description>Recent content in UTF-8 on CODEPOOL</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 17 Jan 2020 00:20:26 +0800</lastBuildDate>
+    
+	<atom:link href="https://codepool.top/tags/utf-8/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Unicode知识梳理</title>
+      <link>https://codepool.top/posts/noteofunicode/</link>
+      <pubDate>Fri, 17 Jan 2020 00:20:26 +0800</pubDate>
+      
+      <guid>https://codepool.top/posts/noteofunicode/</guid>
+      <description>基础知识 一个血淋淋的现实是：计算机只能处理数字。（计算机的CPU和内存只能处理二进制形式的数字） 在计算机被发明的初期，伟大的科学家们就是用二进制和计算机交流的。随着输出设备（例如屏幕/打印机）的出现，</description>
+    </item>
+    
+  </channel>
+</rss>
