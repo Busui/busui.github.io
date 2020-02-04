@@ -6,10 +6,19 @@
     <description>Recent content in Posts on CODEPOOL</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 17 Jan 2020 00:20:26 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 04 Feb 2020 13:07:13 +0800</lastBuildDate>
     
 	<atom:link href="https://codepool.top/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20200204-01A New Stage</title>
+      <link>https://codepool.top/posts/a-new-stage/</link>
+      <pubDate>Tue, 04 Feb 2020 13:07:13 +0800</pubDate>
+      
+      <guid>https://codepool.top/posts/a-new-stage/</guid>
+      <description>这是我写的一篇博客</description>
+    </item>
     
     <item>
       <title>Unicode知识梳理</title>

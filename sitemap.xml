@@ -3,23 +3,38 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://codepool.top/posts/a-new-stage/</loc>
+    <lastmod>2020-02-04T13:07:13+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://codepool.top/categories/</loc>
-    <lastmod>2020-01-17T00:20:26+08:00</lastmod>
+    <lastmod>2020-02-04T13:07:13+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://codepool.top/</loc>
-    <lastmod>2020-01-17T00:20:26+08:00</lastmod>
+    <lastmod>2020-02-04T13:07:13+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://codepool.top/posts/</loc>
-    <lastmod>2020-01-17T00:20:26+08:00</lastmod>
+    <lastmod>2020-02-04T13:07:13+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://codepool.top/tags/</loc>
-    <lastmod>2020-01-17T00:20:26+08:00</lastmod>
+    <lastmod>2020-02-04T13:07:13+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://codepool.top/tags/%E5%B9%B4%E6%80%BB%E7%BB%93/</loc>
+    <lastmod>2020-02-04T13:07:13+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://codepool.top/categories/%E5%BF%83%E6%83%85%E8%AE%B0%E5%BD%95/</loc>
+    <lastmod>2020-02-04T13:07:13+08:00</lastmod>
   </url>
   
   <url>
@@ -80,11 +95,6 @@
   <url>
     <loc>https://codepool.top/tags/javaio%E5%BC%80%E7%AF%87/</loc>
     <lastmod>2020-01-02T23:41:58+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://codepool.top/categories/%E5%BF%83%E6%83%85%E8%AE%B0%E5%BD%95/</loc>
-    <lastmod>2019-10-10T20:33:06+08:00</lastmod>
   </url>
   
   <url>
