@@ -3,11 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://codepool.top/posts/a-new-stage/</loc>
-    <lastmod>2020-02-04T13:07:13+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://codepool.top/categories/</loc>
     <lastmod>2020-02-04T13:07:13+08:00</lastmod>
   </url>
@@ -34,6 +29,11 @@
   
   <url>
     <loc>https://codepool.top/categories/%E5%BF%83%E6%83%85%E8%AE%B0%E5%BD%95/</loc>
+    <lastmod>2020-02-04T13:07:13+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://codepool.top/posts/a-new-stage/</loc>
     <lastmod>2020-02-04T13:07:13+08:00</lastmod>
   </url>
   
@@ -70,16 +70,6 @@
   <url>
     <loc>https://codepool.top/categories/%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81/</loc>
     <lastmod>2020-01-17T00:20:26+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://codepool.top/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/</loc>
-    <lastmod>2020-01-14T14:57:07+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://codepool.top/tags/%E9%BB%98%E8%AE%A4/</loc>
-    <lastmod>2020-01-14T14:57:07+08:00</lastmod>
   </url>
   
   <url>
