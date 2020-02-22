@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>java日记 on CODEPOOL</title>
+    <link>https://codepool.top/categories/java%E6%97%A5%E8%AE%B0/</link>
+    <description>Recent content in java日记 on CODEPOOL</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 22 Feb 2020 22:31:41 +0800</lastBuildDate>
+    
+	<atom:link href="https://codepool.top/categories/java%E6%97%A5%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>java中的基本数据类型</title>
+      <link>https://codepool.top/posts/java00/</link>
+      <pubDate>Sat, 22 Feb 2020 22:31:41 +0800</pubDate>
+      
+      <guid>https://codepool.top/posts/java00/</guid>
+      <description>这是我写的一篇博客</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -6,10 +6,19 @@
     <description>Recent content in Categories on CODEPOOL</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 19 Feb 2020 14:33:42 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 22 Feb 2020 22:31:41 +0800</lastBuildDate>
     
 	<atom:link href="https://codepool.top/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>java日记</title>
+      <link>https://codepool.top/categories/java%E6%97%A5%E8%AE%B0/</link>
+      <pubDate>Sat, 22 Feb 2020 22:31:41 +0800</pubDate>
+      
+      <guid>https://codepool.top/categories/java%E6%97%A5%E8%AE%B0/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>数据结构</title>
@@ -17,15 +26,6 @@
       <pubDate>Wed, 19 Feb 2020 14:33:42 +0800</pubDate>
       
       <guid>https://codepool.top/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>未分类</title>
-      <link>https://codepool.top/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/</link>
-      <pubDate>Sat, 08 Feb 2020 21:42:49 +0800</pubDate>
-      
-      <guid>https://codepool.top/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/</guid>
       <description></description>
     </item>
     

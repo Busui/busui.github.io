@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>CODEPOOL  | 数据结构开篇</title>
+    <title>CODEPOOL  | java中的基本数据类型</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -138,7 +138,7 @@
         
 <main class="container-fluid px-4">
   <article id="main">
-    <h1 id="title">数据结构开篇</h1>
+    <h1 id="title">java中的基本数据类型</h1>
     <div class="row justify-content-end mx-2 mx-sm-4">
         
           <span class="custom-span-meta">
@@ -146,7 +146,9 @@
                 <use xlink:href="#icon-biaoqian3"></use>
               </svg>
               
-              <a class="custom-text-muted custom-a" href="https://codepool.top/tags/%e6%95%b0%e6%8d%ae%e7%bb%93%e6%9e%84%e5%bc%80%e7%af%87/">数据结构开篇</a>&shortmid;
+              <a class="custom-text-muted custom-a" href="https://codepool.top/tags/java/">java</a>&shortmid;
+              
+              <a class="custom-text-muted custom-a" href="https://codepool.top/tags/%e5%9f%ba%e6%9c%ac%e6%95%b0%e6%8d%ae%e7%b1%bb%e5%9e%8b/">基本数据类型</a>&shortmid;
               
           </span>&nbsp;
         
@@ -156,18 +158,18 @@
                 <use xlink:href="#icon-fenlei2"></use>
               </svg>
               
-              <a class="custom-text-muted custom-a" href="https://codepool.top/categories/">数据结构</a>&shortmid;
+              <a class="custom-text-muted custom-a" href="https://codepool.top/categories/">java日记</a>&shortmid;
               
           </span>&nbsp;
         
       <span class="custom-span-meta">
         <svg class="icon" aria-hidden="true">
           <use xlink:href="#icon-time"></use>
-        </svg>2020-02-19</span>&nbsp;
+        </svg>2020-02-22</span>&nbsp;
       <span class="custom-span-meta">
           <svg class="icon" aria-hidden="true">
               <use xlink:href="#icon-count"></use>
-          </svg>1847字
+          </svg>1194字
       </span>
     </div>
     <br>
@@ -175,104 +177,113 @@
       <div class="col-12 px-2 px-md-3">
           
 
-<p>维基百科里对数据结构的定义如下：</p>
+<p>（PS全系列java日记参考core java volumn 1 Fundamentals，11th edition）</p>
 
 <blockquote>
-<p>In computer science, a data structure is a data organization, management, and storage format that enables efficient access and modification. More precisely, a data structure is a collection of data values, the relationships among them, and the functions or operations that can be applied to the data.</p>
+<p>学习编程五年，越来越意识到，最基础的东西，是十分重要的，每一个细节，慢慢品尝，都是美妙。这也就是我会写这么基础的日记记录的原因。</p>
 </blockquote>
 
-<p>虽然不提倡把这个定义死记硬背下来，但一定要意识到在这个定义里的信息量之巨大，非常值得我们花时间慢慢分析出这句话的含义。</p>
+<p><strong>Java is a strongly typed language</strong>. This means that every variable must have a declared type. There are eight primitive types in Java. Four of them are integer types; two are floating-point number types; one is the character type char, used for code units in the Unicode encoding scheme; and one is a boolean type for truth values.</p>
 
-<p>首先，分析第一句话：</p>
+<p><img src="https://codepool.oss-cn-shenzhen.aliyuncs.com/20200222-01/20200222-01bg.png" alt="" /></p>
 
-<blockquote>
-<p>In computer science(说明我们讨论的数据结构是限定在计算机科学这个领域的), a data structure is a data organization, management, and storage format that enables efficient access and modification. (这里提到数据结构这个学科研究的主要内容：1. 组织数据， 2. 管理数据， 3. 一个能够高效访问/修改数据的存储格式)。</p>
-</blockquote>
+<h3 id="integer-types">Integer Types</h3>
 
-<p>至此，我们可以小小归纳一番，数据结构是一个学科，这个学科研究的主要内容是：</p>
+<p>The integer types are for numbers without fractional parts. Negative values are allowed.Java provides the four integer types:</p>
 
 <ol>
-<li>如何组织数据？</li>
-<li>怎样管理数据？</li>
-<li>在内存中使用何种存储格式才能使得程序能够高效访问/修改数据？</li>
+<li>byte: 1 byte(–128 to 127);</li>
+<li>short: 2 bytes (–32,768 to 32,767);</li>
+<li>int: 4 bytes (–2,147,483,648 to 2,147,483,647 (just over 2 billion));</li>
+<li>long; 8 bytes (–9,223,372,036,854,775,808 to 9,223,372,036,854,775,807);</li>
 </ol>
 
-<h3 id="数据从哪里来-到哪里去">数据从哪里来，到哪里去？</h3>
+<p>In most situations, the int type is the most practical. If you want to represent the number of inhabitants of our planet, you’ll need to resort to a long. The byte and short types are mainly intended for specialized applications, such as low-level file handling, or for large arrays when storage space is at a premium.</p>
 
-<p>我们在学习数据结构的时候，一直在说数据，那么我们不妨问一下自己：（在计算机科学里）数据到底是哪里来的，数据最终又到哪里去？其实有两条路径：</p>
+<p>Under Java, the ranges of the integer types <strong>do not</strong> depend on the machine on which you will be running the Java code.</p>
+
+<p>Long integer numbers have a suffix L or l (for example, 4000000000L). Hexadecimal numbers have a prefix 0x or 0X (for example, 0xCAFE). Octal numbers have a prefix 0 (for example, 010 is 8)—naturally, this can be confusing, so we recommend against the use of octal constants.</p>
+
+<p>Starting with Java 7, you can write numbers in binary, with a prefix 0b or 0B. For example, 0b1001 is 9. Also starting with Java 7, you can add underscores to number literals, such as 1_000_000 (or 0b1111_0100_0010_0100_0000) to denote one million. <em>The underscores are for human eyes only</em>. The Java compiler simply removes them.</p>
+
+<h3 id="floating-point-types">Floating-Point Types</h3>
+
+<p>The floating-point types denote numbers with fractional parts. The two floating-point types are shown:</p>
 
 <ol>
-<li>从人类世界来，到计算机世界里去；</li>
-<li>从计算机世界来，到人类世界中去；</li>
+<li>float: 4 bytes (Approximately ±3.40282347E+38F (6–7 significant decimal digits));</li>
+<li>double: 8 bytes (Approximately ±1.79769313486231570E+308 (15 significant decimal digits))</li>
 </ol>
 
-<p>因为人类和计算机是完全不同的物种，计算机是只懂二进制的，而面对海量的二进制时，人类本身是无能为力的（我们对二进制不敏感，甚至大多数人不懂二进制），因此需要使用一系列的操作使得人类的数据最终能够存放到计算机里（反过来说，计算机存放的数据最终能被人类利用）。我用下图大致描绘一下这个过程：（ps：为了简单化，下图只给出了数据从人类世界到计算机世界的大致过程）</p>
+<p>The name double refers to the fact that these numbers have twice the precision of the float type. (Some people call these double-precision numbers.) The limited precision of float (6–7 significant digits) is simply not sufficient for many situations. Use float values only when you work with a library that requires them, or when you need to store a very large number of them.</p>
 
-<p><img src="https://codepool.oss-cn-shenzhen.aliyuncs.com/20200219-01/20200219-01-01.png" alt="" /></p>
+<p>Numbers of type float have a suffix F or f (for example, 3.14F). <strong>Floating-point numbers without an F suffix (such as 3.14) are always considered to be of type double.</strong> You can optionally supply the D or d suffix (for example, 3.14D).</p>
 
-<p>当然，上面阐述的内容不太专业，下面是更加专业的说法：</p>
+<hr />
 
-<blockquote>
-<p>数据结构的研究内容是构造复杂软件系统的基础，它的核心技术是<strong>分解与抽象</strong>。通过分解可以划分出数据的3个层次,再通过抽象，舍弃数据元素的具体内容，就得到逻辑结构。类似地，通过分解将处理要求划分成各种功能，再通过抽象舍弃实现细节，就得到运算的定义。上述两个方面的结合可以将问题变换为数据结构。这是一个从具体（即具体问题）到抽象（即数据结构）的过程。然后，通过增加对实现细节的考虑进一步得到存储结构和实现运算，从而完成设计任务。这是一个从抽象（即数据结构）到具体（即具体实现）的过程。</p>
-</blockquote>
+<p>All floating-point computations follow the IEEE 754 specification. In particular, there are three special floating-point values to denote overflows and errors:</p>
 
-<p>我们先提取重要概念（我们希望你好好看下面的两段话）：</p>
+<ul>
+<li>Positive infinity</li>
+<li>Negative infinity</li>
+<li>NaN (not a number)</li>
+</ul>
 
-<ol>
-<li>从具体（即现实世界存在的具体问题）到抽象（即数据结构）的过程：通过分解可以划分出数据的3个层次,再通过抽象，舍弃数据元素的具体内容，就得到逻辑结构。类似地，通过分解将处理要求划分成各种功能，再通过抽象舍弃实现细节，就得到运算的定义。上述两个方面的结合可以将问题变换为数据结构。</li>
-<li>从抽象（即数据结构）到具体（即计算机世界里的具体实现）的过程：通过增加对实现细节的考虑进一步得到存储结构和实现运算，从而完成设计任务。</li>
-</ol>
+<p>For example, the result of dividing a positive number by 0 is positive infinity. Computing 0/0 or the square root of a negative number yields NaN.</p>
 
-<p><img src="https://codepool.oss-cn-shenzhen.aliyuncs.com/20200219-01/20200219-01-02.png" alt="" /></p>
+<hr />
 
-<p>接下来，要对上面两点分阶段讨论。</p>
+<p>The constants Double.POSITIVE_INFINITY, Double.NEGATIVE_INFINITY, and Double.NaN (as well as corresponding Float constants) represent these special values, but they are rarely used in practice. In particular, you cannot test:</p>
 
-<h3 id="逻辑结构">逻辑结构</h3>
+<pre><code class="language-java">if (x == Double.NaN)    // is never true
+</code></pre>
 
-<p>从具体（即现实世界存在的具体问题）到抽象（即数据结构）的过程中，我们需要找出数据元素之间的逻辑关系，得到逻辑结构。</p>
+<p>to check whether a particular result equals Double.NaN. All “not a number” values are considered distinct. However, you can use the Double.isNaN
+method:</p>
 
-<p>逻辑结构有两大类：</p>
+<pre><code class="language-java">if (Double.isNaN(x)) // check whether x is &quot;not a number&quot;
+</code></pre>
 
-<ol>
-<li>线性结构：数据结构中的元素存在一对一的相互关系；</li>
-<li>非线性结构：数据结构中的元素不是存在一对一的相互关系。</li>
-</ol>
+<hr />
 
-<p>具体的分类如下：</p>
+<p>Floating-point numbers are not suitable for financial calculations in which roundoff errors cannot be tolerated. For example, the command
+<code>System.out.println(2.0 - 1.1)</code> prints <code>0.8999999999999999</code>, not <code>0.9</code> as you would expect. Such roundoff errors are caused by the fact that floatingpoint numbers are represented in the binary number system. There is no precise binary representation of the fraction <sup>1</sup>&frasl;<sub>10</sub>, just as there is no accurate representation of the fraction <sup>1</sup>&frasl;<sub>3</sub> in the decimal system. If you need precise numerical computations without roundoff errors, use the BigDecimal class, which is introduced later in this chapter.</p>
 
-<p><img src="https://codepool.oss-cn-shenzhen.aliyuncs.com/20200219-01/20200219-01-03.png" alt="" /></p>
+<h3 id="the-char-type">The char Type</h3>
 
-<h3 id="存储结构-又称物理结构">存储结构（又称物理结构）</h3>
+<p>The char type was originally intended to describe individual characters. However, this is no longer the case. Nowadays, <strong>some Unicode characters can be described with one char value, and other Unicode characters require two char values.</strong></p>
 
-<p>从抽象（即数据结构）到具体（即计算机世界里的具体实现）的过程中，我们会得到<strong>具体的运算和存储结构</strong>。</p>
+<p><code>Literal values of type char</code> are enclosed in single quotes. For example, &lsquo;A&rsquo; is a character constant with value 65. It is different from &ldquo;A&rdquo;, a string containing a single character.</p>
 
-<p>具体的运算是和算法相关的。</p>
+<p>Values of type <code>char</code> can be expressed as hexadecimal values that run from \u0000 to \uFFFF. For example, \u2122 is the trademark symbol (™) and \u03C0 is the Greek letter pi (π).</p>
 
-<p>而存储结构则有两大类：</p>
+<hr />
 
-<ol>
-<li>顺序存储结构：借助元素在存储器中的相对位置来表示数据元素之间的逻辑关系；</li>
-<li>非顺序存储结构：借助指示元素存储地址的指针表示数据元素之间的逻辑关系。</li>
-</ol>
+<p>Besides the \u escape sequences, there are several escape sequences for special characters, such as <code>\b</code>, <code>\t</code>&hellip; You can use these escape sequences inside quoted character literals and strings, such as &lsquo;\u2122&rsquo; or &ldquo;Hello\n&rdquo;. The \u escape sequence (but none of the  other escape sequences) can even be used outside quoted character constants and strings. For example:</p>
 
-<h3 id="逻辑结构和存储结构的联系">逻辑结构和存储结构的联系</h3>
+<pre><code class="language-java">public static void main(String\u005B\u005D args)
+</code></pre>
 
-<p>以前学习数据结构的时候，总以为数据结构里的<code>逻辑结构</code>和<code>存储结构</code>只是按不同的方向去分类而已，它们本身是没什么联系的。随着时间推移，我才意识到，其实<code>逻辑结构</code>和<code>存储结构</code>是紧密联系在一起的，它们是编写程序时的不同阶段：</p>
+<p>is perfectly legal—\u005B and \u005D are the encodings for [ and ].</p>
 
-<blockquote>
-<p>我们从现实世界得到数据的时候，根据这些数据之间的联系，我们会<strong>先得到逻辑结构</strong>，然后<strong>根据逻辑结构，我们会得到恰当的存储结构</strong>。</p>
-</blockquote>
+<hr />
 
-<p>比如：我们有一个银行的排队系统需要完成，我们现对银行里排队业务进行分析，因为一个人一个人轮着来，所以很容易确定应该是线性结构，接下来我们分析到数据元素（人）之间的联系是“先进先出”，因此我们将队列作为我们的逻辑结构（此时得到了逻辑结构），之后对队列这个逻辑结构进行分析：</p>
+<p>Unicode escape sequences are processed before the code is parsed. For example, &ldquo;\u0022+\u0022&rdquo; is not a string consisting of a plus sign surrounded by
+quotation marks (U+0022). Instead, the \u0022 are converted into &ldquo; before parsing, yielding &ldquo;&rdquo;+&ldquo;&rdquo;, or an empty string. Even more insidiously, you must beware of \u inside comments. The comment:</p>
 
-<ol>
-<li>如果觉得它该使用顺序存储结构，我们就选用数组模拟队列；</li>
-<li>如果觉得它该使用非顺序存储结构，我们就选用指针。</li>
-</ol>
+<pre><code class="language-java">// \u000A is a newline
+</code></pre>
 
-<blockquote>
-<p>数据的逻辑结构和物理结构是数据结构的两个密切相关的方面，同一逻辑结构可以对应不同的存储结构。算法的设计取决于数据的逻辑结构，而算法的实现依赖于指定的存储结构。</p>
-</blockquote>
+<p>yields a syntax error since \u000A is replaced with a newline when the program is read. Similarly, a comment</p>
+
+<pre><code class="language-java">// look inside c:\users
+</code></pre>
+
+<p>yields a syntax error because the \u is not followed by four hex digits</p>
+
+<h3 id="the-boolean-type">The boolean Type</h3>
+
+<p>The boolean type has two values, false and true. It is used for evaluating logical conditions. <strong>You cannot convert between integers and boolean values.</strong></p>
 <div class="container custom-copyright-style border-warning m-2 my-md-4 p-2 shadow-sm">
     <div >
         <span>
@@ -304,20 +315,10 @@
         <div class="col-12 col-md-5">
           <span><svg class="icon" aria-hidden="true">
               <use xlink:href="#icon-PrevioustrackFill"></use>
-            </svg>上一篇<a class="text-dark custom-a" href="https://codepool.top/posts/a-new-stage/"> 美好的开始</a>
+            </svg>上一篇<a class="text-dark custom-a" href="https://codepool.top/posts/datastructure00/"> 数据结构开篇</a>
           </span>
         </div>
         
-        
-          
-              <div class="col-12 col-md-5">
-                  <span class="float-md-right">
-          
-            <svg class="icon" aria-hidden="true">
-              <use xlink:href="#icon-NexttrackFilled"></use>
-            </svg>下一篇<a class="text-dark custom-a" href="https://codepool.top/posts/java00/"> java中的基本数据类型</a>
-          </span>
-        </div>
         
     </div>
   </aside>
