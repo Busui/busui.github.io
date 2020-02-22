@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>CODEPOOL  | 美好的开始</title>
+    <title>CODEPOOL  | 数据结构开篇</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -138,7 +138,7 @@
         
 <main class="container-fluid px-4">
   <article id="main">
-    <h1 id="title">美好的开始</h1>
+    <h1 id="title">数据结构开篇</h1>
     <div class="row justify-content-end mx-2 mx-sm-4">
         
           <span class="custom-span-meta">
@@ -146,7 +146,7 @@
                 <use xlink:href="#icon-biaoqian3"></use>
               </svg>
               
-              <a class="custom-text-muted custom-a" href="https://codepool.top/tags/%e5%b9%b4%e6%80%bb%e7%bb%93/">年总结</a>&shortmid;
+              <a class="custom-text-muted custom-a" href="https://codepool.top/tags/%e6%95%b0%e6%8d%ae%e7%bb%93%e6%9e%84%e5%bc%80%e7%af%87/">数据结构开篇</a>&shortmid;
               
           </span>&nbsp;
         
@@ -156,18 +156,18 @@
                 <use xlink:href="#icon-fenlei2"></use>
               </svg>
               
-              <a class="custom-text-muted custom-a" href="https://codepool.top/categories/">心情记录</a>&shortmid;
+              <a class="custom-text-muted custom-a" href="https://codepool.top/categories/">数据结构</a>&shortmid;
               
           </span>&nbsp;
         
       <span class="custom-span-meta">
         <svg class="icon" aria-hidden="true">
           <use xlink:href="#icon-time"></use>
-        </svg>2020-02-04</span>&nbsp;
+        </svg>2020-02-19</span>&nbsp;
       <span class="custom-span-meta">
           <svg class="icon" aria-hidden="true">
               <use xlink:href="#icon-count"></use>
-          </svg>310字
+          </svg>1847字
       </span>
     </div>
     <br>
@@ -175,29 +175,104 @@
       <div class="col-12 px-2 px-md-3">
           
 
-<blockquote>
-<p>2020年已过1/12，时间匆匆。在2019里做了一年的无头苍蝇，再经过201912-202001为期两个月的心态休整，我的心境才趋于平静，我明白了，我该从头开始，从最简单的东西开始，好好学习。</p>
-</blockquote>
-
-<h3 id="2019年的小总结">2019年的小总结</h3>
-
-<p>在2019年期间，我休整了很多次，彻彻底底地吃喝玩乐。每次卯起来的那一点想读书的精气神，非常容易被击垮，然后再进入新一轮的吃喝玩乐。丧失了读完一本书的能力，我成了无根浮萍。</p>
-
-<p>吃喝玩乐并没有带给我多少快乐，换来的是身体和精神方面的沉痛代价，是真真正正在吃苦头的，愧疚和迷茫的刀锋无时无刻对准我的心脏，我坐立不安。</p>
+<p>维基百科里对数据结构的定义如下：</p>
 
 <blockquote>
-<p>有的人吃苦，就只是在吃苦而已。</p>
+<p>In computer science, a data structure is a data organization, management, and storage format that enables efficient access and modification. More precisely, a data structure is a collection of data values, the relationships among them, and the functions or operations that can be applied to the data.</p>
 </blockquote>
 
-<p>上面这句话说的就是我吧。</p>
+<p>虽然不提倡把这个定义死记硬背下来，但一定要意识到在这个定义里的信息量之巨大，非常值得我们花时间慢慢分析出这句话的含义。</p>
 
-<h3 id="2020年">2020年</h3>
+<p>首先，分析第一句话：</p>
 
 <blockquote>
-<p>你是喜欢读书的，就做你喜欢做的事吧。</p>
+<p>In computer science(说明我们讨论的数据结构是限定在计算机科学这个领域的), a data structure is a data organization, management, and storage format that enables efficient access and modification. (这里提到数据结构这个学科研究的主要内容：1. 组织数据， 2. 管理数据， 3. 一个能够高效访问/修改数据的存储格式)。</p>
 </blockquote>
 
-<p><img src="https://codepool.oss-cn-shenzhen.aliyuncs.com/20200204-01/20200204-01-01.png" alt="20200204-01-01" /></p>
+<p>至此，我们可以小小归纳一番，数据结构是一个学科，这个学科研究的主要内容是：</p>
+
+<ol>
+<li>如何组织数据？</li>
+<li>怎样管理数据？</li>
+<li>在内存中使用何种存储格式才能使得程序能够高效访问/修改数据？</li>
+</ol>
+
+<h3 id="数据从哪里来-到哪里去">数据从哪里来，到哪里去？</h3>
+
+<p>我们在学习数据结构的时候，一直在说数据，那么我们不妨问一下自己：（在计算机科学里）数据到底是哪里来的，数据最终又到哪里去？其实有两条路径：</p>
+
+<ol>
+<li>从人类世界来，到计算机世界里去；</li>
+<li>从计算机世界来，到人类世界中去；</li>
+</ol>
+
+<p>因为人类和计算机是完全不同的物种，计算机是只懂二进制的，而面对海量的二进制时，人类本身是无能为力的（我们对二进制不敏感，甚至大多数人不懂二进制），因此需要使用一系列的操作使得人类的数据最终能够存放到计算机里（反过来说，计算机存放的数据最终能被人类利用）。我用下图大致描绘一下这个过程：（ps：为了简单化，下图只给出了数据从人类世界到计算机世界的大致过程）</p>
+
+<p><img src="https://codepool.oss-cn-shenzhen.aliyuncs.com/20200219-01/20200219-01-01.png" alt="" /></p>
+
+<p>当然，上面阐述的内容不太专业，下面是更加专业的说法：</p>
+
+<blockquote>
+<p>数据结构的研究内容是构造复杂软件系统的基础，它的核心技术是<strong>分解与抽象</strong>。通过分解可以划分出数据的3个层次,再通过抽象，舍弃数据元素的具体内容，就得到逻辑结构。类似地，通过分解将处理要求划分成各种功能，再通过抽象舍弃实现细节，就得到运算的定义。上述两个方面的结合可以将问题变换为数据结构。这是一个从具体（即具体问题）到抽象（即数据结构）的过程。然后，通过增加对实现细节的考虑进一步得到存储结构和实现运算，从而完成设计任务。这是一个从抽象（即数据结构）到具体（即具体实现）的过程。</p>
+</blockquote>
+
+<p>我们先提取重要概念（我们希望你好好看下面的两段话）：</p>
+
+<ol>
+<li>从具体（即现实世界存在的具体问题）到抽象（即数据结构）的过程：通过分解可以划分出数据的3个层次,再通过抽象，舍弃数据元素的具体内容，就得到逻辑结构。类似地，通过分解将处理要求划分成各种功能，再通过抽象舍弃实现细节，就得到运算的定义。上述两个方面的结合可以将问题变换为数据结构。</li>
+<li>从抽象（即数据结构）到具体（即计算机世界里的具体实现）的过程：通过增加对实现细节的考虑进一步得到存储结构和实现运算，从而完成设计任务。</li>
+</ol>
+
+<p><img src="https://codepool.oss-cn-shenzhen.aliyuncs.com/20200219-01/20200219-01-02.png" alt="" /></p>
+
+<p>接下来，要对上面两点分阶段讨论。</p>
+
+<h3 id="逻辑结构">逻辑结构</h3>
+
+<p>从具体（即现实世界存在的具体问题）到抽象（即数据结构）的过程中，我们需要找出数据元素之间的逻辑关系，得到逻辑结构。</p>
+
+<p>逻辑结构有两大类：</p>
+
+<ol>
+<li>线性结构：数据结构中的元素存在一对一的相互关系；</li>
+<li>非线性结构：数据结构中的元素不是存在一对一的相互关系。</li>
+</ol>
+
+<p>具体的分类如下：</p>
+
+<p><img src="https://codepool.oss-cn-shenzhen.aliyuncs.com/20200219-01/20200219-01-03.png" alt="" /></p>
+
+<h3 id="存储结构-又称物理结构">存储结构（又称物理结构）</h3>
+
+<p>从抽象（即数据结构）到具体（即计算机世界里的具体实现）的过程中，我们会得到<strong>具体的运算和存储结构</strong>。</p>
+
+<p>具体的运算是和算法相关的。</p>
+
+<p>而存储结构则有两大类：</p>
+
+<ol>
+<li>顺序存储结构：借助元素在存储器中的相对位置来表示数据元素之间的逻辑关系；</li>
+<li>非顺序存储结构：借助指示元素存储地址的指针表示数据元素之间的逻辑关系。</li>
+</ol>
+
+<h3 id="逻辑结构和存储结构的联系">逻辑结构和存储结构的联系</h3>
+
+<p>以前学习数据结构的时候，总以为数据结构里的<code>逻辑结构</code>和<code>存储结构</code>只是按不同的方向去分类而已，它们本身是没什么联系的。随着时间推移，我才意识到，其实<code>逻辑结构</code>和<code>存储结构</code>是紧密联系在一起的，它们是编写程序时的不同阶段：</p>
+
+<blockquote>
+<p>我们从现实世界得到数据的时候，根据这些数据之间的联系，我们会<strong>先得到逻辑结构</strong>，然后<strong>根据逻辑结构，我们会得到恰当的存储结构</strong>。</p>
+</blockquote>
+
+<p>比如：我们有一个银行的排队系统需要完成，我们现对银行里排队业务进行分析，因为一个人一个人轮着来，所以很容易确定应该是线性结构，接下来我们分析到数据元素（人）之间的联系是“先进先出”，因此我们将队列作为我们的逻辑结构（此时得到了逻辑结构），之后对队列这个逻辑结构进行分析：</p>
+
+<ol>
+<li>如果觉得它该使用顺序存储结构，我们就选用数组模拟队列；</li>
+<li>如果觉得它该使用非顺序存储结构，我们就选用指针。</li>
+</ol>
+
+<blockquote>
+<p>数据的逻辑结构和物理结构是数据结构的两个密切相关的方面，同一逻辑结构可以对应不同的存储结构。算法的设计取决于数据的逻辑结构，而算法的实现依赖于指定的存储结构。</p>
+</blockquote>
 <div class="container custom-copyright-style border-warning m-2 my-md-4 p-2 shadow-sm">
     <div >
         <span>
@@ -229,20 +304,10 @@
         <div class="col-12 col-md-5">
           <span><svg class="icon" aria-hidden="true">
               <use xlink:href="#icon-PrevioustrackFill"></use>
-            </svg>上一篇<a class="text-dark custom-a" href="https://codepool.top/posts/noteofunicode/"> Unicode知识梳理</a>
+            </svg>上一篇<a class="text-dark custom-a" href="https://codepool.top/posts/a-new-stage/"> 美好的开始</a>
           </span>
         </div>
         
-        
-          
-              <div class="col-12 col-md-5">
-                  <span class="float-md-right">
-          
-            <svg class="icon" aria-hidden="true">
-              <use xlink:href="#icon-NexttrackFilled"></use>
-            </svg>下一篇<a class="text-dark custom-a" href="https://codepool.top/posts/datastructure00/"> 数据结构开篇</a>
-          </span>
-        </div>
         
     </div>
   </aside>
