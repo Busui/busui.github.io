@@ -6,10 +6,19 @@
     <description>Recent content in Categories on CODEPOOL</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 22 Feb 2020 22:31:41 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 23 Feb 2020 14:06:38 +0800</lastBuildDate>
     
 	<atom:link href="https://codepool.top/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>java</title>
+      <link>https://codepool.top/categories/java/</link>
+      <pubDate>Sun, 23 Feb 2020 14:06:38 +0800</pubDate>
+      
+      <guid>https://codepool.top/categories/java/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>java日记</title>

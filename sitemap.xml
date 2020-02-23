@@ -4,12 +4,37 @@
   
   <url>
     <loc>https://codepool.top/categories/</loc>
-    <lastmod>2020-02-22T22:31:41+08:00</lastmod>
+    <lastmod>2020-02-23T14:06:38+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://codepool.top/</loc>
-    <lastmod>2020-02-22T22:31:41+08:00</lastmod>
+    <lastmod>2020-02-23T14:06:38+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://codepool.top/categories/java/</loc>
+    <lastmod>2020-02-23T14:06:38+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://codepool.top/posts/</loc>
+    <lastmod>2020-02-23T14:06:38+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://codepool.top/tags/</loc>
+    <lastmod>2020-02-23T14:06:38+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://codepool.top/posts/the-bitwise-operator-of-java/</loc>
+    <lastmod>2020-02-23T14:06:38+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://codepool.top/tags/%E4%BD%8D%E6%93%8D%E4%BD%9C%E7%AC%A6/</loc>
+    <lastmod>2020-02-23T14:06:38+08:00</lastmod>
   </url>
   
   <url>
@@ -24,16 +49,6 @@
   
   <url>
     <loc>https://codepool.top/categories/java%E6%97%A5%E8%AE%B0/</loc>
-    <lastmod>2020-02-22T22:31:41+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://codepool.top/posts/</loc>
-    <lastmod>2020-02-22T22:31:41+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://codepool.top/tags/</loc>
     <lastmod>2020-02-22T22:31:41+08:00</lastmod>
   </url>
   
@@ -218,12 +233,12 @@
   </url>
   
   <url>
-    <loc>https://codepool.top/tags/yellow%E4%B8%BB%E9%A2%98/</loc>
+    <loc>https://codepool.top/categories/yellow%E4%B8%BB%E9%A2%98/</loc>
     <lastmod>2019-07-28T11:46:49+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://codepool.top/categories/yellow%E4%B8%BB%E9%A2%98/</loc>
+    <loc>https://codepool.top/tags/yellow%E4%B8%BB%E9%A2%98/</loc>
     <lastmod>2019-07-28T11:46:49+08:00</lastmod>
   </url>
   

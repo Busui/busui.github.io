@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>位操作符 on CODEPOOL</title>
+    <link>https://codepool.top/tags/%E4%BD%8D%E6%93%8D%E4%BD%9C%E7%AC%A6/</link>
+    <description>Recent content in 位操作符 on CODEPOOL</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 23 Feb 2020 14:06:38 +0800</lastBuildDate>
+    
+	<atom:link href="https://codepool.top/tags/%E4%BD%8D%E6%93%8D%E4%BD%9C%E7%AC%A6/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Bitwise Operator of Java</title>
+      <link>https://codepool.top/posts/the-bitwise-operator-of-java/</link>
+      <pubDate>Sun, 23 Feb 2020 14:06:38 +0800</pubDate>
+      
+      <guid>https://codepool.top/posts/the-bitwise-operator-of-java/</guid>
+      <description>这是我写的一篇博客</description>
+    </item>
+    
+  </channel>
+</rss>
