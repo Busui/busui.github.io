@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>CODEPOOL  | trim和strip方法的本质区别</title>
+    <title>CODEPOOL </title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -36,6 +36,9 @@
     
     <link rel="shortcut icon" href="/img/favicon32.png">
 
+    
+      <link href="/index.xml" rel="alternate" type="application/rss+xml" title="CODEPOOL" />
+      <link href="/index.xml" rel="feed" type="application/rss+xml" title="CODEPOOL" />
     
 
     
@@ -79,12 +82,14 @@
                 <ul class="navbar-nav d-flex">
                     
                     
-                    <li class="">
+                    <li class="active">
                         <a class="nav-link custom-link-color " href="/" style="text-align: center;">
                             <svg class="icon" aria-hidden="true">
                                 <use xlink:href="#icon-ziyuan2"></use>
                             </svg>
                             <span>首页</span>
+                            
+                                <span class="sr-only">(current)</span>
                             
                         </a>
                     </li>
@@ -136,100 +141,96 @@
 </header>
 
         
-<main class="container-fluid px-4">
-  <article id="main">
-    <h1 id="title">trim和strip方法的本质区别</h1>
-    <div class="row justify-content-end mx-2 mx-sm-4">
-        
-          <span class="custom-span-meta">
-              <svg class="icon" aria-hidden="true">
-                <use xlink:href="#icon-biaoqian3"></use>
-              </svg>
-              
-              <a class="custom-text-muted custom-a" href="https://codepool.top/tags/trim%e5%92%8cstrip/">trim和strip</a>&shortmid;
-              
-          </span>&nbsp;
+<main class="container-fluid px-0">
+    <section>
         
         
-          <span class="custom-span-meta">
-              <svg class="icon" aria-hidden="true">
-                <use xlink:href="#icon-fenlei2"></use>
-              </svg>
-              
-              <a class="custom-text-muted custom-a" href="https://codepool.top/categories/">java</a>&shortmid;
-              
-          </span>&nbsp;
-        
-      <span class="custom-span-meta">
-        <svg class="icon" aria-hidden="true">
-          <use xlink:href="#icon-time"></use>
-        </svg>2020-02-23</span>&nbsp;
-      <span class="custom-span-meta">
-          <svg class="icon" aria-hidden="true">
-              <use xlink:href="#icon-count"></use>
-          </svg>91字
-      </span>
-    </div>
-    <br>
-    <div class="row">
-      <div class="col-12 px-2 px-md-3">
-          <p>一直分不清<code>String</code>类里面的trim()和strip()方法的区别，直到今天看到这一句话：</p>
-
-<pre><code class="language-java">String trim()
-String strip()
-// returns a new string by eliminating all leading and trailing characters that are ≤ U+0020 (trim) 
-// or whitespace (strip) in the original string.
-</code></pre>
-
-<p>心里哇一声哭了出来.avi(😂)</p>
-<div class="container custom-copyright-style border-warning m-2 my-md-4 p-2 shadow-sm">
-    <div >
-        <span>
-        <svg class="icon" aria-hidden="true">
-            <use xlink:href="#icon-woshizuozhe"></use>
-        </svg>作者：
-        <a href="https://codepool.top/about/">BUSUI</a>
-        </span>
-    </div>
-    <div>
-        <svg class="icon" aria-hidden="true">
-            <use xlink:href="#icon-suoding"></use>
-        </svg>版权：此文章版权归<a href="https://codepool.top">CODEPOOL</a>所有。允许转载，但禁止商用！
-    </div>
-</div></div>
-    </div>
-  </article>
-  <div class="hr-box">
-      <div class="hr-box-sm hr-red"></div>
-      <div class="hr-box-sm hr-orange"></div>
-      <div class="hr-box-sm hr-yellow "></div>
-      <div class="hr-box-sm hr-green "></div>
-      <div class="hr-box-sm hr-blue "></div>
-      <div class="hr-box-sm hr-purple"></div>
-  </div>
-  <aside id="meta">
-    <div class="row justify-content-between py-2 py-md-3">
-        
-        <div class="col-12 col-md-5">
-          <span><svg class="icon" aria-hidden="true">
-              <use xlink:href="#icon-PrevioustrackFill"></use>
-            </svg>上一篇<a class="text-dark custom-a" href="https://codepool.top/posts/the-bitwise-operator-of-java/"> The Bitwise Operator of Java</a>
-          </span>
+        <article>
+            <div class="container-fluid mb-2 mt-2 mt-sm-4 py-2 bg-white custom-border-top position-relative">
+    <div class="row justify-content-center position-static">
+        <div class="col text-center position-static">
+            <div class="custom-sumary-title pt-1 pt-md-2 position-static">
+                <a class="custom-link-color stretched-link" href='/posts/noisy-day/'> 幸好杯盖不会说话</a>
+            </div>
+            <div class="w-100"></div>
+            <div class="custom-post-meta text-muted">
+                <span>
+                    <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-time"></use>
+                    </svg>2018-08-23</span>&nbsp;&nbsp;
+                <span >
+                  <svg class="icon" aria-hidden="true">
+                      <use xlink:href="#icon-count"></use>
+                  </svg>560字
+              </span></div>
         </div>
-        
-        
-          
-              <div class="col-12 col-md-5">
-                  <span class="float-md-right">
-          
-            <svg class="icon" aria-hidden="true">
-              <use xlink:href="#icon-NexttrackFilled"></use>
-            </svg>下一篇<a class="text-dark custom-a" href="https://codepool.top/posts/class-based-access-privileges/"> Class Based Access Privileges</a>
-          </span>
-        </div>
-        
     </div>
-  </aside>
+    
+    <img src="https://codepool.oss-cn-shenzhen.aliyuncs.com/life/cup.png" alt="" class="img-fluid" style="max-width: 95%; box-shadow:0 0 0px #4f5522;">
+    
+</div>
+
+        </article>
+        
+    </section>
+    <div class="row justify-content-center mt-4 mt-md-5">
+
+<ul class="pagination">
+    
+    <li class="page-item">
+        <a href="/" class="page-link" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
+    </li>
+    
+    <li class="page-item">
+    <a href="/page/2/" class="page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+    </li>
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/">1</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/page/2/">2</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item active"><a class="page-link" href="/page/3/">3</a></li>
+    
+    
+    <li class="page-item disabled">
+    <a  class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+    </li>
+    
+    <li class="page-item">
+        <a href="/page/3/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+    </li>
+    
+</ul>
+
+</div>
 </main>
 
         <footer class="custom-border-top mt-3 py-3 custom-footer">
