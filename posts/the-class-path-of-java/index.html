@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>CODEPOOL  | trim和strip方法的本质区别</title>
+    <title>CODEPOOL  | The Class Path of Java</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -138,7 +138,7 @@
         
 <main class="container-fluid px-4">
   <article id="main">
-    <h1 id="title">trim和strip方法的本质区别</h1>
+    <h1 id="title">The Class Path of Java</h1>
     <div class="row justify-content-end mx-2 mx-sm-4">
         
           <span class="custom-span-meta">
@@ -146,7 +146,7 @@
                 <use xlink:href="#icon-biaoqian3"></use>
               </svg>
               
-              <a class="custom-text-muted custom-a" href="https://codepool.top/tags/trim%e5%92%8cstrip/">trim和strip</a>&shortmid;
+              <a class="custom-text-muted custom-a" href="https://codepool.top/tags/classpath/">classpath</a>&shortmid;
               
           </span>&nbsp;
         
@@ -163,25 +163,111 @@
       <span class="custom-span-meta">
         <svg class="icon" aria-hidden="true">
           <use xlink:href="#icon-time"></use>
-        </svg>2020-02-13</span>&nbsp;
+        </svg>2020-02-25</span>&nbsp;
       <span class="custom-span-meta">
           <svg class="icon" aria-hidden="true">
               <use xlink:href="#icon-count"></use>
-          </svg>91字
+          </svg>1022字
       </span>
     </div>
     <br>
     <div class="row">
       <div class="col-12 px-2 px-md-3">
-          <p>一直分不清<code>String</code>类里面的trim()和strip()方法的区别，直到今天看到这一句话：</p>
+          
 
-<pre><code class="language-java">String trim()
-String strip()
-// returns a new string by eliminating all leading and trailing characters that are ≤ U+0020 (trim) 
-// or whitespace (strip) in the original string.
+<p>Classes are stored in subdirectories of the file system. The path to the class must match the package name.</p>
+
+<p>Class files can also be stored in a JAR (Java archive) file. A JAR file contains multiple class files and subdirectories in a compressed format, saving space and improving performance. When you use a third-party library in your programs, you will usually be given one or more JAR files to include.</p>
+
+<p>To share classes among programs, you need to do the following:</p>
+
+<ol>
+<li>Place your class files inside a directory—for example, <code>/home/user/classdir</code>. Note that this directory is the base directory for the package tree. If you add the class <code>com.horstmann.corejava.Employee</code>, then the Employee.class file must be located in the subdirectory <code>/home/user/classdir/com/horstmann/corejava</code>.</li>
+<li>Place any JAR files inside a directory—for example, <code>/home/user/archives</code>.</li>
+<li>Set the <code>class path</code>. The class path is the collection of all locations that can contain class files.</li>
+</ol>
+
+<p>In UNIX, the elements on the class path are separated by colons:</p>
+
+<pre><code class="language-sh">/home/user/classdir:.:/home/user/archives/archive.jar
 </code></pre>
 
-<p>心里哇一声哭了出来.avi(😂)</p>
+<p>In Windows, they are separated by semicolons:</p>
+
+<pre><code>c:\classdir;.;c:\archives\archive.jar
+</code></pre>
+
+<p>In both cases, the period denotes the current directory.</p>
+
+<p>This class path contains
+1. The base directory /home/user/classdir or c:\classdir;
+2. The current directory (.); and
+3. The JAR file <code>/home/user/archives/archive.jar</code> or <code>c:\archives\archive.jar</code>.</p>
+
+<p>Starting with Java 6, you can specify a wildcard for a JAR file directory, like this:</p>
+
+<pre><code class="language-sh">/home/user/classdir:.:/home/user/archives/'*'
+</code></pre>
+
+<p>or</p>
+
+<pre><code>c:\classdir;.;c:\archives\*
+</code></pre>
+
+<p>In UNIX, the <code>*</code> must be escaped to prevent shell expansion.</p>
+
+<p>All JAR files (but not .class files) in the archives directory are included in this class path.</p>
+
+<p>The Java API is always searched for classes; don’t include it explicitly in the class path.</p>
+
+<blockquote>
+<p>java虚拟机默认会去搜索Java API的类，因此不用显式将它们包括在class path里。</p>
+</blockquote>
+
+<hr />
+
+<p>The javac compiler always looks for files in the current directory, but the java virtual machine launcher only looks into the current directory if the “.” directory is on the class path. If you have no class path set, it’s not a problem—the default class path consists of the “.” directory. But if you have set the class path and forgot to include the “.” directory, your programs will compile without error, but they won’t run.</p>
+
+<blockquote>
+<p>javac编译器默认就会在当前目录寻找源文件，但是只有你将当前目录<code>.</code>添加到class path时，java虚拟机才会搜索当前路径。</p>
+</blockquote>
+
+<h3 id="classpath-虚拟机和编译器之间联系">classpath，虚拟机和编译器之间联系</h3>
+
+<p>The class path lists all directories and archive files that are starting points for locating classes. Let’s consider our sample class path:</p>
+
+<pre><code class="language-sh">/home/user/classdir:.:/home/user/archives/archive.jar
+</code></pre>
+
+<h4 id="对java虚拟机来说">对java虚拟机来说</h4>
+
+<p>Suppose the virtual machine searches for the class file of the <code>com.horstmann.corejava.Employee</code> class. It first looks in the <code>Java API classes</code>. It won’t find the class file there, so it turns to the <code>class path</code>. It then looks for the following files:</p>
+
+<ol>
+<li><code>/home/user/classdir/com/horstmann/corejava/Employee.class</code></li>
+<li><code>com/horstmann/corejava/Employee.class</code> starting from the current directory</li>
+<li><code>com/horstmann/corejava/Employee.class</code> inside <code>/home/user/archives/archive.jar</code></li>
+</ol>
+
+<h4 id="对于javac编译器来说">对于javac编译器来说</h4>
+
+<p>The compiler has a harder time locating files than does the virtual machine. If you refer to a class without specifying its package, the compiler first needs to find out the package that contains the class. It consults all import directives as possible sources for the class. For example, suppose the source file contains directives:</p>
+
+<pre><code>import java.util.*;
+import com.horstmann.corejava.*;
+</code></pre>
+
+<p>and the source code refers to a class Employee. The compiler then tries to find java.lang.Employee (because the java.lang package is always imported by default), java.util.Employee, com.horstmann.corejava.Employee, and Employee in the current package. It searches for each of these classes in all of the locations of the class path. It is a compile-time error if more than one class is found. (Fully qualified class names must be unique, so the order of the import statements doesn’t matter.)</p>
+
+<p>The compiler goes one step further. It looks at the source files to see if the source is newer than the class file. If so, the source file is recompiled automatically. Recall that you can import only public classes from other packages. A source file can only contain one public class, and the names of the file and the public class must match. Therefore, the compiler can easily locate source files for public classes.</p>
+
+<p>However, you can import nonpublic classes from the current package. These classes may be defined in source files with different names. If you import a class from the current package, the compiler searches all source files of the current package to see which one defines the class.</p>
+
+<blockquote>
+<p>对于java虚拟机来说，只需要寻找已经编译过的class字节码文件。</p>
+
+<p>对于javac编译器来说，除了需要寻找java源文件，还需要检查java源文件里面用到的<code>class字节码文件的源文件</code>（这些源文件可能是public的，也可能是nonpublic的，寻找后者会更难些）</p>
+</blockquote>
 <div class="container custom-copyright-style border-warning m-2 my-md-4 p-2 shadow-sm">
     <div >
         <span>
@@ -213,20 +299,10 @@ String strip()
         <div class="col-12 col-md-5">
           <span><svg class="icon" aria-hidden="true">
               <use xlink:href="#icon-PrevioustrackFill"></use>
-            </svg>上一篇<a class="text-dark custom-a" href="https://codepool.top/posts/a-new-stage/"> 美好的开始</a>
+            </svg>上一篇<a class="text-dark custom-a" href="https://codepool.top/posts/the-relation-of-class-and-package/"> 谈谈java中class文件在package的位置</a>
           </span>
         </div>
         
-        
-          
-              <div class="col-12 col-md-5">
-                  <span class="float-md-right">
-          
-            <svg class="icon" aria-hidden="true">
-              <use xlink:href="#icon-NexttrackFilled"></use>
-            </svg>下一篇<a class="text-dark custom-a" href="https://codepool.top/posts/datastructure00/"> 数据结构开篇</a>
-          </span>
-        </div>
         
     </div>
   </aside>

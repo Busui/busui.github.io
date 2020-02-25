@@ -6,7 +6,7 @@
     <description>Recent content in trim和strip on CODEPOOL</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 23 Feb 2020 16:28:13 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 13 Feb 2020 16:28:13 +0800</lastBuildDate>
     
 	<atom:link href="https://codepool.top/tags/trim%E5%92%8Cstrip/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>trim和strip方法的本质区别</title>
       <link>https://codepool.top/posts/whats-deference-between-trim-and-strip-string-method-in-java/</link>
-      <pubDate>Sun, 23 Feb 2020 16:28:13 +0800</pubDate>
+      <pubDate>Thu, 13 Feb 2020 16:28:13 +0800</pubDate>
       
       <guid>https://codepool.top/posts/whats-deference-between-trim-and-strip-string-method-in-java/</guid>
       <description>描述String类里面trim和strip方法的区别</description>

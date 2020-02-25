@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>classpath on CODEPOOL</title>
+    <link>https://codepool.top/tags/classpath/</link>
+    <description>Recent content in classpath on CODEPOOL</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 25 Feb 2020 19:27:45 +0800</lastBuildDate>
+    
+	<atom:link href="https://codepool.top/tags/classpath/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Class Path of Java</title>
+      <link>https://codepool.top/posts/the-class-path-of-java/</link>
+      <pubDate>Tue, 25 Feb 2020 19:27:45 +0800</pubDate>
+      
+      <guid>https://codepool.top/posts/the-class-path-of-java/</guid>
+      <description>讲述设置好classpath后，编译器和虚拟机分别如何定位java源文件和class字节码</description>
+    </item>
+    
+  </channel>
+</rss>
