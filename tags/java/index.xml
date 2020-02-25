@@ -6,10 +6,19 @@
     <description>Recent content in java on CODEPOOL</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 24 Feb 2020 19:42:09 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 25 Feb 2020 15:40:59 +0800</lastBuildDate>
     
 	<atom:link href="https://codepool.top/tags/java/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>谈谈java中class在package的位置</title>
+      <link>https://codepool.top/posts/the-relation-of-class-and-package/</link>
+      <pubDate>Tue, 25 Feb 2020 15:40:59 +0800</pubDate>
+      
+      <guid>https://codepool.top/posts/the-relation-of-class-and-package/</guid>
+      <description>The compiler does not check the directory structure when it compiles source files</description>
+    </item>
     
     <item>
       <title>Class Based Access Privileges</title>
