@@ -6,10 +6,19 @@
     <description>Recent content in Posts on CODEPOOL</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 25 Feb 2020 19:27:45 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 25 Feb 2020 22:07:43 +0800</lastBuildDate>
     
 	<atom:link href="https://codepool.top/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Polymorphism and data type</title>
+      <link>https://codepool.top/posts/polymorphism/</link>
+      <pubDate>Tue, 25 Feb 2020 22:07:43 +0800</pubDate>
+      
+      <guid>https://codepool.top/posts/polymorphism/</guid>
+      <description>话题来自于王垠的“一道java面试题”</description>
+    </item>
     
     <item>
       <title>The Class Path of Java</title>

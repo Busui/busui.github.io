@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>CODEPOOL  | The Class Path of Java</title>
+    <title>CODEPOOL  | Polymorphism and data type</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -138,7 +138,7 @@
         
 <main class="container-fluid px-4">
   <article id="main">
-    <h1 id="title">The Class Path of Java</h1>
+    <h1 id="title">Polymorphism and data type</h1>
     <div class="row justify-content-end mx-2 mx-sm-4">
         
           <span class="custom-span-meta">
@@ -146,7 +146,7 @@
                 <use xlink:href="#icon-biaoqian3"></use>
               </svg>
               
-              <a class="custom-text-muted custom-a" href="https://codepool.top/tags/classpath/">classpath</a>&shortmid;
+              <a class="custom-text-muted custom-a" href="https://codepool.top/tags/%e5%a4%9a%e6%80%81/">多态</a>&shortmid;
               
           </span>&nbsp;
         
@@ -167,7 +167,7 @@
       <span class="custom-span-meta">
           <svg class="icon" aria-hidden="true">
               <use xlink:href="#icon-count"></use>
-          </svg>1022字
+          </svg>1194字
       </span>
     </div>
     <br>
@@ -175,99 +175,111 @@
       <div class="col-12 px-2 px-md-3">
           
 
-<p>Classes are stored in subdirectories of the file system. The path to the class must match the package name.</p>
+<p>想起好久没去看过<a href="http://yinwang.org">王垠</a>的博客，今晚上去发现了他新发布了一篇博文，问了一个关于java类型的问题，我觉得十分有趣，刚好我正在学Java，我就试着分析一下。</p>
 
-<p>Class files can also be stored in a JAR (Java archive) file. A JAR file contains multiple class files and subdirectories in a compressed format, saving space and improving performance. When you use a third-party library in your programs, you will usually be given one or more JAR files to include.</p>
+<h3 id="原问题-一道java面试题">原问题：一道java面试题</h3>
 
-<p>To share classes among programs, you need to do the following:</p>
+<p>关于程序员对 Java 类型系统的理解，比较高级的一个面试问题是这样：</p>
 
-<ol>
-<li>Place your class files inside a directory—for example, <code>/home/user/classdir</code>. Note that this directory is the base directory for the package tree. If you add the class <code>com.horstmann.corejava.Employee</code>, then the Employee.class file must be located in the subdirectory <code>/home/user/classdir/com/horstmann/corejava</code>.</li>
-<li>Place any JAR files inside a directory—for example, <code>/home/user/archives</code>.</li>
-<li>Set the <code>class path</code>. The class path is the collection of all locations that can contain class files.</li>
-</ol>
-
-<p>In UNIX, the elements on the class path are separated by colons:</p>
-
-<pre><code class="language-sh">/home/user/classdir:.:/home/user/archives/archive.jar
+<pre><code class="language-java">public static void f() {
+    String[] a = new String[2];
+    Object[] b = a;
+    a[0] = &quot;hi&quot;;
+    b[1] = Integer.valueOf(42);
+}
 </code></pre>
 
-<p>In Windows, they are separated by semicolons:</p>
+<p>这段代码里面到底哪一行错了？为什么？如果某个 Java 版本能顺利运行这段代码，那么如何让这个错误暴露得更致命一些？</p>
 
-<pre><code>c:\classdir;.;c:\archives\archive.jar
-</code></pre>
+<p>注意这里所谓的「错了」是本质上，原理上的，而不一定是 Java 编译器，IDE 或者运行时报给你的。也就是说，你用的 Java 实现，IDE 都可能是错的，没找对真正错误的地方，或者没告诉你真正的原因。</p>
 
-<p>In both cases, the period denotes the current directory.</p>
+<p>如果你知道哪里错了，并且知道「为什么」错了，可以联系我。</p>
 
-<p>This class path contains
-1. The base directory /home/user/classdir or c:\classdir;
-2. The current directory (.); and
-3. The JAR file <code>/home/user/archives/archive.jar</code> or <code>c:\archives\archive.jar</code>.</p>
+<h3 id="简单回答问题">简单回答问题</h3>
 
-<p>Starting with Java 6, you can specify a wildcard for a JAR file directory, like this:</p>
-
-<pre><code class="language-sh">/home/user/classdir:.:/home/user/archives/'*'
-</code></pre>
-
-<p>or</p>
-
-<pre><code>c:\classdir;.;c:\archives\*
-</code></pre>
-
-<p>In UNIX, the <code>*</code> must be escaped to prevent shell expansion.</p>
-
-<p>All JAR files (but not .class files) in the archives directory are included in this class path.</p>
-
-<p>The Java API is always searched for classes; don’t include it explicitly in the class path.</p>
+<p>问：这段代码里面到底哪一行错了？为什么？如果某个 Java 版本能顺利运行这段代码，那么如何让这个错误暴露得更致命一些？</p>
 
 <blockquote>
-<p>java虚拟机默认会去搜索Java API的类，因此不用显式将它们包括在class path里。</p>
+<p>目前没找到能够顺利运行这段代码的版本。个人猜测如果这段代码能够通过运行，那么用b[1]访问Integer类的方法就会出现致命错误。</p>
 </blockquote>
+
+<p>问：注意这里所谓的「错了」是本质上，原理上的，而不一定是 Java 编译器，IDE 或者运行时报给你的。也就是说，你用的 Java 实现，IDE 都可能是错的，没找对真正错误的地方，或者没告诉你真正的原因。</p>
+
+<p>如果你知道哪里错了，并且知道「为什么」错了，可以联系我。</p>
+
+<blockquote>
+<p>错在<code>b[1] = Integer.valueOf(42);</code>语句尝试往专门为String类开辟的空间放置Integer对象。</p>
+</blockquote>
+
+<h3 id="分析">分析</h3>
+
+<p>运行环境：</p>
+
+<pre><code>➜ java -version
+java version &quot;13.0.1&quot; 2019-10-15
+Java(TM) SE Runtime Environment (build 13.0.1+9)
+Java HotSpot(TM) 64-Bit Server VM (build 13.0.1+9, mixed mode, sharing)
+</code></pre>
+
+<pre><code>IntelliJ IDEA 2019.2.3 (Ultimate Edition)
+Build #IU-192.6817.14, built on September 24, 2019
+Runtime version: 11.0.4+10-b304.69 x86_64
+VM: OpenJDK 64-Bit Server VM by JetBrains s.r.o
+macOS 10.13.6
+GC: ParNew, ConcurrentMarkSweep
+</code></pre>
 
 <hr />
 
-<p>The javac compiler always looks for files in the current directory, but the java virtual machine launcher only looks into the current directory if the “.” directory is on the class path. If you have no class path set, it’s not a problem—the default class path consists of the “.” directory. But if you have set the class path and forgot to include the “.” directory, your programs will compile without error, but they won’t run.</p>
+<p>首先我试着修改一下代码，：</p>
 
-<blockquote>
-<p>javac编译器默认就会在当前目录寻找源文件，但是只有你将当前目录<code>.</code>添加到class path时，java虚拟机才会搜索当前路径。</p>
-</blockquote>
+<pre><code>public class ForTest {
+    public static void main(String[] args) {
+        f();
+    }
+    public static void f() {
+        String[] a = new String[2];
+        Object[] b = a;
+        a[0] = &quot;hi&quot;;
+        b[1] = Integer.valueOf(42);
+        for (String e:
+             a) {
+            System.out.println(Arrays.toString(a));
+        }
+    }
 
-<h3 id="classpath-虚拟机和编译器之间联系">classpath，虚拟机和编译器之间联系</h3>
-
-<p>The class path lists all directories and archive files that are starting points for locating classes. Let’s consider our sample class path:</p>
-
-<pre><code class="language-sh">/home/user/classdir:.:/home/user/archives/archive.jar
+}
 </code></pre>
 
-<h4 id="对java虚拟机来说">对java虚拟机来说</h4>
+<p>运行时抛出异常：<code>java.lang.ArrayStoreException: java.lang.Integer</code>。</p>
 
-<p>Suppose the virtual machine searches for the class file of the <code>com.horstmann.corejava.Employee</code> class. It first looks in the <code>Java API classes</code>. It won’t find the class file there, so it turns to the <code>class path</code>. It then looks for the following files:</p>
+<blockquote>
+<p>An array is a data structure that stores a collection of values of the same type。</p>
+</blockquote>
+
+<p>根据数组的定义来看，你在尝试往数组里装<code>不同类型</code>的数据，所以抛出异常。</p>
+
+<hr />
+
+<p>但我们来仔细看看代码：</p>
+
+<pre><code class="language-java">String[] a = new String[2];
+Object[] b = a;
+a[0] = &quot;hi&quot;;
+b[1] = Integer.valueOf(42);
+</code></pre>
+
+<p>上面共四行代码：</p>
 
 <ol>
-<li><code>/home/user/classdir/com/horstmann/corejava/Employee.class</code></li>
-<li><code>com/horstmann/corejava/Employee.class</code> starting from the current directory</li>
-<li><code>com/horstmann/corejava/Employee.class</code> inside <code>/home/user/archives/archive.jar</code></li>
+<li>第一行声明了一个String类型的数组；</li>
+
+<li><p>第二行尝试将子类（String）数组引用转换成父类数组引用，在Java中这么做是合法的，而且不用强制转换；(In Java, arrays of subclass references can be converted to arrays of superclass references without a cast.&mdash;-出自core java volumn 1 Fundamentals，11th edition (Polymorphism section))</p></li>
+
+<li><p>第三行将字符串<code>&quot;hi&quot;</code>放到String数组a里面，没毛病。</p></li>
+
+<li><p>关键在第四行：虽然在编译器看来，<code>数组b</code>是Object数组，所以可以存放子类Integer的instances。但实际上数组b指向的内存本来是专门为String类开辟的，你往里面存放Integer实例，可能会导致“内存错乱”，<strong>比如你访问一个不存在的方法，就可能导致你的访问超出“本来数组a指向的那块空间”。</strong></p></li>
 </ol>
-
-<h4 id="对于javac编译器来说">对于javac编译器来说</h4>
-
-<p>The compiler has a harder time locating files than does the virtual machine. If you refer to a class without specifying its package, the compiler first needs to find out the package that contains the class. It consults all import directives as possible sources for the class. For example, suppose the source file contains directives:</p>
-
-<pre><code>import java.util.*;
-import com.horstmann.corejava.*;
-</code></pre>
-
-<p>and the source code refers to a class Employee. The compiler then tries to find java.lang.Employee (because the java.lang package is always imported by default), java.util.Employee, com.horstmann.corejava.Employee, and Employee in the current package. It searches for each of these classes in all of the locations of the class path. It is a compile-time error if more than one class is found. (Fully qualified class names must be unique, so the order of the import statements doesn’t matter.)</p>
-
-<p>The compiler goes one step further. It looks at the source files to see if the source is newer than the class file. If so, the source file is recompiled automatically. Recall that you can import only public classes from other packages. A source file can only contain one public class, and the names of the file and the public class must match. Therefore, the compiler can easily locate source files for public classes.</p>
-
-<p>However, you can import nonpublic classes from the current package. These classes may be defined in source files with different names. If you import a class from the current package, the compiler searches all source files of the current package to see which one defines the class.</p>
-
-<blockquote>
-<p>对于java虚拟机来说，只需要寻找已经编译过的class字节码文件。</p>
-
-<p>对于javac编译器来说，除了需要寻找java源文件，还需要检查java源文件里面用到的<code>class字节码文件的源文件</code>（这些源文件可能是public的，也可能是nonpublic的，寻找后者会更难些）</p>
-</blockquote>
 <div class="container custom-copyright-style border-warning m-2 my-md-4 p-2 shadow-sm">
     <div >
         <span>
@@ -299,20 +311,10 @@ import com.horstmann.corejava.*;
         <div class="col-12 col-md-5">
           <span><svg class="icon" aria-hidden="true">
               <use xlink:href="#icon-PrevioustrackFill"></use>
-            </svg>上一篇<a class="text-dark custom-a" href="https://codepool.top/posts/the-relation-of-class-and-package/"> 谈谈java中class文件在package的位置</a>
+            </svg>上一篇<a class="text-dark custom-a" href="https://codepool.top/posts/the-class-path-of-java/"> The Class Path of Java</a>
           </span>
         </div>
         
-        
-          
-              <div class="col-12 col-md-5">
-                  <span class="float-md-right">
-          
-            <svg class="icon" aria-hidden="true">
-              <use xlink:href="#icon-NexttrackFilled"></use>
-            </svg>下一篇<a class="text-dark custom-a" href="https://codepool.top/posts/polymorphism/"> Polymorphism and data type</a>
-          </span>
-        </div>
         
     </div>
   </aside>
