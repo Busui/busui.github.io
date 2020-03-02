@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>CODEPOOL  | Polymorphism and data type</title>
+    <title>CODEPOOL  | 协变返回类型</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -138,7 +138,7 @@
         
 <main class="container-fluid px-4">
   <article id="main">
-    <h1 id="title">Polymorphism and data type</h1>
+    <h1 id="title">协变返回类型</h1>
     <div class="row justify-content-end mx-2 mx-sm-4">
         
           <span class="custom-span-meta">
@@ -146,7 +146,7 @@
                 <use xlink:href="#icon-biaoqian3"></use>
               </svg>
               
-              <a class="custom-text-muted custom-a" href="https://codepool.top/tags/%e5%a4%9a%e6%80%81/">多态</a>&shortmid;
+              <a class="custom-text-muted custom-a" href="https://codepool.top/tags/%e5%8d%8f%e5%8f%98%e8%bf%94%e5%9b%9e%e7%b1%bb%e5%9e%8b/">协变返回类型</a>&shortmid;
               
           </span>&nbsp;
         
@@ -156,130 +156,40 @@
                 <use xlink:href="#icon-fenlei2"></use>
               </svg>
               
-              <a class="custom-text-muted custom-a" href="https://codepool.top/categories/">java</a>&shortmid;
+              <a class="custom-text-muted custom-a" href="https://codepool.top/categories/">java返回类型</a>&shortmid;
               
           </span>&nbsp;
         
       <span class="custom-span-meta">
         <svg class="icon" aria-hidden="true">
           <use xlink:href="#icon-time"></use>
-        </svg>2020-02-25</span>&nbsp;
+        </svg>2020-03-02</span>&nbsp;
       <span class="custom-span-meta">
           <svg class="icon" aria-hidden="true">
               <use xlink:href="#icon-count"></use>
-          </svg>1194字
+          </svg>93字
       </span>
     </div>
     <br>
     <div class="row">
       <div class="col-12 px-2 px-md-3">
-          
+          <p>Bridge methods are not limited to generic types. We already noted in Chapter 5 that it is legal for a method to specify a more restrictive return type when overriding another method. For example:</p>
 
-<p>想起好久没去看过<a href="http://yinwang.org">王垠</a>的博客，今晚上去发现了他新发布了一篇博文，问了一个关于java类型的问题，我觉得十分有趣，刚好我正在学Java，我就试着分析一下。</p>
-
-<h3 id="原问题-一道java面试题">原问题：一道java面试题</h3>
-
-<p>关于程序员对 Java 类型系统的理解，比较高级的一个面试问题是这样：</p>
-
-<pre><code class="language-java">public static void f() {
-    String[] a = new String[2];
-    Object[] b = a;
-    a[0] = &quot;hi&quot;;
-    b[1] = Integer.valueOf(42);
+<pre><code class="language-java">public class Employee implements Cloneable
+{
+    public Employee clone() throws CloneNotSupportedException { . . . }
 }
 </code></pre>
 
-<p>这段代码里面到底哪一行错了？为什么？如果某个 Java 版本能顺利运行这段代码，那么如何让这个错误暴露得更致命一些？</p>
+<p>The <code>Object.clone</code> and <code>Employee.clone</code> methods are said to have <code>covariant return types</code>.</p>
 
-<p>注意这里所谓的「错了」是本质上，原理上的，而不一定是 Java 编译器，IDE 或者运行时报给你的。也就是说，你用的 Java 实现，IDE 都可能是错的，没找对真正错误的地方，或者没告诉你真正的原因。</p>
+<p>Actually, the Employee class has two clone methods:</p>
 
-<p>如果你知道哪里错了，并且知道「为什么」错了，可以联系我。</p>
-
-<h3 id="简单回答问题">简单回答问题</h3>
-
-<p>问：这段代码里面到底哪一行错了？为什么？如果某个 Java 版本能顺利运行这段代码，那么如何让这个错误暴露得更致命一些？</p>
-
-<blockquote>
-<p>目前没找到能够顺利运行这段代码的版本。个人猜测如果这段代码能够通过运行，那么用b[1]访问Integer类的方法就会出现致命错误。</p>
-</blockquote>
-
-<p>问：注意这里所谓的「错了」是本质上，原理上的，而不一定是 Java 编译器，IDE 或者运行时报给你的。也就是说，你用的 Java 实现，IDE 都可能是错的，没找对真正错误的地方，或者没告诉你真正的原因。</p>
-
-<p>如果你知道哪里错了，并且知道「为什么」错了，可以联系我。</p>
-
-<blockquote>
-<p>错在<code>b[1] = Integer.valueOf(42);</code>语句尝试往专门为String类开辟的空间放置Integer对象。</p>
-</blockquote>
-
-<h3 id="分析">分析</h3>
-
-<p>运行环境：</p>
-
-<pre><code>➜ java -version
-java version &quot;13.0.1&quot; 2019-10-15
-Java(TM) SE Runtime Environment (build 13.0.1+9)
-Java HotSpot(TM) 64-Bit Server VM (build 13.0.1+9, mixed mode, sharing)
+<pre><code class="language-java">Employee clone() // defined above
+Object clone() // synthesized bridge method, overrides Object.clone
 </code></pre>
 
-<pre><code>IntelliJ IDEA 2019.2.3 (Ultimate Edition)
-Build #IU-192.6817.14, built on September 24, 2019
-Runtime version: 11.0.4+10-b304.69 x86_64
-VM: OpenJDK 64-Bit Server VM by JetBrains s.r.o
-macOS 10.13.6
-GC: ParNew, ConcurrentMarkSweep
-</code></pre>
-
-<hr />
-
-<p>首先我试着修改一下代码，：</p>
-
-<pre><code>public class ForTest {
-    public static void main(String[] args) {
-        f();
-    }
-    public static void f() {
-        String[] a = new String[2];
-        Object[] b = a;
-        a[0] = &quot;hi&quot;;
-        b[1] = Integer.valueOf(42);
-        for (String e:
-             a) {
-            System.out.println(Arrays.toString(a));
-        }
-    }
-
-}
-</code></pre>
-
-<p>运行时抛出异常：<code>java.lang.ArrayStoreException: java.lang.Integer</code>。</p>
-
-<blockquote>
-<p>An array is a data structure that stores a collection of values of the same type。</p>
-</blockquote>
-
-<p>根据数组的定义来看，你在尝试往数组里装<code>不同类型</code>的数据，所以抛出异常。</p>
-
-<hr />
-
-<p>但我们来仔细看看代码：</p>
-
-<pre><code class="language-java">String[] a = new String[2];
-Object[] b = a;
-a[0] = &quot;hi&quot;;
-b[1] = Integer.valueOf(42);
-</code></pre>
-
-<p>上面共四行代码：</p>
-
-<ol>
-<li>第一行声明了一个String类型的数组；</li>
-
-<li><p>第二行尝试将子类（String）数组引用转换成父类数组引用，在Java中这么做是合法的，而且不用强制转换；(In Java, arrays of subclass references can be converted to arrays of superclass references without a cast.&mdash;-出自core java volumn 1 Fundamentals，11th edition (Polymorphism section))</p></li>
-
-<li><p>第三行将字符串<code>&quot;hi&quot;</code>放到String数组a里面，没毛病。</p></li>
-
-<li><p>关键在第四行：虽然在编译器看来，<code>数组b</code>是Object数组，所以可以存放子类Integer的instances。但实际上数组b指向的内存本来是专门为String类开辟的，你往里面存放Integer实例，可能会导致“内存错乱”，<strong>比如你访问一个不存在的方法，就可能导致你的访问超出“本来数组a指向的那块空间”。</strong></p></li>
-</ol>
+<p>The synthesized bridge method calls the newly defined method.</p>
 <div class="container custom-copyright-style border-warning m-2 my-md-4 p-2 shadow-sm">
     <div >
         <span>
@@ -311,20 +221,10 @@ b[1] = Integer.valueOf(42);
         <div class="col-12 col-md-5">
           <span><svg class="icon" aria-hidden="true">
               <use xlink:href="#icon-PrevioustrackFill"></use>
-            </svg>上一篇<a class="text-dark custom-a" href="https://codepool.top/posts/the-class-path-of-java/"> The Class Path of Java</a>
+            </svg>上一篇<a class="text-dark custom-a" href="https://codepool.top/posts/polymorphism/"> Polymorphism and data type</a>
           </span>
         </div>
         
-        
-          
-              <div class="col-12 col-md-5">
-                  <span class="float-md-right">
-          
-            <svg class="icon" aria-hidden="true">
-              <use xlink:href="#icon-NexttrackFilled"></use>
-            </svg>下一篇<a class="text-dark custom-a" href="https://codepool.top/posts/covariant-return-types/"> 协变返回类型</a>
-          </span>
-        </div>
         
     </div>
   </aside>

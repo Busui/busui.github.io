@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>协变返回类型 on CODEPOOL</title>
+    <link>https://codepool.top/tags/%E5%8D%8F%E5%8F%98%E8%BF%94%E5%9B%9E%E7%B1%BB%E5%9E%8B/</link>
+    <description>Recent content in 协变返回类型 on CODEPOOL</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 02 Mar 2020 14:28:14 +0800</lastBuildDate>
+    
+	<atom:link href="https://codepool.top/tags/%E5%8D%8F%E5%8F%98%E8%BF%94%E5%9B%9E%E7%B1%BB%E5%9E%8B/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>协变返回类型</title>
+      <link>https://codepool.top/posts/covariant-return-types/</link>
+      <pubDate>Mon, 02 Mar 2020 14:28:14 +0800</pubDate>
+      
+      <guid>https://codepool.top/posts/covariant-return-types/</guid>
+      <description>covariant return types意思是我们可以返回更加restrictive的类型</description>
+    </item>
+    
+  </channel>
+</rss>

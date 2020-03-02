@@ -6,10 +6,46 @@
     <description>Recent content in 未分类 on CODEPOOL</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 23 Feb 2020 21:03:37 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 29 Feb 2020 21:21:17 +0800</lastBuildDate>
     
 	<atom:link href="https://codepool.top/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Interfaces</title>
+      <link></link>
+      <pubDate>Sat, 29 Feb 2020 21:21:17 +0800</pubDate>
+      
+      <guid></guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lambda and Funtional Interface</title>
+      <link></link>
+      <pubDate>Fri, 28 Feb 2020 21:54:17 +0800</pubDate>
+      
+      <guid></guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Object Oriented Programing</title>
+      <link></link>
+      <pubDate>Thu, 27 Feb 2020 00:56:30 +0800</pubDate>
+      
+      <guid></guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Overloading,overloading Resolution,dynamy Binding,static Binding</title>
+      <link></link>
+      <pubDate>Wed, 26 Feb 2020 14:45:22 +0800</pubDate>
+      
+      <guid></guid>
+      <description></description>
+    </item>
     
     <item>
       <title>The Valiable Initializing in Java</title>
