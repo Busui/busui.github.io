@@ -6,10 +6,19 @@
     <description>Recent content in java on CODEPOOL</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 25 Feb 2020 22:07:43 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 05 Mar 2020 13:55:57 +0800</lastBuildDate>
     
 	<atom:link href="https://codepool.top/categories/java/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>java的方法引用</title>
+      <link>https://codepool.top/posts/method-references/</link>
+      <pubDate>Thu, 05 Mar 2020 13:55:57 +0800</pubDate>
+      
+      <guid>https://codepool.top/posts/method-references/</guid>
+      <description>当lambda表达式的方法体里面只是调用一个方法，我们可以直接将lambda替换成方法引用</description>
+    </item>
     
     <item>
       <title>Polymorphism and data type</title>

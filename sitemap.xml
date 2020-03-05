@@ -4,26 +4,41 @@
   
   <url>
     <loc>https://codepool.top/categories/</loc>
-    <lastmod>2020-03-02T14:28:14+08:00</lastmod>
+    <lastmod>2020-03-05T13:55:57+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://codepool.top/</loc>
-    <lastmod>2020-03-02T14:28:14+08:00</lastmod>
+    <lastmod>2020-03-05T13:55:57+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://codepool.top/categories/java%E8%BF%94%E5%9B%9E%E7%B1%BB%E5%9E%8B/</loc>
-    <lastmod>2020-03-02T14:28:14+08:00</lastmod>
+    <loc>https://codepool.top/categories/java/</loc>
+    <lastmod>2020-03-05T13:55:57+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://codepool.top/posts/method-references/</loc>
+    <lastmod>2020-03-05T13:55:57+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://codepool.top/posts/</loc>
-    <lastmod>2020-03-02T14:28:14+08:00</lastmod>
+    <lastmod>2020-03-05T13:55:57+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://codepool.top/tags/</loc>
+    <lastmod>2020-03-05T13:55:57+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://codepool.top/tags/%E6%96%B9%E6%B3%95%E5%BC%95%E7%94%A8/</loc>
+    <lastmod>2020-03-05T13:55:57+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://codepool.top/categories/java%E8%BF%94%E5%9B%9E%E7%B1%BB%E5%9E%8B/</loc>
     <lastmod>2020-03-02T14:28:14+08:00</lastmod>
   </url>
   
@@ -45,11 +60,6 @@
   <url>
     <loc>https://codepool.top/tags/%E9%BB%98%E8%AE%A4/</loc>
     <lastmod>2020-02-29T21:21:17+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://codepool.top/categories/java/</loc>
-    <lastmod>2020-02-25T22:07:43+08:00</lastmod>
   </url>
   
   <url>
