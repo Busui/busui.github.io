@@ -8,7 +8,7 @@
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
-    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="viewport" content="width=device-width,minimum-scale=1, user-scalable=no">
     <meta name="generator" content="Hugo 0.57.0" />
     
     
@@ -52,7 +52,7 @@
               document.body.classList.add('custom-mobile');
           }
        </script>
-      <div class="container px-0" id="content">
+      <div class="container" id="content">
         <header class="container" id="header-id">
     <div class="row justify-content-center">
         <div class="col-12 text-center">
@@ -142,7 +142,7 @@
 
         
     <div class="row justify-content-center pt-2 pb-5 mx-1">
-        <div class="col-11 shadow-sm border-top pb-2" style="min-height: 60vh">
+        <div class="col-md-11 col-12 shadow-sm border-top pb-2" style="min-height: 60vh">
             <div class="p-2 px-md-4 mt-5 mb-3" style="text-align: center;">目前共计32个标签</div>
             
             <a href="/tags/abstract-class/" class="d-inline-block mx-3 mx-md-4 p-1 custom-a" style="font-size:0.8rem">abstract class</a>
@@ -213,7 +213,10 @@
     </div>
 
 
-        <footer class="custom-border-top mt-3 py-3 custom-footer">
+      </div>
+      
+      <div class="container mt-2" id="content">
+        <footer class="custom-footer">
     <aside>
         <span>CODEPOOL&nbsp;&COPY;&nbsp;2018-2020</span>
     </asite>
@@ -245,32 +248,6 @@
 </footer>
       </div>
       
-<button onclick="topFunction()" id="myBtn" title="Go to top">
-    <svg class="icon" aria-hidden="true">
-        <use xlink:href="#icon-top2"></use>
-    </svg>
-</button>
-
-<script>
-    
-    window.onscroll = function () {
-        scrollFunction()
-    };
-
-    function scrollFunction() {
-        if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
-            document.getElementById("myBtn").style.display = "block";
-        } else {
-            document.getElementById("myBtn").style.display = "none";
-        }
-    }
-
-    
-    function topFunction() {
-        document.body.scrollTop = 0; 
-        document.documentElement.scrollTop = 0; 
-    }
-</script>
       
 
   <script src="/js/jquery-3.3.1.slim.min.js"></script>
