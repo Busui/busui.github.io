@@ -4,12 +4,37 @@
   
   <url>
     <loc>https://codepool.top/categories/</loc>
-    <lastmod>2020-03-12T00:13:38+08:00</lastmod>
+    <lastmod>2020-05-04T19:50:27+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://codepool.top/</loc>
-    <lastmod>2020-03-12T00:13:38+08:00</lastmod>
+    <lastmod>2020-05-04T19:50:27+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://codepool.top/posts/</loc>
+    <lastmod>2020-05-04T19:50:27+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://codepool.top/tags/</loc>
+    <lastmod>2020-05-04T19:50:27+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://codepool.top/posts/%E4%B8%80%E4%BA%9B%E5%94%A0%E5%8F%A8/</loc>
+    <lastmod>2020-05-04T19:50:27+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://codepool.top/tags/%E5%BF%83%E6%83%85/</loc>
+    <lastmod>2020-05-04T19:50:27+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://codepool.top/categories/%E5%BF%83%E6%83%85%E8%AE%B0%E5%BD%95/</loc>
+    <lastmod>2020-05-04T19:50:27+08:00</lastmod>
   </url>
   
   <url>
@@ -24,16 +49,6 @@
   
   <url>
     <loc>https://codepool.top/tags/method-class/</loc>
-    <lastmod>2020-03-12T00:13:38+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://codepool.top/posts/</loc>
-    <lastmod>2020-03-12T00:13:38+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://codepool.top/tags/</loc>
     <lastmod>2020-03-12T00:13:38+08:00</lastmod>
   </url>
   
@@ -188,11 +203,6 @@
   </url>
   
   <url>
-    <loc>https://codepool.top/categories/%E5%BF%83%E6%83%85%E8%AE%B0%E5%BD%95/</loc>
-    <lastmod>2020-02-04T13:07:13+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://codepool.top/posts/a-new-stage/</loc>
     <lastmod>2020-02-04T13:07:13+08:00</lastmod>
   </url>
@@ -343,12 +353,12 @@
   </url>
   
   <url>
-    <loc>https://codepool.top/categories/yellow%E4%B8%BB%E9%A2%98/</loc>
+    <loc>https://codepool.top/tags/yellow%E4%B8%BB%E9%A2%98/</loc>
     <lastmod>2019-07-28T11:46:49+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://codepool.top/tags/yellow%E4%B8%BB%E9%A2%98/</loc>
+    <loc>https://codepool.top/categories/yellow%E4%B8%BB%E9%A2%98/</loc>
     <lastmod>2019-07-28T11:46:49+08:00</lastmod>
   </url>
   
@@ -369,11 +379,6 @@
   
   <url>
     <loc>https://codepool.top/posts/noisy-day/</loc>
-    <lastmod>2018-08-23T17:04:58+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://codepool.top/tags/%E5%BF%83%E6%83%85/</loc>
     <lastmod>2018-08-23T17:04:58+08:00</lastmod>
   </url>
   
